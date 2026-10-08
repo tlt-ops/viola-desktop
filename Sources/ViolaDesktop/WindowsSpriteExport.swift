@@ -20,7 +20,7 @@ enum WindowsSpriteExport {
         for visible in [true, false] {
             let prefix = visible ? "" : "hidden"
             func name(_ kind: String) -> String {
-                visible ? kind : prefix + kind.prefix(1).uppercased() + kind.dropFirst()
+                visible ? kind : prefix + kind.prefix(1).uppercased() + String(kind.dropFirst())
             }
             let idleName = name("idle"), idleFolder = try frameFolder(idleName)
             let idle = LayerRenderer(assets: assets); idle.setDesksVisible(visible)

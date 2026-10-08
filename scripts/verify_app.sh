@@ -21,6 +21,7 @@ check_field CFBundleName viola终稿
 check_field CFBundleDisplayName viola终稿
 check_field CFBundleShortVersionString 0.2.50
 check_field CFBundleVersion 51
+check_field ViolaProfileDirectory ViolaDesktop-Preview
 check_field LSMinimumSystemVersion 13.0
 [[ -x "$APP/Contents/MacOS/ViolaDesktop" ]] || { echo "Executable is missing." >&2; exit 1; }
 RESOURCE_DIR="$APP/Contents/Resources"

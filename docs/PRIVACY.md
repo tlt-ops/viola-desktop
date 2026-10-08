@@ -12,7 +12,7 @@
 
 ## macOS 本地文件
 
-数据位于 `~/Library/Application Support/<profile>/`。`<profile>` 来自应用 `Info.plist` 的 `ViolaProfileDirectory`；没有该键时为 `ViolaDesktop`。当前仓库的 `packaging/Info.plist` 没有覆盖该键，因此公开构建默认使用 `ViolaDesktop`；应用 bundle ID 为 `local.viola.desktop.preview`。可在产物的 `Contents/Info.plist` 确认配置。
+数据位于 `~/Library/Application Support/<profile>/`。`<profile>` 来自应用 `Info.plist` 的 `ViolaProfileDirectory`；没有该键时为 `ViolaDesktop`。当前仓库的 `packaging/Info.plist` 明确指定 `ViolaProfileDirectory` 为 `ViolaDesktop-Preview`，公开应用使用 `~/Library/Application Support/ViolaDesktop-Preview/`，延续原终稿的设置与统计目录。CLI 没有该 Info.plist 键时仍默认使用 `ViolaDesktop`；应用 bundle ID 为 `local.viola.desktop.preview`。首次启动新 profile 时从旧 `ViolaDesktop` 目录迁移 `config.json` 和 `keyboard-stats.json` 的规则不变。可在产物的 `Contents/Info.plist` 确认配置。
 
 | 文件/目录 | 内容 |
 | --- | --- |
