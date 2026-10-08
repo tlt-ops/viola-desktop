@@ -17754,6 +17754,738 @@
     "sha256": "047eaafe40a86b744d1017180a4ce171f2e6ad92569b2de5bf55150d322d799e"
   },
   {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Info.plist",
+    "size": 748,
+    "mode": "100644",
+    "sha256": "bedcdc177718eb1d88bfacebc3118da1ff7f0124a239b48e0eb301ff8b05a227"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/MacOS/ViolaDesktop",
+    "size": 1599200,
+    "mode": "100755",
+    "sha256": "1e1137ccec21fb1d4710a0819dfa5445af1dd943164371dba259f9cfbb2975c6"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/Sounds/nailong-laugh.m4a",
+    "size": 59814,
+    "mode": "100644",
+    "sha256": "8e5056ff948e02feca1d393f6017270eabf1a8d9dcc3e4f36b7b0cb6c2e7ec83"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/Sounds/viola-laugh.m4a",
+    "size": 197056,
+    "mode": "100644",
+    "sha256": "d7540d916e3d6ff31ef7a9c2b79e31943ff0b89fb814117e82e9e6a28e95c6ae"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/body-original-v0.2.29.png",
+    "size": 571041,
+    "mode": "100644",
+    "sha256": "83d9f43d83fb0e0f1049a05164f52f7422ee67d642268ba8b8c7ac1fa3592f79"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/body-original-v0.2.31.png",
+    "size": 554171,
+    "mode": "100644",
+    "sha256": "94999f9e784d9502c1f75296ddc2d83ff37014fb37249ae760dfcf80dedcbe80"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/body-reference-v0.2.16.png",
+    "size": 267452,
+    "mode": "100644",
+    "sha256": "5e850ab1da5513c07b9e8092b7552f0094d82f0967a9637eca5b881cee67b0a5"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/body.png",
+    "size": 359130,
+    "mode": "100644",
+    "sha256": "28b3b8b3eef3e5327d796ac03e156e536ad13b6d9388deb8d3712a5ea3aa2a63"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/character.json",
+    "size": 10309,
+    "mode": "100644",
+    "sha256": "fd422b4b533388e7f7717979972f7a1e8f8c58ff64d29c066eacb398a6652411"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/costume-gap-completed-v0.2.18.png",
+    "size": 1823243,
+    "mode": "100644",
+    "sha256": "50ff474a98e28a2dee2224601c9411e3a9f8fba22e8b2cbd7ae1f2afc8e1b6d9"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/desk.png",
+    "size": 107501,
+    "mode": "100644",
+    "sha256": "739ea059be39980502cfc26056fd7513dd199c789adaf0c091e312f723150bff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-arms-background-v0.2.8.png",
+    "size": 1143231,
+    "mode": "100644",
+    "sha256": "356176d8b3bffba46c44d5f22eb65a66e2db56e6404b545915d9ae32a63e484f"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-closed-eyes-reference-v0.2.17.png",
+    "size": 1974341,
+    "mode": "100644",
+    "sha256": "766c3f17c58722ad80e22f440866fc22f4e11338d5caea488482ba0726e3e08b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-effort-v0.2.5.png",
+    "size": 1290175,
+    "mode": "100644",
+    "sha256": "86cb3d33ac484c23040abd3a36c8aea98bd4d37459d79794a05d1536ae60f9fd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-hands-no-ground-v0.2.13.png",
+    "size": 1125300,
+    "mode": "100644",
+    "sha256": "a12288ec82d8c1ce8ec4c13d7c82c91e9a596f39a49e70b2c2738394f7a24cbb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-hearts-drool-v0.2.11.png",
+    "size": 1185799,
+    "mode": "100644",
+    "sha256": "35f08171bb6dbde92c870597a0da25e40b56d01192348848f10a3b5886ae9cdf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-hearts-v0.2.5.png",
+    "size": 1221923,
+    "mode": "100644",
+    "sha256": "f418011c0b680259bcb697bf942826b0087f982d3644a4ba7d83fa12940027c0"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-help-arms-v0.2.8.png",
+    "size": 688549,
+    "mode": "100644",
+    "sha256": "6275deff9a616d6d5293ec3bec67573b578408a8e38b856284d9f50c05523046"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-natural-crown-mask-v0.2.46.png",
+    "size": 539,
+    "mode": "100644",
+    "sha256": "765fd8d589b4814d393fda9b548d22a0b9b2dcc4030f96673ff24e4a32965afe"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-natural-crown-v0.2.46.png",
+    "size": 1564453,
+    "mode": "100644",
+    "sha256": "5d5c87e3947c14032f82e58b27398ee27e858d77dbf18445cc1ec40b3e329199"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend-no-ground-v0.2.13.png",
+    "size": 1069252,
+    "mode": "100644",
+    "sha256": "870b05cfb83a5366a5f56cbc81245bee4887f0b88b473893933b4c6f47b943ce"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend_rest_back-original-v0.2.29.png",
+    "size": 1691542,
+    "mode": "100644",
+    "sha256": "0db0664a44c509c3f3c6c91b3a43483c8169d4ec06276743db4b6933cd2e8cdb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/friend_rest_front-original-v0.2.29.png",
+    "size": 1691490,
+    "mode": "100644",
+    "sha256": "777da1fff38852a51e9f13f8c7b87f782c3702848f9fb89996837a005a5d6e40"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/frontal-arms-v0.2.5.png",
+    "size": 1416069,
+    "mode": "100644",
+    "sha256": "d6ee70d42665086fc30c3922de4fb9146114d9e74e4cfe87752727b4696cd0c6"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/frontal-arms.png",
+    "size": 1365378,
+    "mode": "100644",
+    "sha256": "c9e2bf3c8b0b7e0294f32044d7d0ca681a52fd0174cc904861069c4a39a419f8"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/head-original-v0.2.29.png",
+    "size": 171780,
+    "mode": "100644",
+    "sha256": "4f9e38f7eb04a0ff39357385e3cb65a19c332378fc47427e0efe54d6bf207849"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/head-reference-v0.2.16.png",
+    "size": 135962,
+    "mode": "100644",
+    "sha256": "71c0237cacfc21ca81a304a59b358a29f7f79586ff679761b9bade8386d0a2ed"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/head.png",
+    "size": 292664,
+    "mode": "100644",
+    "sha256": "4a755942dd86d3da4595d2242e5f45c0f932a1868f71fedfd77dd6ebfc8bedeb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/head_close.png",
+    "size": 312027,
+    "mode": "100644",
+    "sha256": "736fdce8da0f754f7da714a2000a82019646acf6b307cb89dc2cceeed2788544"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/heels-pair-v0.2.8.png",
+    "size": 791462,
+    "mode": "100644",
+    "sha256": "b5e7dd284d13c58052bf753973d799d90eec7ab0c3ad1f38abf34dfbbb295e6c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/keyboard.png",
+    "size": 142766,
+    "mode": "100644",
+    "sha256": "321f9155ed23f970c782b2f38111302b6a33bdf357903cdbbc1ac7f53d991094"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/laugh-body-v0.2.12.png",
+    "size": 1899984,
+    "mode": "100644",
+    "sha256": "5c96c4e040ecbbf5b2b01019c7dd3850a6c37658c28f5ac4b1f83dee42dfd191"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/laugh-face-v0.2.12.png",
+    "size": 1115250,
+    "mode": "100644",
+    "sha256": "c931d10774e5677576d852da39a7c0c14d643a2d1c6a4581ba4aec5c1562ec5b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/laugh-mouse-v0.2.12.png",
+    "size": 883308,
+    "mode": "100644",
+    "sha256": "6301cd28ac1124c07721b1571ecf77195e4ecc8363331db1dfb9d89dad4a597d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/left_arm.png",
+    "size": 182640,
+    "mode": "100644",
+    "sha256": "2450ba269fdc0dea2e02eb475fdda59133bd478f35dd411f05a9ece817d0796c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/left_index-original-v0.2.29.png",
+    "size": 4010,
+    "mode": "100644",
+    "sha256": "86adbd1ad492d9650ccb7a7588c56fca09901e6b8d4d5b207471b21165733e47"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/left_middle-original-v0.2.29.png",
+    "size": 4918,
+    "mode": "100644",
+    "sha256": "a6753752e35b3ff71a85c6b971c8949de1fa8d3d1a3d94a6801b7c0ddd49daf1"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/left_palm-original-v0.2.29.png",
+    "size": 10738,
+    "mode": "100644",
+    "sha256": "787ae9e1479e0d72339e6144f04d266df16d687fe4e4af10ea6d7af88f4523ff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/left_pinky-original-v0.2.29.png",
+    "size": 5201,
+    "mode": "100644",
+    "sha256": "8fd8dc70707aaacb581372904b4ac0fa88c229baf545dd734f3350a6bc7d9811"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/left_ring-original-v0.2.29.png",
+    "size": 4916,
+    "mode": "100644",
+    "sha256": "cd715357a9771d9895b19276927f352f63d91f35159944374a22557b63279712"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/left_thumb-original-v0.2.29.png",
+    "size": 3524,
+    "mode": "100644",
+    "sha256": "191207ea58d0174ebf0fbb8780080b529b85a4d2fe7808dfe7b0d726831ca855"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg-reference-perfect-back-v0.2.15.png",
+    "size": 49460,
+    "mode": "100644",
+    "sha256": "462d635a76c544137abd5efbcb12c307b05e2a99059cd40d13e1691b4d85b883"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg-reference-perfect-front-v0.2.15.png",
+    "size": 90404,
+    "mode": "100644",
+    "sha256": "08894a22cb95af92bc3fb43754565c4425956a3844a840e4c05706bddcd0181b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg-right-seated-bare-thigh-v0.2.14.png",
+    "size": 463873,
+    "mode": "100644",
+    "sha256": "9d7c46d7a8a565b694283e64c4e07257be82c79396fd175af5619199d076694a"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg-right-seated-v0.2.12.png",
+    "size": 488522,
+    "mode": "100644",
+    "sha256": "b9718e976f01fa9484879dad3ec7e609508c717e423d5458c0df25cf8818b7e6"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_back-original-v0.2.29.png",
+    "size": 127873,
+    "mode": "100644",
+    "sha256": "288b8a6c206b74cec2aeeadf5ed4448ffa4710b6336716bb1580f4ca10ff086d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_back-reference-v0.2.16.png",
+    "size": 67999,
+    "mode": "100644",
+    "sha256": "c88c20d7dbcc5317111fb685bc4e3e3bdc4dd4fcc38cec43dabb09034d78e53c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_back-toes-reference-v0.2.16.png",
+    "size": 48747,
+    "mode": "100644",
+    "sha256": "1dadd4beeea18f371cb76b8d311dc6683f85b443ebc832feb1c1d9b5423058eb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_back_thigh-original-v0.2.29.png",
+    "size": 13314,
+    "mode": "100644",
+    "sha256": "92a07e191f297c1eeca6ff07e4cf9a77e43fa7cc8d37a954e7188b4466b791fb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_front-original-v0.2.29.png",
+    "size": 143373,
+    "mode": "100644",
+    "sha256": "6d077be0cfc0b1018df13c83a4c628c7f2c7cc6c2868dee6aa2bf4661a9abcaf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_front-original-v0.2.30.png",
+    "size": 142073,
+    "mode": "100644",
+    "sha256": "9282b7d2b2b62e1e1ddce448555fa910efe384766f0a96e5ee6dbf993d22d46c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_front-reference-v0.2.16.png",
+    "size": 119303,
+    "mode": "100644",
+    "sha256": "815d537f761b16dd757c41e362d610f157a57aded42dcb18af07fc51dd5574bf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_front-toes-reference-v0.2.16.png",
+    "size": 68739,
+    "mode": "100644",
+    "sha256": "ff64b2248964b11e3522564c829a4a17900951cf718b8e7d2420969af31b13b5"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_front_thigh-original-v0.2.29.png",
+    "size": 25026,
+    "mode": "100644",
+    "sha256": "ad8e17e79ef14a2c97434d2efff71ba30dab33479e2185820cb0b11b3e3418ea"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/leg_front_thigh-original-v0.2.30.png",
+    "size": 20912,
+    "mode": "100644",
+    "sha256": "3e40af7861ad87b8b219337bfa7a3549e2838b3e74691266bf7b99ab27298101"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/legs-anatomy-v0.2.7.png",
+    "size": 518048,
+    "mode": "100644",
+    "sha256": "8b363ad52be56f663a8615e62856deb3d7e2e7ae5d7374b22bc227faeabdf505"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/legs-bare-thigh-v0.2.14.png",
+    "size": 380412,
+    "mode": "100644",
+    "sha256": "396df33e1e345d28a1f1f489f53633dec02367a2e07858f9f6ff491d259d9b96"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/legs-right-knee-v0.2.12.png",
+    "size": 420405,
+    "mode": "100644",
+    "sha256": "b91df44b0ee1105c5f1c836d13e3889b226a0d9a3a29f13ccd0e52a1463d7440"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/legs-slender-v0.2.8.png",
+    "size": 415398,
+    "mode": "100644",
+    "sha256": "537b7d78b10ad8b13f5725480de707bfff835d11f4148ce3056c66ac5bec634b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/modular-desk-v0.2.6.png",
+    "size": 580736,
+    "mode": "100644",
+    "sha256": "fad328f283ccf5a279e67811bc83ddd2740311bd3a413e6be3d20328e0178349"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/mouse-grip-hand-only-v0.2.39.png",
+    "size": 141095,
+    "mode": "100644",
+    "sha256": "3c8a7cadb9cb0cfa5a7f685ba7332b033e48a4f2d7a6b07d25764ee93727eb7c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/mouse.png",
+    "size": 43295,
+    "mode": "100644",
+    "sha256": "e80bf6a47badde2ef85896d315086eb1a9e7c051863fcbafe44cf9b3be75f268"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.29.png",
+    "size": 20449,
+    "mode": "100644",
+    "sha256": "083abebc4eda2e05d0c4a0aa1a62ad900003bc670150680313cd4bb4aff6bfde"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.30.png",
+    "size": 20185,
+    "mode": "100644",
+    "sha256": "34dc978d28ef7e0b012497d0d30ad7345ce977fd108a4e4246d29b83938ace03"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.31.png",
+    "size": 20441,
+    "mode": "100644",
+    "sha256": "1bfd3cb710de35a3b70a5e24a8482e362e99261b001166d68d6393f52a795491"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/mouse_hand.png",
+    "size": 827904,
+    "mode": "100644",
+    "sha256": "1f9a836e7d8c312116fbd6c04628e7b0b4e809b14923482c74d93b2f273d3b83"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference-seating.png",
+    "size": 1348628,
+    "mode": "100644",
+    "sha256": "e7c882ffab18f1b5edfb8e2f8bbf3ebf08b0083f34fd748174dbf639fb143077"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference-source.png",
+    "size": 1293458,
+    "mode": "100644",
+    "sha256": "29d3f89358fb9b55a3ea201280cdce048ecab11ef52e5239ed0bd8483ed1fc6e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_hidden_dress_strip.png",
+    "size": 12709,
+    "mode": "100644",
+    "sha256": "4d84890e23c0c0d635167ce20bfa0864bba8a9ea69522335c1ab8f1cc346be7b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_left_arm-original-v0.2.29.png",
+    "size": 55396,
+    "mode": "100644",
+    "sha256": "71e7083d9697822610dbd54ef10b40a4d60ea1519058804b6887eab9360278e9"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_left_arm-original-v0.2.31.png",
+    "size": 55350,
+    "mode": "100644",
+    "sha256": "aa498408d31b888fe214e666faee5a4d98118a8af6e9012c4521b6b6f69743c3"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_left_arm-reference-v0.2.16.png",
+    "size": 35889,
+    "mode": "100644",
+    "sha256": "b6763435d71bff79bf1532e83952daef466c18a97e82f8d24a824a0540b1fe9c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_left_hand-reference-v0.2.16.png",
+    "size": 12720,
+    "mode": "100644",
+    "sha256": "4de2494c2d9495d25824ef53064020db3c7dd6ef23e16ff1cbd803913c9d420e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_right_arm-original-v0.2.29.png",
+    "size": 68126,
+    "mode": "100644",
+    "sha256": "8dd7f10dcb8475679e867591209a8aa2215eb2fbd8b0b3c3e19ba1fb6e38c7a4"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_right_arm-original-v0.2.31.png",
+    "size": 68171,
+    "mode": "100644",
+    "sha256": "ac490dd3bbb72bb1a46bf2b32f7fbc0815f467c4b7b7725c0bda896b732a436d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_right_arm-reference-v0.2.16.png",
+    "size": 52694,
+    "mode": "100644",
+    "sha256": "a48c1170ab88e55bd07a8aebb42dcf6de82df4eb9a78d0769968a2afcca8db9a"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/reference_right_hand-reference-v0.2.16.png",
+    "size": 14057,
+    "mode": "100644",
+    "sha256": "b2261c5dfb45263391e4918a2a259e195c7efd9e645f3a779671ba3d6a8124ec"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/resting-arms-v0.2.21.png",
+    "size": 242828,
+    "mode": "100644",
+    "sha256": "3a6b09a15c7f7a8ee0a60fd6dc011115f0420192af49f17b40dda5e975ed3a75"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/resting-reference-v0.2.21.png",
+    "size": 1240990,
+    "mode": "100644",
+    "sha256": "ae65f0af938cd30403826f4243debc5a9c7afa11e379ec169017f7f0225a5446"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.29.png",
+    "size": 128317,
+    "mode": "100644",
+    "sha256": "ec5a0aacb5daa50895791c43ca757b1365c0e9d1ba81ec9af38a5843448d383f"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.30.png",
+    "size": 128054,
+    "mode": "100644",
+    "sha256": "a5548bddc66450597ca84aed8832c0b990eb0f6eb9cc4910c10e2ee1c707b7da"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.31.png",
+    "size": 128350,
+    "mode": "100644",
+    "sha256": "7c5bde5c0d90c6b539f6e8bba578b0ffd3868ac7ce38162df0e0d1f9f01ec2eb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/resting_pet_arm-original-v0.2.29.png",
+    "size": 79086,
+    "mode": "100644",
+    "sha256": "8480f3c16eb7d96ada1590e724418294b479eb198e6ffec6d8c725fbb2ca7c20"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/resting_pet_arm-original-v0.2.31.png",
+    "size": 79037,
+    "mode": "100644",
+    "sha256": "4152f2ed8debd31ceb26e32f362873b721558c828329d81b1d8beace678dc836"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/right_arm.png",
+    "size": 756945,
+    "mode": "100644",
+    "sha256": "200ff395329c6baaddb0872c5c7f97d1a8a67c793eb768be1b76714a42f52aae"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/seating-original-v0.2.29.png",
+    "size": 1663551,
+    "mode": "100644",
+    "sha256": "e7a19dd655908f30428e715006e031ea986d2136841d45f8004e3ebc64bc0cff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/seating-original-v0.2.30.png",
+    "size": 1663531,
+    "mode": "100644",
+    "sha256": "c9f9ce36946e4244779570687ebacdd3c8972463d7675cc7f0656d94d50082fd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/seating-reference-v0.2.16.png",
+    "size": 566417,
+    "mode": "100644",
+    "sha256": "234c667a93bd9975463a75335798fe457ec14d4c6fdef335c9dd327f2d2dbd10"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/seating-repair-v0.2.5.png",
+    "size": 1302950,
+    "mode": "100644",
+    "sha256": "1040847f400db1fdf86e0499ae4267883cc8dbd9502fa38109f2a6cc15c869d7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/seating-sides-v0.2.5.png",
+    "size": 1173318,
+    "mode": "100644",
+    "sha256": "ac298115259e30e08d5b4593223aaa0ae208bd8c1c310389119f0ba7cbdeb089"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/thigh-reference-perfect-skin-v0.2.15.png",
+    "size": 17441,
+    "mode": "100644",
+    "sha256": "cd231663e0cd1b512a777ee4959a80dade586ba626e04b21ba2bba1b9fe4cc06"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/typing-hand-v0.2.10.png",
+    "size": 1427279,
+    "mode": "100644",
+    "sha256": "3b01a53f7df3a890ef9db0e52c07f9ac450ce21d6dc18caffdd44dcf383a7046"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-amused-v0.2.8.png",
+    "size": 1139584,
+    "mode": "100644",
+    "sha256": "4acff03fb5bac1962c375e0853dae9e4bd9256a4b844d6db1d4644f713782405"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-full-skirt-reference-v0.2.14.png",
+    "size": 54525,
+    "mode": "100644",
+    "sha256": "03317be9741705c6e845e1d51a5ed2c04b76615344a2c6c9475e067a3312f143"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-chest-v0.2.47.png",
+    "size": 1762464,
+    "mode": "100644",
+    "sha256": "7df24be00639d9d2c074d8e9b62fbde68df1b86e1ec3dfcb0bdd423895777099"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-clean-v0.2.47.png",
+    "size": 1838606,
+    "mode": "100644",
+    "sha256": "010e7eb83cb65cb5c0433042e9b8f03f775f546a16ea6b58b509b85d88793714"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-hair-v0.2.47.png",
+    "size": 1799342,
+    "mode": "100644",
+    "sha256": "22753e6fb20fd4c7db4e879755778db397ef011ff98d3473c6e589722c7a11dd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-head-v0.2.47.png",
+    "size": 1762387,
+    "mode": "100644",
+    "sha256": "796e554c706974fba3bca29bc33c5acd78beb235975bbfd19861a7a8876c14cf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-layers-v0.2.47.json",
+    "size": 6549,
+    "mode": "100644",
+    "sha256": "dd78e2284c42ecc799b78dc0cbd8b354a697ae4e7b0f70ebd78a4c9b7f3d776c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-left-hand-v0.2.47.png",
+    "size": 1768321,
+    "mode": "100644",
+    "sha256": "d5e31d393a2d2072e19c3ac024a78f176f5b2892ad309198e7fc179f684db48e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-left-lower-v0.2.47.png",
+    "size": 1768561,
+    "mode": "100644",
+    "sha256": "ad108edb1d6e3bd140c2c27fb467403243253f9e78fd3ac06ac5d3f414231f80"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-left-upper-v0.2.47.png",
+    "size": 1774055,
+    "mode": "100644",
+    "sha256": "4c0be4021f48290dc306329433658b93339be8cc9f934047093e0a52fe0e3c18"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-right-hand-v0.2.47.png",
+    "size": 1767957,
+    "mode": "100644",
+    "sha256": "ff2e80f88b14ddc8d71c00b1958dd7408f9bfbe26ff71cfa5211188755918653"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-right-lower-v0.2.47.png",
+    "size": 1770216,
+    "mode": "100644",
+    "sha256": "6ab39a57b58248eb061937fd144154fa0d465beb6eb7124a3ed38f9ee67df205"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-right-upper-v0.2.47.png",
+    "size": 1771689,
+    "mode": "100644",
+    "sha256": "e5c2001b1914b05f28ea176b52a6010c95754eb178757f196687743bac646d1b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-wipe-hand-v0.2.47.png",
+    "size": 1748593,
+    "mode": "100644",
+    "sha256": "9799061edd95a516ac31aabaa1fc895637ab04882e6d0cbb6c10a53605fe74e8"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-base-v0.2.46.png",
+    "size": 1835290,
+    "mode": "100644",
+    "sha256": "9305885d6007a79702bb10aef875862030e2cd8b3f29d2d96b38d0e273537a89"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-mouth-v0.2.46.png",
+    "size": 14947,
+    "mode": "100644",
+    "sha256": "e2f123d09ae6105274ac61b6e33a57cbb3467b3bd8fe08c641afa93cee183e93"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-v0.2.46.png",
+    "size": 1869753,
+    "mode": "100644",
+    "sha256": "b97971ce28e5c917701bbcfd2bfb5d9756db8ed7737dc135e8e143ab50d0bd1e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-tear-wipe-v0.2.46.png",
+    "size": 1826386,
+    "mode": "100644",
+    "sha256": "1f2c9cc8e65ce82bad13f3ac58a8fac5386400e78ed7d62c8c2ecc5c75553dd2"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-wipe-base-v0.2.46.png",
+    "size": 1806502,
+    "mode": "100644",
+    "sha256": "142964d149a34657cee79f55e2746bee3776015f26b94f508e501bdfc8b44c10"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-wipe-hand-v0.2.46.png",
+    "size": 181681,
+    "mode": "100644",
+    "sha256": "8034c95f523818cd4a3dc0e79f2ec7b0bbf8c64b8215bf9d2e2e8f1d1630b843"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-open-seated-reference-v0.2.18.png",
+    "size": 1774798,
+    "mode": "100644",
+    "sha256": "746c9b5541577270a397607a6efde83b5b291ffaa08e5cf8afd2854bebaf59e7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-seated-body-reference-v0.2.18.png",
+    "size": 1664874,
+    "mode": "100644",
+    "sha256": "3e1247f6e69c0e5318bcb9ffe106fb04b17e855d4778e93236382e14fd09b0d7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-skirt-reference-crop-v0.2.14.png",
+    "size": 47700,
+    "mode": "100644",
+    "sha256": "2ceb1192f8bd56f41e697b5c4c3af329305c35175f7c5d78a24ebb2fdfb3a35b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-skirt-v0.2.14.png",
+    "size": 1273103,
+    "mode": "100644",
+    "sha256": "7e3a6511693e7c9b7981ebd9209ff0fa4c4b8507fbf9e6e2f89456bf147e37de"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola-thigh-reference-wedge-v0.2.15.png",
+    "size": 172262,
+    "mode": "100644",
+    "sha256": "9612504434c84691c336e6d34a9c79ee15b3cd4ddd0c4a5be5c7012662813627"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola_skirt-original-v0.2.29.png",
+    "size": 395758,
+    "mode": "100644",
+    "sha256": "d60c4fdbe257b013308036b3dd91bc93af4906d32fb2a72cfc2d1ec67523c050"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola_skirt-original-v0.2.30.png",
+    "size": 395915,
+    "mode": "100644",
+    "sha256": "2d8d0d80e3ca8b371a52bd9be6d2f4f13c68410a482001df2726ec644e9afd78"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola_skirt-reference-v0.2.16.png",
+    "size": 169534,
+    "mode": "100644",
+    "sha256": "a3dc7b004bfb98f69966c5bb4593f756a88df6a320ab44888ad4b0e8ebe671c3"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/Resources/Characters/Viola/viola_thigh_skin-reference-v0.2.16.png",
+    "size": 18693,
+    "mode": "100644",
+    "sha256": "047eaafe40a86b744d1017180a4ce171f2e6ad92569b2de5bf55150d322d799e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/.previous-app.7xQ8Dm/viola终稿.app/Contents/_CodeSignature/CodeResources",
+    "size": 37912,
+    "mode": "100644",
+    "sha256": "41f594e555152c3bf351da2fe8dd9e54feb05702bd1a720dc552352c4d30a77c"
+  },
+  {
     "path": "history/cache/open-source-20261008/build/.previous-app.sFmVjU/viola终稿.app/Contents/Info.plist",
     "size": 748,
     "mode": "100644",
@@ -18478,6 +19210,738 @@
     "size": 37628,
     "mode": "100644",
     "sha256": "2976702d4ae9d949bdeed356bec10be9f27b3006640c74ef251decc115f9a333"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Info.plist",
+    "size": 748,
+    "mode": "100644",
+    "sha256": "bedcdc177718eb1d88bfacebc3118da1ff7f0124a239b48e0eb301ff8b05a227"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/MacOS/ViolaDesktop",
+    "size": 1599200,
+    "mode": "100755",
+    "sha256": "1e1137ccec21fb1d4710a0819dfa5445af1dd943164371dba259f9cfbb2975c6"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/Sounds/nailong-laugh.m4a",
+    "size": 59814,
+    "mode": "100644",
+    "sha256": "8e5056ff948e02feca1d393f6017270eabf1a8d9dcc3e4f36b7b0cb6c2e7ec83"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/Sounds/viola-laugh.m4a",
+    "size": 197056,
+    "mode": "100644",
+    "sha256": "d7540d916e3d6ff31ef7a9c2b79e31943ff0b89fb814117e82e9e6a28e95c6ae"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/body-original-v0.2.29.png",
+    "size": 571041,
+    "mode": "100644",
+    "sha256": "83d9f43d83fb0e0f1049a05164f52f7422ee67d642268ba8b8c7ac1fa3592f79"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/body-original-v0.2.31.png",
+    "size": 554171,
+    "mode": "100644",
+    "sha256": "94999f9e784d9502c1f75296ddc2d83ff37014fb37249ae760dfcf80dedcbe80"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/body-reference-v0.2.16.png",
+    "size": 267452,
+    "mode": "100644",
+    "sha256": "5e850ab1da5513c07b9e8092b7552f0094d82f0967a9637eca5b881cee67b0a5"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/body.png",
+    "size": 359130,
+    "mode": "100644",
+    "sha256": "28b3b8b3eef3e5327d796ac03e156e536ad13b6d9388deb8d3712a5ea3aa2a63"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/character.json",
+    "size": 10309,
+    "mode": "100644",
+    "sha256": "fd422b4b533388e7f7717979972f7a1e8f8c58ff64d29c066eacb398a6652411"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/costume-gap-completed-v0.2.18.png",
+    "size": 1823243,
+    "mode": "100644",
+    "sha256": "50ff474a98e28a2dee2224601c9411e3a9f8fba22e8b2cbd7ae1f2afc8e1b6d9"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/desk.png",
+    "size": 107501,
+    "mode": "100644",
+    "sha256": "739ea059be39980502cfc26056fd7513dd199c789adaf0c091e312f723150bff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-arms-background-v0.2.8.png",
+    "size": 1143231,
+    "mode": "100644",
+    "sha256": "356176d8b3bffba46c44d5f22eb65a66e2db56e6404b545915d9ae32a63e484f"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-closed-eyes-reference-v0.2.17.png",
+    "size": 1974341,
+    "mode": "100644",
+    "sha256": "766c3f17c58722ad80e22f440866fc22f4e11338d5caea488482ba0726e3e08b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-effort-v0.2.5.png",
+    "size": 1290175,
+    "mode": "100644",
+    "sha256": "86cb3d33ac484c23040abd3a36c8aea98bd4d37459d79794a05d1536ae60f9fd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-hands-no-ground-v0.2.13.png",
+    "size": 1125300,
+    "mode": "100644",
+    "sha256": "a12288ec82d8c1ce8ec4c13d7c82c91e9a596f39a49e70b2c2738394f7a24cbb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-hearts-drool-v0.2.11.png",
+    "size": 1185799,
+    "mode": "100644",
+    "sha256": "35f08171bb6dbde92c870597a0da25e40b56d01192348848f10a3b5886ae9cdf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-hearts-v0.2.5.png",
+    "size": 1221923,
+    "mode": "100644",
+    "sha256": "f418011c0b680259bcb697bf942826b0087f982d3644a4ba7d83fa12940027c0"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-help-arms-v0.2.8.png",
+    "size": 688549,
+    "mode": "100644",
+    "sha256": "6275deff9a616d6d5293ec3bec67573b578408a8e38b856284d9f50c05523046"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-natural-crown-mask-v0.2.46.png",
+    "size": 539,
+    "mode": "100644",
+    "sha256": "765fd8d589b4814d393fda9b548d22a0b9b2dcc4030f96673ff24e4a32965afe"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-natural-crown-v0.2.46.png",
+    "size": 1564453,
+    "mode": "100644",
+    "sha256": "5d5c87e3947c14032f82e58b27398ee27e858d77dbf18445cc1ec40b3e329199"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend-no-ground-v0.2.13.png",
+    "size": 1069252,
+    "mode": "100644",
+    "sha256": "870b05cfb83a5366a5f56cbc81245bee4887f0b88b473893933b4c6f47b943ce"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend_rest_back-original-v0.2.29.png",
+    "size": 1691542,
+    "mode": "100644",
+    "sha256": "0db0664a44c509c3f3c6c91b3a43483c8169d4ec06276743db4b6933cd2e8cdb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/friend_rest_front-original-v0.2.29.png",
+    "size": 1691490,
+    "mode": "100644",
+    "sha256": "777da1fff38852a51e9f13f8c7b87f782c3702848f9fb89996837a005a5d6e40"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/frontal-arms-v0.2.5.png",
+    "size": 1416069,
+    "mode": "100644",
+    "sha256": "d6ee70d42665086fc30c3922de4fb9146114d9e74e4cfe87752727b4696cd0c6"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/frontal-arms.png",
+    "size": 1365378,
+    "mode": "100644",
+    "sha256": "c9e2bf3c8b0b7e0294f32044d7d0ca681a52fd0174cc904861069c4a39a419f8"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/head-original-v0.2.29.png",
+    "size": 171780,
+    "mode": "100644",
+    "sha256": "4f9e38f7eb04a0ff39357385e3cb65a19c332378fc47427e0efe54d6bf207849"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/head-reference-v0.2.16.png",
+    "size": 135962,
+    "mode": "100644",
+    "sha256": "71c0237cacfc21ca81a304a59b358a29f7f79586ff679761b9bade8386d0a2ed"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/head.png",
+    "size": 292664,
+    "mode": "100644",
+    "sha256": "4a755942dd86d3da4595d2242e5f45c0f932a1868f71fedfd77dd6ebfc8bedeb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/head_close.png",
+    "size": 312027,
+    "mode": "100644",
+    "sha256": "736fdce8da0f754f7da714a2000a82019646acf6b307cb89dc2cceeed2788544"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/heels-pair-v0.2.8.png",
+    "size": 791462,
+    "mode": "100644",
+    "sha256": "b5e7dd284d13c58052bf753973d799d90eec7ab0c3ad1f38abf34dfbbb295e6c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/keyboard.png",
+    "size": 142766,
+    "mode": "100644",
+    "sha256": "321f9155ed23f970c782b2f38111302b6a33bdf357903cdbbc1ac7f53d991094"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/laugh-body-v0.2.12.png",
+    "size": 1899984,
+    "mode": "100644",
+    "sha256": "5c96c4e040ecbbf5b2b01019c7dd3850a6c37658c28f5ac4b1f83dee42dfd191"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/laugh-face-v0.2.12.png",
+    "size": 1115250,
+    "mode": "100644",
+    "sha256": "c931d10774e5677576d852da39a7c0c14d643a2d1c6a4581ba4aec5c1562ec5b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/laugh-mouse-v0.2.12.png",
+    "size": 883308,
+    "mode": "100644",
+    "sha256": "6301cd28ac1124c07721b1571ecf77195e4ecc8363331db1dfb9d89dad4a597d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/left_arm.png",
+    "size": 182640,
+    "mode": "100644",
+    "sha256": "2450ba269fdc0dea2e02eb475fdda59133bd478f35dd411f05a9ece817d0796c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/left_index-original-v0.2.29.png",
+    "size": 4010,
+    "mode": "100644",
+    "sha256": "86adbd1ad492d9650ccb7a7588c56fca09901e6b8d4d5b207471b21165733e47"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/left_middle-original-v0.2.29.png",
+    "size": 4918,
+    "mode": "100644",
+    "sha256": "a6753752e35b3ff71a85c6b971c8949de1fa8d3d1a3d94a6801b7c0ddd49daf1"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/left_palm-original-v0.2.29.png",
+    "size": 10738,
+    "mode": "100644",
+    "sha256": "787ae9e1479e0d72339e6144f04d266df16d687fe4e4af10ea6d7af88f4523ff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/left_pinky-original-v0.2.29.png",
+    "size": 5201,
+    "mode": "100644",
+    "sha256": "8fd8dc70707aaacb581372904b4ac0fa88c229baf545dd734f3350a6bc7d9811"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/left_ring-original-v0.2.29.png",
+    "size": 4916,
+    "mode": "100644",
+    "sha256": "cd715357a9771d9895b19276927f352f63d91f35159944374a22557b63279712"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/left_thumb-original-v0.2.29.png",
+    "size": 3524,
+    "mode": "100644",
+    "sha256": "191207ea58d0174ebf0fbb8780080b529b85a4d2fe7808dfe7b0d726831ca855"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg-reference-perfect-back-v0.2.15.png",
+    "size": 49460,
+    "mode": "100644",
+    "sha256": "462d635a76c544137abd5efbcb12c307b05e2a99059cd40d13e1691b4d85b883"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg-reference-perfect-front-v0.2.15.png",
+    "size": 90404,
+    "mode": "100644",
+    "sha256": "08894a22cb95af92bc3fb43754565c4425956a3844a840e4c05706bddcd0181b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg-right-seated-bare-thigh-v0.2.14.png",
+    "size": 463873,
+    "mode": "100644",
+    "sha256": "9d7c46d7a8a565b694283e64c4e07257be82c79396fd175af5619199d076694a"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg-right-seated-v0.2.12.png",
+    "size": 488522,
+    "mode": "100644",
+    "sha256": "b9718e976f01fa9484879dad3ec7e609508c717e423d5458c0df25cf8818b7e6"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_back-original-v0.2.29.png",
+    "size": 127873,
+    "mode": "100644",
+    "sha256": "288b8a6c206b74cec2aeeadf5ed4448ffa4710b6336716bb1580f4ca10ff086d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_back-reference-v0.2.16.png",
+    "size": 67999,
+    "mode": "100644",
+    "sha256": "c88c20d7dbcc5317111fb685bc4e3e3bdc4dd4fcc38cec43dabb09034d78e53c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_back-toes-reference-v0.2.16.png",
+    "size": 48747,
+    "mode": "100644",
+    "sha256": "1dadd4beeea18f371cb76b8d311dc6683f85b443ebc832feb1c1d9b5423058eb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_back_thigh-original-v0.2.29.png",
+    "size": 13314,
+    "mode": "100644",
+    "sha256": "92a07e191f297c1eeca6ff07e4cf9a77e43fa7cc8d37a954e7188b4466b791fb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_front-original-v0.2.29.png",
+    "size": 143373,
+    "mode": "100644",
+    "sha256": "6d077be0cfc0b1018df13c83a4c628c7f2c7cc6c2868dee6aa2bf4661a9abcaf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_front-original-v0.2.30.png",
+    "size": 142073,
+    "mode": "100644",
+    "sha256": "9282b7d2b2b62e1e1ddce448555fa910efe384766f0a96e5ee6dbf993d22d46c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_front-reference-v0.2.16.png",
+    "size": 119303,
+    "mode": "100644",
+    "sha256": "815d537f761b16dd757c41e362d610f157a57aded42dcb18af07fc51dd5574bf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_front-toes-reference-v0.2.16.png",
+    "size": 68739,
+    "mode": "100644",
+    "sha256": "ff64b2248964b11e3522564c829a4a17900951cf718b8e7d2420969af31b13b5"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_front_thigh-original-v0.2.29.png",
+    "size": 25026,
+    "mode": "100644",
+    "sha256": "ad8e17e79ef14a2c97434d2efff71ba30dab33479e2185820cb0b11b3e3418ea"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/leg_front_thigh-original-v0.2.30.png",
+    "size": 20912,
+    "mode": "100644",
+    "sha256": "3e40af7861ad87b8b219337bfa7a3549e2838b3e74691266bf7b99ab27298101"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/legs-anatomy-v0.2.7.png",
+    "size": 518048,
+    "mode": "100644",
+    "sha256": "8b363ad52be56f663a8615e62856deb3d7e2e7ae5d7374b22bc227faeabdf505"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/legs-bare-thigh-v0.2.14.png",
+    "size": 380412,
+    "mode": "100644",
+    "sha256": "396df33e1e345d28a1f1f489f53633dec02367a2e07858f9f6ff491d259d9b96"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/legs-right-knee-v0.2.12.png",
+    "size": 420405,
+    "mode": "100644",
+    "sha256": "b91df44b0ee1105c5f1c836d13e3889b226a0d9a3a29f13ccd0e52a1463d7440"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/legs-slender-v0.2.8.png",
+    "size": 415398,
+    "mode": "100644",
+    "sha256": "537b7d78b10ad8b13f5725480de707bfff835d11f4148ce3056c66ac5bec634b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/modular-desk-v0.2.6.png",
+    "size": 580736,
+    "mode": "100644",
+    "sha256": "fad328f283ccf5a279e67811bc83ddd2740311bd3a413e6be3d20328e0178349"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/mouse-grip-hand-only-v0.2.39.png",
+    "size": 141095,
+    "mode": "100644",
+    "sha256": "3c8a7cadb9cb0cfa5a7f685ba7332b033e48a4f2d7a6b07d25764ee93727eb7c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/mouse.png",
+    "size": 43295,
+    "mode": "100644",
+    "sha256": "e80bf6a47badde2ef85896d315086eb1a9e7c051863fcbafe44cf9b3be75f268"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.29.png",
+    "size": 20449,
+    "mode": "100644",
+    "sha256": "083abebc4eda2e05d0c4a0aa1a62ad900003bc670150680313cd4bb4aff6bfde"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.30.png",
+    "size": 20185,
+    "mode": "100644",
+    "sha256": "34dc978d28ef7e0b012497d0d30ad7345ce977fd108a4e4246d29b83938ace03"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.31.png",
+    "size": 20441,
+    "mode": "100644",
+    "sha256": "1bfd3cb710de35a3b70a5e24a8482e362e99261b001166d68d6393f52a795491"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/mouse_hand.png",
+    "size": 827904,
+    "mode": "100644",
+    "sha256": "1f9a836e7d8c312116fbd6c04628e7b0b4e809b14923482c74d93b2f273d3b83"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference-seating.png",
+    "size": 1348628,
+    "mode": "100644",
+    "sha256": "e7c882ffab18f1b5edfb8e2f8bbf3ebf08b0083f34fd748174dbf639fb143077"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference-source.png",
+    "size": 1293458,
+    "mode": "100644",
+    "sha256": "29d3f89358fb9b55a3ea201280cdce048ecab11ef52e5239ed0bd8483ed1fc6e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_hidden_dress_strip.png",
+    "size": 12709,
+    "mode": "100644",
+    "sha256": "4d84890e23c0c0d635167ce20bfa0864bba8a9ea69522335c1ab8f1cc346be7b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_left_arm-original-v0.2.29.png",
+    "size": 55396,
+    "mode": "100644",
+    "sha256": "71e7083d9697822610dbd54ef10b40a4d60ea1519058804b6887eab9360278e9"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_left_arm-original-v0.2.31.png",
+    "size": 55350,
+    "mode": "100644",
+    "sha256": "aa498408d31b888fe214e666faee5a4d98118a8af6e9012c4521b6b6f69743c3"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_left_arm-reference-v0.2.16.png",
+    "size": 35889,
+    "mode": "100644",
+    "sha256": "b6763435d71bff79bf1532e83952daef466c18a97e82f8d24a824a0540b1fe9c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_left_hand-reference-v0.2.16.png",
+    "size": 12720,
+    "mode": "100644",
+    "sha256": "4de2494c2d9495d25824ef53064020db3c7dd6ef23e16ff1cbd803913c9d420e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_right_arm-original-v0.2.29.png",
+    "size": 68126,
+    "mode": "100644",
+    "sha256": "8dd7f10dcb8475679e867591209a8aa2215eb2fbd8b0b3c3e19ba1fb6e38c7a4"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_right_arm-original-v0.2.31.png",
+    "size": 68171,
+    "mode": "100644",
+    "sha256": "ac490dd3bbb72bb1a46bf2b32f7fbc0815f467c4b7b7725c0bda896b732a436d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_right_arm-reference-v0.2.16.png",
+    "size": 52694,
+    "mode": "100644",
+    "sha256": "a48c1170ab88e55bd07a8aebb42dcf6de82df4eb9a78d0769968a2afcca8db9a"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/reference_right_hand-reference-v0.2.16.png",
+    "size": 14057,
+    "mode": "100644",
+    "sha256": "b2261c5dfb45263391e4918a2a259e195c7efd9e645f3a779671ba3d6a8124ec"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/resting-arms-v0.2.21.png",
+    "size": 242828,
+    "mode": "100644",
+    "sha256": "3a6b09a15c7f7a8ee0a60fd6dc011115f0420192af49f17b40dda5e975ed3a75"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/resting-reference-v0.2.21.png",
+    "size": 1240990,
+    "mode": "100644",
+    "sha256": "ae65f0af938cd30403826f4243debc5a9c7afa11e379ec169017f7f0225a5446"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.29.png",
+    "size": 128317,
+    "mode": "100644",
+    "sha256": "ec5a0aacb5daa50895791c43ca757b1365c0e9d1ba81ec9af38a5843448d383f"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.30.png",
+    "size": 128054,
+    "mode": "100644",
+    "sha256": "a5548bddc66450597ca84aed8832c0b990eb0f6eb9cc4910c10e2ee1c707b7da"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.31.png",
+    "size": 128350,
+    "mode": "100644",
+    "sha256": "7c5bde5c0d90c6b539f6e8bba578b0ffd3868ac7ce38162df0e0d1f9f01ec2eb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/resting_pet_arm-original-v0.2.29.png",
+    "size": 79086,
+    "mode": "100644",
+    "sha256": "8480f3c16eb7d96ada1590e724418294b479eb198e6ffec6d8c725fbb2ca7c20"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/resting_pet_arm-original-v0.2.31.png",
+    "size": 79037,
+    "mode": "100644",
+    "sha256": "4152f2ed8debd31ceb26e32f362873b721558c828329d81b1d8beace678dc836"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/right_arm.png",
+    "size": 756945,
+    "mode": "100644",
+    "sha256": "200ff395329c6baaddb0872c5c7f97d1a8a67c793eb768be1b76714a42f52aae"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/seating-original-v0.2.29.png",
+    "size": 1663551,
+    "mode": "100644",
+    "sha256": "e7a19dd655908f30428e715006e031ea986d2136841d45f8004e3ebc64bc0cff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/seating-original-v0.2.30.png",
+    "size": 1663531,
+    "mode": "100644",
+    "sha256": "c9f9ce36946e4244779570687ebacdd3c8972463d7675cc7f0656d94d50082fd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/seating-reference-v0.2.16.png",
+    "size": 566417,
+    "mode": "100644",
+    "sha256": "234c667a93bd9975463a75335798fe457ec14d4c6fdef335c9dd327f2d2dbd10"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/seating-repair-v0.2.5.png",
+    "size": 1302950,
+    "mode": "100644",
+    "sha256": "1040847f400db1fdf86e0499ae4267883cc8dbd9502fa38109f2a6cc15c869d7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/seating-sides-v0.2.5.png",
+    "size": 1173318,
+    "mode": "100644",
+    "sha256": "ac298115259e30e08d5b4593223aaa0ae208bd8c1c310389119f0ba7cbdeb089"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/thigh-reference-perfect-skin-v0.2.15.png",
+    "size": 17441,
+    "mode": "100644",
+    "sha256": "cd231663e0cd1b512a777ee4959a80dade586ba626e04b21ba2bba1b9fe4cc06"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/typing-hand-v0.2.10.png",
+    "size": 1427279,
+    "mode": "100644",
+    "sha256": "3b01a53f7df3a890ef9db0e52c07f9ac450ce21d6dc18caffdd44dcf383a7046"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-amused-v0.2.8.png",
+    "size": 1139584,
+    "mode": "100644",
+    "sha256": "4acff03fb5bac1962c375e0853dae9e4bd9256a4b844d6db1d4644f713782405"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-full-skirt-reference-v0.2.14.png",
+    "size": 54525,
+    "mode": "100644",
+    "sha256": "03317be9741705c6e845e1d51a5ed2c04b76615344a2c6c9475e067a3312f143"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-chest-v0.2.47.png",
+    "size": 1762464,
+    "mode": "100644",
+    "sha256": "7df24be00639d9d2c074d8e9b62fbde68df1b86e1ec3dfcb0bdd423895777099"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-clean-v0.2.47.png",
+    "size": 1838606,
+    "mode": "100644",
+    "sha256": "010e7eb83cb65cb5c0433042e9b8f03f775f546a16ea6b58b509b85d88793714"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-hair-v0.2.47.png",
+    "size": 1799342,
+    "mode": "100644",
+    "sha256": "22753e6fb20fd4c7db4e879755778db397ef011ff98d3473c6e589722c7a11dd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-head-v0.2.47.png",
+    "size": 1762387,
+    "mode": "100644",
+    "sha256": "796e554c706974fba3bca29bc33c5acd78beb235975bbfd19861a7a8876c14cf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-layers-v0.2.47.json",
+    "size": 6549,
+    "mode": "100644",
+    "sha256": "dd78e2284c42ecc799b78dc0cbd8b354a697ae4e7b0f70ebd78a4c9b7f3d776c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-left-hand-v0.2.47.png",
+    "size": 1768321,
+    "mode": "100644",
+    "sha256": "d5e31d393a2d2072e19c3ac024a78f176f5b2892ad309198e7fc179f684db48e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-left-lower-v0.2.47.png",
+    "size": 1768561,
+    "mode": "100644",
+    "sha256": "ad108edb1d6e3bd140c2c27fb467403243253f9e78fd3ac06ac5d3f414231f80"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-left-upper-v0.2.47.png",
+    "size": 1774055,
+    "mode": "100644",
+    "sha256": "4c0be4021f48290dc306329433658b93339be8cc9f934047093e0a52fe0e3c18"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-right-hand-v0.2.47.png",
+    "size": 1767957,
+    "mode": "100644",
+    "sha256": "ff2e80f88b14ddc8d71c00b1958dd7408f9bfbe26ff71cfa5211188755918653"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-right-lower-v0.2.47.png",
+    "size": 1770216,
+    "mode": "100644",
+    "sha256": "6ab39a57b58248eb061937fd144154fa0d465beb6eb7124a3ed38f9ee67df205"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-right-upper-v0.2.47.png",
+    "size": 1771689,
+    "mode": "100644",
+    "sha256": "e5c2001b1914b05f28ea176b52a6010c95754eb178757f196687743bac646d1b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-layered-wipe-hand-v0.2.47.png",
+    "size": 1748593,
+    "mode": "100644",
+    "sha256": "9799061edd95a516ac31aabaa1fc895637ab04882e6d0cbb6c10a53605fe74e8"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-base-v0.2.46.png",
+    "size": 1835290,
+    "mode": "100644",
+    "sha256": "9305885d6007a79702bb10aef875862030e2cd8b3f29d2d96b38d0e273537a89"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-mouth-v0.2.46.png",
+    "size": 14947,
+    "mode": "100644",
+    "sha256": "e2f123d09ae6105274ac61b6e33a57cbb3467b3bd8fe08c641afa93cee183e93"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-v0.2.46.png",
+    "size": 1869753,
+    "mode": "100644",
+    "sha256": "b97971ce28e5c917701bbcfd2bfb5d9756db8ed7737dc135e8e143ab50d0bd1e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-natural-tear-wipe-v0.2.46.png",
+    "size": 1826386,
+    "mode": "100644",
+    "sha256": "1f2c9cc8e65ce82bad13f3ac58a8fac5386400e78ed7d62c8c2ecc5c75553dd2"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-natural-wipe-base-v0.2.46.png",
+    "size": 1806502,
+    "mode": "100644",
+    "sha256": "142964d149a34657cee79f55e2746bee3776015f26b94f508e501bdfc8b44c10"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-natural-wipe-hand-v0.2.46.png",
+    "size": 181681,
+    "mode": "100644",
+    "sha256": "8034c95f523818cd4a3dc0e79f2ec7b0bbf8c64b8215bf9d2e2e8f1d1630b843"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-open-seated-reference-v0.2.18.png",
+    "size": 1774798,
+    "mode": "100644",
+    "sha256": "746c9b5541577270a397607a6efde83b5b291ffaa08e5cf8afd2854bebaf59e7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-seated-body-reference-v0.2.18.png",
+    "size": 1664874,
+    "mode": "100644",
+    "sha256": "3e1247f6e69c0e5318bcb9ffe106fb04b17e855d4778e93236382e14fd09b0d7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-skirt-reference-crop-v0.2.14.png",
+    "size": 47700,
+    "mode": "100644",
+    "sha256": "2ceb1192f8bd56f41e697b5c4c3af329305c35175f7c5d78a24ebb2fdfb3a35b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-skirt-v0.2.14.png",
+    "size": 1273103,
+    "mode": "100644",
+    "sha256": "7e3a6511693e7c9b7981ebd9209ff0fa4c4b8507fbf9e6e2f89456bf147e37de"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola-thigh-reference-wedge-v0.2.15.png",
+    "size": 172262,
+    "mode": "100644",
+    "sha256": "9612504434c84691c336e6d34a9c79ee15b3cd4ddd0c4a5be5c7012662813627"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola_skirt-original-v0.2.29.png",
+    "size": 395758,
+    "mode": "100644",
+    "sha256": "d60c4fdbe257b013308036b3dd91bc93af4906d32fb2a72cfc2d1ec67523c050"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola_skirt-original-v0.2.30.png",
+    "size": 395915,
+    "mode": "100644",
+    "sha256": "2d8d0d80e3ca8b371a52bd9be6d2f4f13c68410a482001df2726ec644e9afd78"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola_skirt-reference-v0.2.16.png",
+    "size": 169534,
+    "mode": "100644",
+    "sha256": "a3dc7b004bfb98f69966c5bb4593f756a88df6a320ab44888ad4b0e8ebe671c3"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/Resources/Characters/Viola/viola_thigh_skin-reference-v0.2.16.png",
+    "size": 18693,
+    "mode": "100644",
+    "sha256": "047eaafe40a86b744d1017180a4ce171f2e6ad92569b2de5bf55150d322d799e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/first-0.2.50-default-profile.app/Contents/_CodeSignature/CodeResources",
+    "size": 37912,
+    "mode": "100644",
+    "sha256": "41f594e555152c3bf351da2fe8dd9e54feb05702bd1a720dc552352c4d30a77c"
   },
   {
     "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/original-installed.app/Contents/Info.plist",
@@ -21142,6 +22606,738 @@
     "size": 37628,
     "mode": "100644",
     "sha256": "2976702d4ae9d949bdeed356bec10be9f27b3006640c74ef251decc115f9a333"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Info.plist",
+    "size": 821,
+    "mode": "100644",
+    "sha256": "cb7d80bb04c0959f8cb47c9a1e4b0eaf706d85bb17b630cd4f34f41d69706907"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/MacOS/ViolaDesktop",
+    "size": 1599200,
+    "mode": "100755",
+    "sha256": "e97a8d2880e05b3791fed77b5311b883d58c27a8e536f9587dd152c51b919825"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/Sounds/nailong-laugh.m4a",
+    "size": 59814,
+    "mode": "100644",
+    "sha256": "8e5056ff948e02feca1d393f6017270eabf1a8d9dcc3e4f36b7b0cb6c2e7ec83"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/Sounds/viola-laugh.m4a",
+    "size": 197056,
+    "mode": "100644",
+    "sha256": "d7540d916e3d6ff31ef7a9c2b79e31943ff0b89fb814117e82e9e6a28e95c6ae"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/body-original-v0.2.29.png",
+    "size": 571041,
+    "mode": "100644",
+    "sha256": "83d9f43d83fb0e0f1049a05164f52f7422ee67d642268ba8b8c7ac1fa3592f79"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/body-original-v0.2.31.png",
+    "size": 554171,
+    "mode": "100644",
+    "sha256": "94999f9e784d9502c1f75296ddc2d83ff37014fb37249ae760dfcf80dedcbe80"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/body-reference-v0.2.16.png",
+    "size": 267452,
+    "mode": "100644",
+    "sha256": "5e850ab1da5513c07b9e8092b7552f0094d82f0967a9637eca5b881cee67b0a5"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/body.png",
+    "size": 359130,
+    "mode": "100644",
+    "sha256": "28b3b8b3eef3e5327d796ac03e156e536ad13b6d9388deb8d3712a5ea3aa2a63"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/character.json",
+    "size": 10309,
+    "mode": "100644",
+    "sha256": "fd422b4b533388e7f7717979972f7a1e8f8c58ff64d29c066eacb398a6652411"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/costume-gap-completed-v0.2.18.png",
+    "size": 1823243,
+    "mode": "100644",
+    "sha256": "50ff474a98e28a2dee2224601c9411e3a9f8fba22e8b2cbd7ae1f2afc8e1b6d9"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/desk.png",
+    "size": 107501,
+    "mode": "100644",
+    "sha256": "739ea059be39980502cfc26056fd7513dd199c789adaf0c091e312f723150bff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-arms-background-v0.2.8.png",
+    "size": 1143231,
+    "mode": "100644",
+    "sha256": "356176d8b3bffba46c44d5f22eb65a66e2db56e6404b545915d9ae32a63e484f"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-closed-eyes-reference-v0.2.17.png",
+    "size": 1974341,
+    "mode": "100644",
+    "sha256": "766c3f17c58722ad80e22f440866fc22f4e11338d5caea488482ba0726e3e08b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-effort-v0.2.5.png",
+    "size": 1290175,
+    "mode": "100644",
+    "sha256": "86cb3d33ac484c23040abd3a36c8aea98bd4d37459d79794a05d1536ae60f9fd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-hands-no-ground-v0.2.13.png",
+    "size": 1125300,
+    "mode": "100644",
+    "sha256": "a12288ec82d8c1ce8ec4c13d7c82c91e9a596f39a49e70b2c2738394f7a24cbb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-hearts-drool-v0.2.11.png",
+    "size": 1185799,
+    "mode": "100644",
+    "sha256": "35f08171bb6dbde92c870597a0da25e40b56d01192348848f10a3b5886ae9cdf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-hearts-v0.2.5.png",
+    "size": 1221923,
+    "mode": "100644",
+    "sha256": "f418011c0b680259bcb697bf942826b0087f982d3644a4ba7d83fa12940027c0"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-help-arms-v0.2.8.png",
+    "size": 688549,
+    "mode": "100644",
+    "sha256": "6275deff9a616d6d5293ec3bec67573b578408a8e38b856284d9f50c05523046"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-natural-crown-mask-v0.2.46.png",
+    "size": 539,
+    "mode": "100644",
+    "sha256": "765fd8d589b4814d393fda9b548d22a0b9b2dcc4030f96673ff24e4a32965afe"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-natural-crown-v0.2.46.png",
+    "size": 1564453,
+    "mode": "100644",
+    "sha256": "5d5c87e3947c14032f82e58b27398ee27e858d77dbf18445cc1ec40b3e329199"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend-no-ground-v0.2.13.png",
+    "size": 1069252,
+    "mode": "100644",
+    "sha256": "870b05cfb83a5366a5f56cbc81245bee4887f0b88b473893933b4c6f47b943ce"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend_rest_back-original-v0.2.29.png",
+    "size": 1691542,
+    "mode": "100644",
+    "sha256": "0db0664a44c509c3f3c6c91b3a43483c8169d4ec06276743db4b6933cd2e8cdb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/friend_rest_front-original-v0.2.29.png",
+    "size": 1691490,
+    "mode": "100644",
+    "sha256": "777da1fff38852a51e9f13f8c7b87f782c3702848f9fb89996837a005a5d6e40"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/frontal-arms-v0.2.5.png",
+    "size": 1416069,
+    "mode": "100644",
+    "sha256": "d6ee70d42665086fc30c3922de4fb9146114d9e74e4cfe87752727b4696cd0c6"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/frontal-arms.png",
+    "size": 1365378,
+    "mode": "100644",
+    "sha256": "c9e2bf3c8b0b7e0294f32044d7d0ca681a52fd0174cc904861069c4a39a419f8"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/head-original-v0.2.29.png",
+    "size": 171780,
+    "mode": "100644",
+    "sha256": "4f9e38f7eb04a0ff39357385e3cb65a19c332378fc47427e0efe54d6bf207849"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/head-reference-v0.2.16.png",
+    "size": 135962,
+    "mode": "100644",
+    "sha256": "71c0237cacfc21ca81a304a59b358a29f7f79586ff679761b9bade8386d0a2ed"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/head.png",
+    "size": 292664,
+    "mode": "100644",
+    "sha256": "4a755942dd86d3da4595d2242e5f45c0f932a1868f71fedfd77dd6ebfc8bedeb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/head_close.png",
+    "size": 312027,
+    "mode": "100644",
+    "sha256": "736fdce8da0f754f7da714a2000a82019646acf6b307cb89dc2cceeed2788544"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/heels-pair-v0.2.8.png",
+    "size": 791462,
+    "mode": "100644",
+    "sha256": "b5e7dd284d13c58052bf753973d799d90eec7ab0c3ad1f38abf34dfbbb295e6c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/keyboard.png",
+    "size": 142766,
+    "mode": "100644",
+    "sha256": "321f9155ed23f970c782b2f38111302b6a33bdf357903cdbbc1ac7f53d991094"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/laugh-body-v0.2.12.png",
+    "size": 1899984,
+    "mode": "100644",
+    "sha256": "5c96c4e040ecbbf5b2b01019c7dd3850a6c37658c28f5ac4b1f83dee42dfd191"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/laugh-face-v0.2.12.png",
+    "size": 1115250,
+    "mode": "100644",
+    "sha256": "c931d10774e5677576d852da39a7c0c14d643a2d1c6a4581ba4aec5c1562ec5b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/laugh-mouse-v0.2.12.png",
+    "size": 883308,
+    "mode": "100644",
+    "sha256": "6301cd28ac1124c07721b1571ecf77195e4ecc8363331db1dfb9d89dad4a597d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/left_arm.png",
+    "size": 182640,
+    "mode": "100644",
+    "sha256": "2450ba269fdc0dea2e02eb475fdda59133bd478f35dd411f05a9ece817d0796c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/left_index-original-v0.2.29.png",
+    "size": 4010,
+    "mode": "100644",
+    "sha256": "86adbd1ad492d9650ccb7a7588c56fca09901e6b8d4d5b207471b21165733e47"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/left_middle-original-v0.2.29.png",
+    "size": 4918,
+    "mode": "100644",
+    "sha256": "a6753752e35b3ff71a85c6b971c8949de1fa8d3d1a3d94a6801b7c0ddd49daf1"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/left_palm-original-v0.2.29.png",
+    "size": 10738,
+    "mode": "100644",
+    "sha256": "787ae9e1479e0d72339e6144f04d266df16d687fe4e4af10ea6d7af88f4523ff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/left_pinky-original-v0.2.29.png",
+    "size": 5201,
+    "mode": "100644",
+    "sha256": "8fd8dc70707aaacb581372904b4ac0fa88c229baf545dd734f3350a6bc7d9811"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/left_ring-original-v0.2.29.png",
+    "size": 4916,
+    "mode": "100644",
+    "sha256": "cd715357a9771d9895b19276927f352f63d91f35159944374a22557b63279712"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/left_thumb-original-v0.2.29.png",
+    "size": 3524,
+    "mode": "100644",
+    "sha256": "191207ea58d0174ebf0fbb8780080b529b85a4d2fe7808dfe7b0d726831ca855"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg-reference-perfect-back-v0.2.15.png",
+    "size": 49460,
+    "mode": "100644",
+    "sha256": "462d635a76c544137abd5efbcb12c307b05e2a99059cd40d13e1691b4d85b883"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg-reference-perfect-front-v0.2.15.png",
+    "size": 90404,
+    "mode": "100644",
+    "sha256": "08894a22cb95af92bc3fb43754565c4425956a3844a840e4c05706bddcd0181b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg-right-seated-bare-thigh-v0.2.14.png",
+    "size": 463873,
+    "mode": "100644",
+    "sha256": "9d7c46d7a8a565b694283e64c4e07257be82c79396fd175af5619199d076694a"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg-right-seated-v0.2.12.png",
+    "size": 488522,
+    "mode": "100644",
+    "sha256": "b9718e976f01fa9484879dad3ec7e609508c717e423d5458c0df25cf8818b7e6"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_back-original-v0.2.29.png",
+    "size": 127873,
+    "mode": "100644",
+    "sha256": "288b8a6c206b74cec2aeeadf5ed4448ffa4710b6336716bb1580f4ca10ff086d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_back-reference-v0.2.16.png",
+    "size": 67999,
+    "mode": "100644",
+    "sha256": "c88c20d7dbcc5317111fb685bc4e3e3bdc4dd4fcc38cec43dabb09034d78e53c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_back-toes-reference-v0.2.16.png",
+    "size": 48747,
+    "mode": "100644",
+    "sha256": "1dadd4beeea18f371cb76b8d311dc6683f85b443ebc832feb1c1d9b5423058eb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_back_thigh-original-v0.2.29.png",
+    "size": 13314,
+    "mode": "100644",
+    "sha256": "92a07e191f297c1eeca6ff07e4cf9a77e43fa7cc8d37a954e7188b4466b791fb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_front-original-v0.2.29.png",
+    "size": 143373,
+    "mode": "100644",
+    "sha256": "6d077be0cfc0b1018df13c83a4c628c7f2c7cc6c2868dee6aa2bf4661a9abcaf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_front-original-v0.2.30.png",
+    "size": 142073,
+    "mode": "100644",
+    "sha256": "9282b7d2b2b62e1e1ddce448555fa910efe384766f0a96e5ee6dbf993d22d46c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_front-reference-v0.2.16.png",
+    "size": 119303,
+    "mode": "100644",
+    "sha256": "815d537f761b16dd757c41e362d610f157a57aded42dcb18af07fc51dd5574bf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_front-toes-reference-v0.2.16.png",
+    "size": 68739,
+    "mode": "100644",
+    "sha256": "ff64b2248964b11e3522564c829a4a17900951cf718b8e7d2420969af31b13b5"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_front_thigh-original-v0.2.29.png",
+    "size": 25026,
+    "mode": "100644",
+    "sha256": "ad8e17e79ef14a2c97434d2efff71ba30dab33479e2185820cb0b11b3e3418ea"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/leg_front_thigh-original-v0.2.30.png",
+    "size": 20912,
+    "mode": "100644",
+    "sha256": "3e40af7861ad87b8b219337bfa7a3549e2838b3e74691266bf7b99ab27298101"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/legs-anatomy-v0.2.7.png",
+    "size": 518048,
+    "mode": "100644",
+    "sha256": "8b363ad52be56f663a8615e62856deb3d7e2e7ae5d7374b22bc227faeabdf505"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/legs-bare-thigh-v0.2.14.png",
+    "size": 380412,
+    "mode": "100644",
+    "sha256": "396df33e1e345d28a1f1f489f53633dec02367a2e07858f9f6ff491d259d9b96"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/legs-right-knee-v0.2.12.png",
+    "size": 420405,
+    "mode": "100644",
+    "sha256": "b91df44b0ee1105c5f1c836d13e3889b226a0d9a3a29f13ccd0e52a1463d7440"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/legs-slender-v0.2.8.png",
+    "size": 415398,
+    "mode": "100644",
+    "sha256": "537b7d78b10ad8b13f5725480de707bfff835d11f4148ce3056c66ac5bec634b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/modular-desk-v0.2.6.png",
+    "size": 580736,
+    "mode": "100644",
+    "sha256": "fad328f283ccf5a279e67811bc83ddd2740311bd3a413e6be3d20328e0178349"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/mouse-grip-hand-only-v0.2.39.png",
+    "size": 141095,
+    "mode": "100644",
+    "sha256": "3c8a7cadb9cb0cfa5a7f685ba7332b033e48a4f2d7a6b07d25764ee93727eb7c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/mouse.png",
+    "size": 43295,
+    "mode": "100644",
+    "sha256": "e80bf6a47badde2ef85896d315086eb1a9e7c051863fcbafe44cf9b3be75f268"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.29.png",
+    "size": 20449,
+    "mode": "100644",
+    "sha256": "083abebc4eda2e05d0c4a0aa1a62ad900003bc670150680313cd4bb4aff6bfde"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.30.png",
+    "size": 20185,
+    "mode": "100644",
+    "sha256": "34dc978d28ef7e0b012497d0d30ad7345ce977fd108a4e4246d29b83938ace03"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/mouse_hand-original-v0.2.31.png",
+    "size": 20441,
+    "mode": "100644",
+    "sha256": "1bfd3cb710de35a3b70a5e24a8482e362e99261b001166d68d6393f52a795491"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/mouse_hand.png",
+    "size": 827904,
+    "mode": "100644",
+    "sha256": "1f9a836e7d8c312116fbd6c04628e7b0b4e809b14923482c74d93b2f273d3b83"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference-seating.png",
+    "size": 1348628,
+    "mode": "100644",
+    "sha256": "e7c882ffab18f1b5edfb8e2f8bbf3ebf08b0083f34fd748174dbf639fb143077"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference-source.png",
+    "size": 1293458,
+    "mode": "100644",
+    "sha256": "29d3f89358fb9b55a3ea201280cdce048ecab11ef52e5239ed0bd8483ed1fc6e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_hidden_dress_strip.png",
+    "size": 12709,
+    "mode": "100644",
+    "sha256": "4d84890e23c0c0d635167ce20bfa0864bba8a9ea69522335c1ab8f1cc346be7b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_left_arm-original-v0.2.29.png",
+    "size": 55396,
+    "mode": "100644",
+    "sha256": "71e7083d9697822610dbd54ef10b40a4d60ea1519058804b6887eab9360278e9"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_left_arm-original-v0.2.31.png",
+    "size": 55350,
+    "mode": "100644",
+    "sha256": "aa498408d31b888fe214e666faee5a4d98118a8af6e9012c4521b6b6f69743c3"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_left_arm-reference-v0.2.16.png",
+    "size": 35889,
+    "mode": "100644",
+    "sha256": "b6763435d71bff79bf1532e83952daef466c18a97e82f8d24a824a0540b1fe9c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_left_hand-reference-v0.2.16.png",
+    "size": 12720,
+    "mode": "100644",
+    "sha256": "4de2494c2d9495d25824ef53064020db3c7dd6ef23e16ff1cbd803913c9d420e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_right_arm-original-v0.2.29.png",
+    "size": 68126,
+    "mode": "100644",
+    "sha256": "8dd7f10dcb8475679e867591209a8aa2215eb2fbd8b0b3c3e19ba1fb6e38c7a4"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_right_arm-original-v0.2.31.png",
+    "size": 68171,
+    "mode": "100644",
+    "sha256": "ac490dd3bbb72bb1a46bf2b32f7fbc0815f467c4b7b7725c0bda896b732a436d"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_right_arm-reference-v0.2.16.png",
+    "size": 52694,
+    "mode": "100644",
+    "sha256": "a48c1170ab88e55bd07a8aebb42dcf6de82df4eb9a78d0769968a2afcca8db9a"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/reference_right_hand-reference-v0.2.16.png",
+    "size": 14057,
+    "mode": "100644",
+    "sha256": "b2261c5dfb45263391e4918a2a259e195c7efd9e645f3a779671ba3d6a8124ec"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/resting-arms-v0.2.21.png",
+    "size": 242828,
+    "mode": "100644",
+    "sha256": "3a6b09a15c7f7a8ee0a60fd6dc011115f0420192af49f17b40dda5e975ed3a75"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/resting-reference-v0.2.21.png",
+    "size": 1240990,
+    "mode": "100644",
+    "sha256": "ae65f0af938cd30403826f4243debc5a9c7afa11e379ec169017f7f0225a5446"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.29.png",
+    "size": 128317,
+    "mode": "100644",
+    "sha256": "ec5a0aacb5daa50895791c43ca757b1365c0e9d1ba81ec9af38a5843448d383f"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.30.png",
+    "size": 128054,
+    "mode": "100644",
+    "sha256": "a5548bddc66450597ca84aed8832c0b990eb0f6eb9cc4910c10e2ee1c707b7da"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/resting_lap_arm-original-v0.2.31.png",
+    "size": 128350,
+    "mode": "100644",
+    "sha256": "7c5bde5c0d90c6b539f6e8bba578b0ffd3868ac7ce38162df0e0d1f9f01ec2eb"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/resting_pet_arm-original-v0.2.29.png",
+    "size": 79086,
+    "mode": "100644",
+    "sha256": "8480f3c16eb7d96ada1590e724418294b479eb198e6ffec6d8c725fbb2ca7c20"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/resting_pet_arm-original-v0.2.31.png",
+    "size": 79037,
+    "mode": "100644",
+    "sha256": "4152f2ed8debd31ceb26e32f362873b721558c828329d81b1d8beace678dc836"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/right_arm.png",
+    "size": 756945,
+    "mode": "100644",
+    "sha256": "200ff395329c6baaddb0872c5c7f97d1a8a67c793eb768be1b76714a42f52aae"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/seating-original-v0.2.29.png",
+    "size": 1663551,
+    "mode": "100644",
+    "sha256": "e7a19dd655908f30428e715006e031ea986d2136841d45f8004e3ebc64bc0cff"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/seating-original-v0.2.30.png",
+    "size": 1663531,
+    "mode": "100644",
+    "sha256": "c9f9ce36946e4244779570687ebacdd3c8972463d7675cc7f0656d94d50082fd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/seating-reference-v0.2.16.png",
+    "size": 566417,
+    "mode": "100644",
+    "sha256": "234c667a93bd9975463a75335798fe457ec14d4c6fdef335c9dd327f2d2dbd10"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/seating-repair-v0.2.5.png",
+    "size": 1302950,
+    "mode": "100644",
+    "sha256": "1040847f400db1fdf86e0499ae4267883cc8dbd9502fa38109f2a6cc15c869d7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/seating-sides-v0.2.5.png",
+    "size": 1173318,
+    "mode": "100644",
+    "sha256": "ac298115259e30e08d5b4593223aaa0ae208bd8c1c310389119f0ba7cbdeb089"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/thigh-reference-perfect-skin-v0.2.15.png",
+    "size": 17441,
+    "mode": "100644",
+    "sha256": "cd231663e0cd1b512a777ee4959a80dade586ba626e04b21ba2bba1b9fe4cc06"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/typing-hand-v0.2.10.png",
+    "size": 1427279,
+    "mode": "100644",
+    "sha256": "3b01a53f7df3a890ef9db0e52c07f9ac450ce21d6dc18caffdd44dcf383a7046"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-amused-v0.2.8.png",
+    "size": 1139584,
+    "mode": "100644",
+    "sha256": "4acff03fb5bac1962c375e0853dae9e4bd9256a4b844d6db1d4644f713782405"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-full-skirt-reference-v0.2.14.png",
+    "size": 54525,
+    "mode": "100644",
+    "sha256": "03317be9741705c6e845e1d51a5ed2c04b76615344a2c6c9475e067a3312f143"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-chest-v0.2.47.png",
+    "size": 1762464,
+    "mode": "100644",
+    "sha256": "7df24be00639d9d2c074d8e9b62fbde68df1b86e1ec3dfcb0bdd423895777099"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-clean-v0.2.47.png",
+    "size": 1838606,
+    "mode": "100644",
+    "sha256": "010e7eb83cb65cb5c0433042e9b8f03f775f546a16ea6b58b509b85d88793714"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-hair-v0.2.47.png",
+    "size": 1799342,
+    "mode": "100644",
+    "sha256": "22753e6fb20fd4c7db4e879755778db397ef011ff98d3473c6e589722c7a11dd"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-head-v0.2.47.png",
+    "size": 1762387,
+    "mode": "100644",
+    "sha256": "796e554c706974fba3bca29bc33c5acd78beb235975bbfd19861a7a8876c14cf"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-layers-v0.2.47.json",
+    "size": 6549,
+    "mode": "100644",
+    "sha256": "dd78e2284c42ecc799b78dc0cbd8b354a697ae4e7b0f70ebd78a4c9b7f3d776c"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-left-hand-v0.2.47.png",
+    "size": 1768321,
+    "mode": "100644",
+    "sha256": "d5e31d393a2d2072e19c3ac024a78f176f5b2892ad309198e7fc179f684db48e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-left-lower-v0.2.47.png",
+    "size": 1768561,
+    "mode": "100644",
+    "sha256": "ad108edb1d6e3bd140c2c27fb467403243253f9e78fd3ac06ac5d3f414231f80"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-left-upper-v0.2.47.png",
+    "size": 1774055,
+    "mode": "100644",
+    "sha256": "4c0be4021f48290dc306329433658b93339be8cc9f934047093e0a52fe0e3c18"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-right-hand-v0.2.47.png",
+    "size": 1767957,
+    "mode": "100644",
+    "sha256": "ff2e80f88b14ddc8d71c00b1958dd7408f9bfbe26ff71cfa5211188755918653"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-right-lower-v0.2.47.png",
+    "size": 1770216,
+    "mode": "100644",
+    "sha256": "6ab39a57b58248eb061937fd144154fa0d465beb6eb7124a3ed38f9ee67df205"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-right-upper-v0.2.47.png",
+    "size": 1771689,
+    "mode": "100644",
+    "sha256": "e5c2001b1914b05f28ea176b52a6010c95754eb178757f196687743bac646d1b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-layered-wipe-hand-v0.2.47.png",
+    "size": 1748593,
+    "mode": "100644",
+    "sha256": "9799061edd95a516ac31aabaa1fc895637ab04882e6d0cbb6c10a53605fe74e8"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-base-v0.2.46.png",
+    "size": 1835290,
+    "mode": "100644",
+    "sha256": "9305885d6007a79702bb10aef875862030e2cd8b3f29d2d96b38d0e273537a89"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-mouth-v0.2.46.png",
+    "size": 14947,
+    "mode": "100644",
+    "sha256": "e2f123d09ae6105274ac61b6e33a57cbb3467b3bd8fe08c641afa93cee183e93"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-belly-laugh-v0.2.46.png",
+    "size": 1869753,
+    "mode": "100644",
+    "sha256": "b97971ce28e5c917701bbcfd2bfb5d9756db8ed7737dc135e8e143ab50d0bd1e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-tear-wipe-v0.2.46.png",
+    "size": 1826386,
+    "mode": "100644",
+    "sha256": "1f2c9cc8e65ce82bad13f3ac58a8fac5386400e78ed7d62c8c2ecc5c75553dd2"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-wipe-base-v0.2.46.png",
+    "size": 1806502,
+    "mode": "100644",
+    "sha256": "142964d149a34657cee79f55e2746bee3776015f26b94f508e501bdfc8b44c10"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-natural-wipe-hand-v0.2.46.png",
+    "size": 181681,
+    "mode": "100644",
+    "sha256": "8034c95f523818cd4a3dc0e79f2ec7b0bbf8c64b8215bf9d2e2e8f1d1630b843"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-open-seated-reference-v0.2.18.png",
+    "size": 1774798,
+    "mode": "100644",
+    "sha256": "746c9b5541577270a397607a6efde83b5b291ffaa08e5cf8afd2854bebaf59e7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-seated-body-reference-v0.2.18.png",
+    "size": 1664874,
+    "mode": "100644",
+    "sha256": "3e1247f6e69c0e5318bcb9ffe106fb04b17e855d4778e93236382e14fd09b0d7"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-skirt-reference-crop-v0.2.14.png",
+    "size": 47700,
+    "mode": "100644",
+    "sha256": "2ceb1192f8bd56f41e697b5c4c3af329305c35175f7c5d78a24ebb2fdfb3a35b"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-skirt-v0.2.14.png",
+    "size": 1273103,
+    "mode": "100644",
+    "sha256": "7e3a6511693e7c9b7981ebd9209ff0fa4c4b8507fbf9e6e2f89456bf147e37de"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola-thigh-reference-wedge-v0.2.15.png",
+    "size": 172262,
+    "mode": "100644",
+    "sha256": "9612504434c84691c336e6d34a9c79ee15b3cd4ddd0c4a5be5c7012662813627"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola_skirt-original-v0.2.29.png",
+    "size": 395758,
+    "mode": "100644",
+    "sha256": "d60c4fdbe257b013308036b3dd91bc93af4906d32fb2a72cfc2d1ec67523c050"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola_skirt-original-v0.2.30.png",
+    "size": 395915,
+    "mode": "100644",
+    "sha256": "2d8d0d80e3ca8b371a52bd9be6d2f4f13c68410a482001df2726ec644e9afd78"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola_skirt-reference-v0.2.16.png",
+    "size": 169534,
+    "mode": "100644",
+    "sha256": "a3dc7b004bfb98f69966c5bb4593f756a88df6a320ab44888ad4b0e8ebe671c3"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/Resources/Characters/Viola/viola_thigh_skin-reference-v0.2.16.png",
+    "size": 18693,
+    "mode": "100644",
+    "sha256": "047eaafe40a86b744d1017180a4ce171f2e6ad92569b2de5bf55150d322d799e"
+  },
+  {
+    "path": "history/cache/open-source-20261008/build/viola终稿.app/Contents/_CodeSignature/CodeResources",
+    "size": 37912,
+    "mode": "100644",
+    "sha256": "41f594e555152c3bf351da2fe8dd9e54feb05702bd1a720dc552352c4d30a77c"
   },
   {
     "path": "history/cache/original-laugh-v0.2.48/Viola 新版.app/Contents/Info.plist",
@@ -65146,6 +67342,12 @@
     "size": 1420684,
     "mode": "100644",
     "sha256": "2031492a0263c0c0e8501f60729769fca4ddf2db77b32727b41decfed9ef8969"
+  },
+  {
+    "path": "history/transitional-builds.json",
+    "size": 95891,
+    "mode": "100644",
+    "sha256": "971b5f8ce281edddbfb93a2a4d09e84cdbb01ff760f3eb5b0f0833d1d2e6e8e5"
   },
   {
     "path": "history/versions.json",
