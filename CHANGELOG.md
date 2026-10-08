@@ -6,6 +6,7 @@
 - 眨眼、朋友吃力表情与旧常态表情在入口和回位时连续混合，保留固定微眯、捂肚子、擦泪及八秒摇摆踢腿动作。
 - Windows 从当前键位、鼠标或闲置姿势进入笑动作，完整播放恢复尾帧后回到真实常态；退出后重新安排眨眼。
 - 增加确定性过渡渲染检查、眼线配准和 alpha 检查，以及 Windows 衔接与像素混合自检。
+- 修复提交 `22e9922` 的 [macOS CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37768690100) 通过 46 项核心检查、2,164 帧过渡渲染和打包；[Windows CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37768690096) 通过 x64 发布、自检、原生窗口 PNG 冒烟检查及打包。
 
 ## 0.2.50（build 51）— 两种大笑音源
 

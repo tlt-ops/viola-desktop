@@ -45,7 +45,7 @@ swift build -c release
 swift run -c release ViolaChecks
 ```
 
-0.2.51 的本地 `ViolaChecks` 已执行，46 项核心检查通过。另已渲染并检查 2,164 帧笑姿入口/恢复、眼线配准与 alpha 覆盖，覆盖桌面显示/隐藏和同时眨眼；原固定大笑的 1,058 个时序阶段、445 个桌面/输入隔离阶段及手臂回位检查通过。正常状态与笑中段的 13 张代表帧与 0.2.50 逐像素一致。应用包签名、版本及所有资源字节校验通过。这些检查不等于已在每一种 macOS、屏幕布局或输入设备上完成实机验证。历史 0.2.50 的 [macOS CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37712787059) 结果保留用于追溯；当前提交的检查见 [GitHub Actions](https://github.com/tlt-ops/viola-desktop/actions)。
+0.2.51 的本地 `ViolaChecks` 已执行，46 项核心检查通过。另已渲染并检查 2,164 帧笑姿入口/恢复、眼线配准与 alpha 覆盖，覆盖桌面显示/隐藏和同时眨眼；原固定大笑的 1,058 个时序阶段、445 个桌面/输入隔离阶段及手臂回位检查通过。正常状态与笑中段的 13 张代表帧与 0.2.50 逐像素一致。应用包签名、版本及所有资源字节校验通过。这些检查不等于已在每一种 macOS、屏幕布局或输入设备上完成实机验证。修复提交 `22e9922` 的 [macOS CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37768690100) 已通过 release 编译、46 项核心检查、2,164 帧过渡渲染及签名/资源校验并生成 ZIP；历史结果保留在 [GitHub Actions](https://github.com/tlt-ops/viola-desktop/actions)。
 
 ## Windows 下载与构建
 
