@@ -49,15 +49,20 @@ enum WindowsSpriteExport {
             clips[blinkName] = ["frameCount": closures.count, "fps": 30, "loop": false]
             let laughName = name("laugh"), laughFolder = try frameFolder(laughName)
             let laugh = LayerRenderer(assets: assets); laugh.setDesksVisible(visible)
+            // Seed the same stable normal pose that an already visible pet has at handoff.
+            var laughRest = AnimationFrame(); laughRest.dt = 1.0 / 60; laughRest.renderInterval = 1.0 / 60
+            for _ in 0..<60 { laugh.render(laughRest) }
             let engine = AnimationEngine(now: 0, expressionSeed: 42)
             engine.allowsShoeDrops = false; engine.activity.sleepDelay = .infinity
             guard engine.startLaugh(now: 0) else { throw AssetError.invalid("Windows laugh export did not start") }
-            for index in 0..<246 {
-                var frame = engine.tick(now: Double(index) / 30)
-                frame.renderInterval = index == 0 ? 0 : 1.0 / 30
+            let laughFPS = 30.0, laughSettleTail = 0.2
+            let laughFrameCount = Int(((FixedLaughMotion.duration + laughSettleTail) * laughFPS).rounded())
+            for index in 0..<laughFrameCount {
+                var frame = engine.tick(now: Double(index) / laughFPS)
+                frame.renderInterval = index == 0 ? 0 : 1.0 / laughFPS
                 laugh.render(frame); try save(laugh, to: laughFolder, index: index)
             }
-            clips[laughName] = ["frameCount": 246, "fps": 30, "loop": false]
+            clips[laughName] = ["frameCount": laughFrameCount, "fps": laughFPS, "loop": false]
             let crawlName = name("crawl"), crawlFolder = try frameFolder(crawlName)
             let crawl = LayerRenderer(assets: assets); crawl.setDesksVisible(visible)
             let gait = CrawlMotion(); _ = gait.start(now: 0, direction: 1)
@@ -92,7 +97,7 @@ enum WindowsSpriteExport {
             var click = neutral; click.state = .click; click.mousePress = 1
             try pose(mode + "-mouse-click", click)
         }
-        let manifest: [String: Any] = ["schemaVersion": 1, "sourceVersion": "0.2.49", "width": 320, "height": 384,
+        let manifest: [String: Any] = ["schemaVersion": 1, "sourceVersion": "0.2.51", "width": 320, "height": 384,
             "clips": clips, "poses": poses, "crawlCycleSeconds": 0.72, "laughActionSeconds": 8,
             "license": "See ASSET_LICENSE.md; media are not MIT licensed"]
         try JSONSerialization.data(withJSONObject: manifest, options: [.prettyPrinted, .sortedKeys])

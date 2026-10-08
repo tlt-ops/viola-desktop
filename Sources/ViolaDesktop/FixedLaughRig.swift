@@ -18,6 +18,7 @@ final class FixedLaughRig {
     private var entryLeft: Contact?, entryRight: Contact?
     private var previousAge = -1.0
     private(set) var diagnostics: [String:Any] = [:]
+    private(set) var normalPortraitTransform = CGAffineTransform.identity
     private static let scale: CGFloat = 0.326
     fileprivate static func point(_ x: CGFloat,_ y: CGFloat) -> CGPoint {
         CGPoint(x:145+x*scale,y:934-y*scale)
@@ -107,10 +108,9 @@ final class FixedLaughRig {
         head.position = CGPoint(x:movedNeck.x,y:movedNeck.y+lift)
         let headAngle = FixedLaughMotion.headNod(age:age)*amount
         head.setAffineTransform(CGAffineTransform(rotationAngle:angle+headAngle))
-        // At the ownership boundary fit the laugh's painted eye line to the
-        // normal portrait. Then release that registration smoothly into the
-        // untouched .47 head pose. This is one rigid similarity transform, not
-        // an eye deformation or two translucent faces.
+        // Register both portraits to one moving eye line throughout the
+        // handoff, then release into the unchanged .47 head pose. The normal
+        // portrait follows the same rigid map while its contribution fades.
         let localEyes = [Self.point(350,413),Self.point(507,362)].map {
             CGPoint(x:$0.x-neck.x,y:$0.y-neck.y)
         }
@@ -136,7 +136,19 @@ final class FixedLaughRig {
         let centerOffset = localCenter.applying(portraitMap)
         head.position = CGPoint(x:center.x-centerOffset.x,y:center.y-centerOffset.y)
         head.setAffineTransform(portraitMap)
-        let ownsPortrait = FixedLaughMotion.ownsLaughPortrait(weight:weight)
+        let sharedAngle = portraitAngle-alignedAngle
+        let sharedScale = portraitScale/alignedScale
+        normalPortraitTransform = CGAffineTransform(translationX:-normalCenter.x,y:-normalCenter.y)
+            .concatenating(CGAffineTransform(rotationAngle:sharedAngle).scaledBy(x:sharedScale,y:sharedScale))
+            .concatenating(CGAffineTransform(translationX:center.x,y:center.y))
+        let eyeRegistrationError = zip(normalEyes,localEyes).map { normal, local in
+            let a = normal.applying(normalPortraitTransform)
+            let b = local.applying(portraitMap)
+                .applying(CGAffineTransform(translationX:head.position.x,y:head.position.y))
+            return hypot(a.x-b.x,a.y-b.y)
+        }.max() ?? 0
+        let portraitBlend = LaughFaceTransition.portraitBlend(weight:weight)
+        let ownsPortrait = portraitBlend > 0
         portraitRoot.isHidden = !ownsPortrait
         hair.position = head.position
         let hairAngle = FixedLaughMotion.hairSway(age:age)*amount
@@ -171,8 +183,9 @@ final class FixedLaughRig {
             "leftWrist":[leftArm.wrist.x,leftArm.wrist.y],"rightWrist":[rightArm.wrist.x,rightArm.wrist.y],
             "leftAngle":leftArm.handAngle,"rightAngle":rightArm.handAngle,"torsoRotation":angle,
             "rockWeight":FixedLaughMotion.rockWeight(age:age),"paintedEyeOwner":ownsPortrait,
-            "paintedEyeArt":"viola-layered-head-v0.2.47.png","normalEyeOverlayOpacity":ownsPortrait ? 0.0 : 1.0,
-            "portraitOpaque":true,"portraitOpacity":ownsPortrait ? 1.0 : 0.0,
+            "paintedEyeArt":"viola-layered-head-v0.2.47.png","normalEyeOverlayOpacity":1-portraitBlend,
+            "portraitOpaque":true,"portraitOpacity":portraitBlend,
+            "portraitBlendMode":"premultiplied-add","portraitEyeRegistrationError":eyeRegistrationError,
             "portraitRegistrationRelease":release,"portraitScale":portraitScale,"portraitRotation":portraitAngle,
             "headRotation":headAngle,"hairRotation":hairAngle,"chestScale":compression,"shoulderLift":lift,
             "torsoPosition":[chest.position.x,chest.position.y],"pulse":FixedLaughMotion.pulse(age:age),

@@ -30,6 +30,10 @@ final class LayerRenderer: CharacterRenderer {
     private var straightKeyboardArm: StraightKeyboardArmRig?
     private var sourceLaughWeight: Double = 0
     private var fixedLaugh: FixedLaughRig?
+    private let normalPortraitRoot = CALayer()
+    private let portraitBlendLayer = CALayer()
+    private var portraitBlendRenderer: PortraitBlendRenderer?
+    private(set) var portraitTransitionDiagnostics: [String:Any] = [:]
     private let laughBodyMask = CAGradientLayer()
     private let laughForeground = CALayer()
     private var laughForegroundPairs: [(CALayer,CALayer)] = []
@@ -451,6 +455,23 @@ final class LayerRenderer: CharacterRenderer {
             }
             let face = SourceReferenceFaceRig(canvasSize:canvasSize,images:assets.images,definitions:definitions)
             rootLayer.addSublayer(face.root); sourceFace = face
+            if let fixedLaugh, let head = layers["head"] {
+                normalPortraitRoot.anchorPoint = .zero; normalPortraitRoot.position = .zero
+                normalPortraitRoot.bounds = CGRect(origin:.zero,size:canvasSize)
+                // Keep the exact normal head/shoulder occlusion order at rest.
+                rootLayer.insertSublayer(normalPortraitRoot,below:head)
+                head.removeFromSuperlayer(); normalPortraitRoot.addSublayer(head)
+                face.riderPortraitLayer.removeFromSuperlayer()
+                normalPortraitRoot.addSublayer(face.riderPortraitLayer)
+                let viewport = CGRect(x:120,y:530,width:500,height:430)
+                    .intersection(CGRect(origin:.zero,size:canvasSize))
+                portraitBlendRenderer = PortraitBlendRenderer(viewport:viewport,scale:1)
+                portraitBlendLayer.anchorPoint = .zero; portraitBlendLayer.position = viewport.origin
+                portraitBlendLayer.bounds = CGRect(origin:.zero,size:viewport.size)
+                portraitBlendLayer.contentsGravity = .resize; portraitBlendLayer.contentsScale = 1
+                portraitBlendLayer.isHidden = true
+                rootLayer.insertSublayer(portraitBlendLayer,above:fixedLaugh.portraitRoot)
+            }
         }
         if continuousFriendClothing { friendCrawlRig = FriendCrawlRig(layers:layers,definitions:definitions,sourceReference:sourceReference) }
         setDesksVisible(true)
@@ -552,7 +573,8 @@ final class LayerRenderer: CharacterRenderer {
         referenceFriendExpressions?.render(expression:frame.friendExpression,opacity:frame.friendExpressionOpacity,support:support)
         sourceFace?.render(blink:frame.blink, laugh:frame.laugh, expression:frame.friendExpression,
             opacity:frame.friendExpressionOpacity, seatX:seatX, torsoY:torsoY, support:support,
-            friendBlink:frame.friendBlink,laughAge:frame.laughAge,desksVisible:desksVisible)
+            friendBlink:frame.friendBlink,laughAge:frame.laughAge,desksVisible:desksVisible,
+            normalExpression:frame.normalFriendExpression,normalOpacity:frame.normalFriendExpressionOpacity)
         pose("keyboard", dy: frame.keyboardY)
         let smoothing = 1 - exp(-max(0, frame.renderInterval ?? frame.dt) * 28)
         let referencePose = definitions["reference_left_arm"] != nil
@@ -725,7 +747,7 @@ final class LayerRenderer: CharacterRenderer {
             copy.anchorPoint = original.anchorPoint; copy.transform = original.transform
             copy.opacity = original.opacity; copy.isHidden = original.isHidden
         }
-        layers["head"]?.opacity = FixedLaughMotion.ownsLaughPortrait(weight:weight) ? 0 : 1
+        renderPortraitTransition(weight:weight)
         layers["neck_bridge"]?.opacity = Float(1-weight)
         // Hide the old torso above its waist but keep the long hair and skirt
         // below it. At zero remove the mask entirely for identical normal art.
@@ -746,6 +768,40 @@ final class LayerRenderer: CharacterRenderer {
             layers[id]?.opacity = Float(1-weight)
         }
         keyboardGlow.opacity *= Float(1-weight)
+    }
+    private func renderPortraitTransition(weight: Double) {
+        guard let fixedLaugh, let head = layers["head"] else { return }
+        let blend = LaughFaceTransition.portraitBlend(weight:weight)
+        let registration = fixedLaugh.normalPortraitTransform
+        head.position = head.position.applying(registration)
+        head.setAffineTransform(head.affineTransform().concatenating(CGAffineTransform(
+            a:registration.a,b:registration.b,c:registration.c,d:registration.d,tx:0,ty:0)))
+        head.opacity = 1
+        sourceFace?.applyRiderPortraitTransform(registration)
+        normalPortraitRoot.opacity = 1; normalPortraitRoot.isHidden = false
+        fixedLaugh.portraitRoot.opacity = 1; fixedLaugh.portraitRoot.isHidden = false
+        portraitBlendLayer.isHidden = true
+        var milliseconds = 0.0
+        if blend == 0 {
+            fixedLaugh.portraitRoot.isHidden = true
+            portraitBlendLayer.contents = nil
+        } else if blend == 1 {
+            normalPortraitRoot.isHidden = true
+            portraitBlendLayer.contents = nil
+        } else if let image = portraitBlendRenderer?.composite(
+            normal:normalPortraitRoot,laugh:fixedLaugh.portraitRoot,weight:blend) {
+            normalPortraitRoot.isHidden = true; fixedLaugh.portraitRoot.isHidden = true
+            portraitBlendLayer.contents = image; portraitBlendLayer.isHidden = false
+            milliseconds = portraitBlendRenderer?.lastRenderMilliseconds ?? 0
+        } else {
+            // Allocation failures retain a complete face rather than a gap.
+            normalPortraitRoot.isHidden = blend >= 0.5
+            fixedLaugh.portraitRoot.isHidden = blend < 0.5
+        }
+        portraitTransitionDiagnostics = ["blend":blend,"normalContribution":1-blend,
+            "laughContribution":blend,"composited":!portraitBlendLayer.isHidden,
+            "renderMilliseconds":milliseconds,"premultipliedAlpha":true,
+            "fallback":blend > 0 && blend < 1 && portraitBlendLayer.isHidden]
     }
     private func referenceArmPose(_ id: String, shoulder: CGPoint, hand: CGPoint) {
         guard let layer = layers[id], let sprite = definitions[id], let wrist = sprite.contact else { return }

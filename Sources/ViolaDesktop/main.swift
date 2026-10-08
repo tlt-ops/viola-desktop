@@ -41,6 +41,64 @@ if let index = arguments.firstIndex(of: "--render-gallery"), arguments.count > i
         let layout = layoutIndex.flatMap { $0+1 < arguments.count ? URL(fileURLWithPath:arguments[$0+1]) : nil }
         let renderer = try LayerRenderer(assets: CharacterAssets(directory: CharacterAssets.bundledDirectory,manifestURL:layout))
         if arguments.contains("--hide-desks") { renderer.setDesksVisible(false) }
+        if arguments.contains("--laugh-transition-review") {
+            try PortraitBlendRenderer.verifyPremultipliedBlend()
+            let assets = try CharacterAssets(directory:CharacterAssets.bundledDirectory,manifestURL:layout)
+            var evidence: [[String:Any]] = []
+            for visible in [true,false] {
+                for collision in [false,true] {
+                    let mode = "\(visible ? "desk" : "hidden")-\(collision ? "blink" : "open")"
+                    let rig = LayerRenderer(assets:assets); rig.setDesksVisible(visible)
+                    let engine = AnimationEngine(now:0,expressionSeed:42); engine.allowsShoeDrops = false
+                    for n in 0..<60 {
+                        var frame = engine.tick(now:Double(n)/60)
+                        frame.blink = collision ? 1 : 0; frame.friendBlink = frame.blink
+                        frame.renderInterval = 1.0/60; rig.render(frame)
+                    }
+                    guard engine.startLaugh(now:1) else { throw AssetError.invalid("transition laugh did not start") }
+                    let motion = folder.appendingPathComponent(mode,isDirectory:true)
+                    try FileManager.default.createDirectory(at:motion,withIntermediateDirectories:true)
+                    var previousBlend = 0.0, maxRenderMilliseconds = 0.0
+                    for n in 0...540 {
+                        var frame = engine.tick(now:1+Double(n)/60)
+                        frame.blink = collision ? 1 : 0; frame.friendBlink = frame.blink
+                        frame.renderInterval = 1.0/60; rig.render(frame)
+                        let transition = rig.portraitTransitionDiagnostics
+                        let blend = transition["blend"] as? Double ?? .nan
+                        let normal = transition["normalContribution"] as? Double ?? .nan
+                        let laugh = transition["laughContribution"] as? Double ?? .nan
+                        guard blend.isFinite, (0...1).contains(blend), abs(normal+laugh-1) < 1e-9,
+                              abs(blend-previousBlend) < 0.17, transition["fallback"] as? Bool == false else {
+                            throw AssetError.invalid("portrait transition jumps or loses its compositor at \(mode)-\(n): \(transition)")
+                        }
+                        previousBlend = blend
+                        maxRenderMilliseconds = max(maxRenderMilliseconds,transition["renderMilliseconds"] as? Double ?? 0)
+                        if let fixed = rig.sourceArmDiagnostics["fixedLaugh"] as? [String:Any] {
+                            guard (fixed["portraitEyeRegistrationError"] as? Double ?? .infinity) < 1e-6 else {
+                                throw AssetError.invalid("old/new eye lines separate at \(mode)-\(n)")
+                            }
+                        }
+                        if n <= 32 || (438...495).contains(n) {
+                            try rig.savePNG(to:motion.appendingPathComponent(String(format:"face-%03d.png",n)),
+                                background:NSColor(calibratedWhite:0.94,alpha:1),
+                                region:CGRect(x:185,y:700,width:255,height:220),scale:2)
+                        }
+                        if [0,9,12,13,18,26,61,120,180,240,330,360,420,450,459,460,461,474,480,495,540].contains(n) {
+                            try rig.savePNG(to:motion.appendingPathComponent(String(format:"full-%03d.png",n)),
+                                background:NSColor(calibratedWhite:0.94,alpha:1))
+                        }
+                        evidence.append(["mode":mode,"time":Double(n)/60,"face":rig.sourceFaceDiagnostics,
+                            "transition":transition,"arms":rig.sourceArmDiagnostics])
+                    }
+                    guard previousBlend == 0 else { throw AssetError.invalid("portrait fails to return to normal at \(mode)") }
+                    print("\(mode): continuous entry/return, eye registration and alpha PASS; peak face blend render \(maxRenderMilliseconds) ms")
+                }
+            }
+            try JSONSerialization.data(withJSONObject:evidence,options:[.prettyPrinted,.sortedKeys])
+                .write(to:folder.appendingPathComponent("laugh-transition-review.json"))
+            print("Verified 2164 frames across desk visibility and simultaneous full blinks")
+            exit(0)
+        }
         if arguments.contains("--fixed-laugh-review") {
             let assets = try CharacterAssets(directory:CharacterAssets.bundledDirectory,manifestURL:layout)
             let background = NSColor(calibratedWhite:0.96,alpha:1)

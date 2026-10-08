@@ -1,6 +1,6 @@
 # Viola终稿 · Viola Desktop
 
-一个原生桌面伙伴：薇欧拉坐在紫色伙伴身上，随着物理键位、鼠标移动和点击做出动作，并有大笑、闲置爬行和回位动画。当前公开源码版本为 **0.2.50**（build 51）。macOS 使用 Swift/AppKit，Windows 移植使用 .NET/WPF，具体功能与验证范围分别说明。
+一个原生桌面伙伴：薇欧拉坐在紫色伙伴身上，随着物理键位、鼠标移动和点击做出动作，并有大笑、闲置爬行和回位动画。当前源码版本为 **0.2.51**（build 52）。macOS 使用 Swift/AppKit，Windows 移植使用 .NET/WPF，具体功能与验证范围分别说明。
 
 ![Viola Desktop 预览](docs/images/preview.png)
 
@@ -45,7 +45,7 @@ swift build -c release
 swift run -c release ViolaChecks
 ```
 
-0.2.50 的本地 `ViolaChecks` 已执行，43 项核心检查通过。`ViolaChecks` 检查核心行为与几何约束；通过这些检查并不等于已在每一种 macOS、屏幕布局或输入设备上完成实机验证。[macOS CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37712787059) 也已通过 Swift 5.10 编译、43 项核心检查、应用包签名与资源逐字节校验，并生成 ZIP。
+0.2.51 的本地 `ViolaChecks` 已执行，46 项核心检查通过。另已渲染并检查 2,164 帧笑姿入口/恢复、眼线配准与 alpha 覆盖，覆盖桌面显示/隐藏和同时眨眼；原固定大笑的 1,058 个时序阶段、445 个桌面/输入隔离阶段及手臂回位检查通过。正常状态与笑中段的 13 张代表帧与 0.2.50 逐像素一致。应用包签名、版本及所有资源字节校验通过。这些检查不等于已在每一种 macOS、屏幕布局或输入设备上完成实机验证。修复提交 `22e9922` 的 [macOS CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37768690100) 已通过 release 编译、46 项核心检查、2,164 帧过渡渲染及签名/资源校验并生成 ZIP；历史结果保留在 [GitHub Actions](https://github.com/tlt-ops/viola-desktop/actions)。
 
 ## Windows 下载与构建
 

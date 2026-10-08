@@ -46,7 +46,7 @@ def pack(source: Path, destination: Path) -> None:
                 raise ValueError(f"Invalid pose: {key}")
         shutil.copyfile(source / filename, destination / filename)
     manifest["poses"].update({"mouse-left": "desk-mouse-0.png", "mouse-right": "desk-mouse-2.png"})
-    manifest["applicationVersion"] = "0.2.50"
+    manifest["applicationVersion"] = "0.2.51"
     (destination / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8")
     print(f"Packed {len(manifest['clips'])} clips and {len(manifest['poses'])} poses", flush=True)

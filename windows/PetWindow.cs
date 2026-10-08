@@ -38,6 +38,9 @@ internal sealed class PetWindow : Window
     private readonly Random random = new();
     private readonly MediaPlayer sound = new();
     private readonly TextBlock status = new();
+    private LaughTransition? laughTransition;
+    private FrameBlend? laughEntry, laughReturn;
+    private bool laughAudioStopped;
 
     public PetWindow(string? smoke)
     {
@@ -192,8 +195,13 @@ internal sealed class PetWindow : Window
 
     private void BeginLaugh()
     {
+        // Capture exactly what is visible, including a held key, mouse pose or an interrupted handoff.
+        BitmapSource previous = sprite.Source as BitmapSource ?? assets.Frame(settings.ShowDesks ? "idle" : "hiddenIdle", 0);
         if (state == "crawl") EndCrawl();
         state = "laugh"; stateStart = clock.Elapsed.TotalSeconds;
+        Clip clip = assets.Manifest.Clips[settings.ShowDesks ? "laugh" : "hiddenLaugh"];
+        laughTransition = new LaughTransition(clip.FrameCount, clip.Fps, stateStart);
+        laughEntry = new FrameBlend(previous); laughReturn = null; laughAudioStopped = false;
         StopSound();
         if (settings.SoundEnabled)
         {
@@ -224,7 +232,17 @@ internal sealed class PetWindow : Window
     private void Tick()
     {
         double now = clock.Elapsed.TotalSeconds;
-        if (state == "laugh" && now - stateStart >= 8) { state = "idle"; stateStart = now; StopSound(); }
+        if (state == "laugh" && laughTransition != null)
+        {
+            // Eight seconds remains the action/audio interval; the baked tail belongs to recovery.
+            if (!laughAudioStopped && now - stateStart >= LaughTransition.ActionSeconds) { StopSound(); laughAudioStopped = true; }
+            if (laughTransition.Sample(now).Phase == LaughPhase.Complete)
+            {
+                state = "idle"; stateStart = laughTransition.ReturnStart;
+                laughTransition = null; laughEntry = null; laughReturn = null;
+                nextBlink = LaughTransition.NextBlink(now, random.NextDouble());
+            }
+        }
         if (state == "crawl")
         {
             double t = Math.Clamp((now - stateStart) / 8, 0, 1);
@@ -246,9 +264,32 @@ internal sealed class PetWindow : Window
 
     private void Render(double now)
     {
-        string clip = settings.ShowDesks ? state : "hidden" + char.ToUpperInvariant(state[0]) + state.Substring(1);
-        BitmapSource frame = assets.Frame(clip, now - stateStart);
-        if (state != "laugh" && state != "crawl")
+        BitmapSource frame;
+        if (state == "laugh" && laughTransition != null)
+        {
+            LaughSample sample = laughTransition.Sample(now);
+            string clip = settings.ShowDesks ? "laugh" : "hiddenLaugh";
+            if (sample.Phase == LaughPhase.Entry)
+                frame = laughEntry!.Mix(assets.Frame(clip, sample.ClipAge), sample.BlendWeight);
+            else if (sample.Phase == LaughPhase.Return || sample.Phase == LaughPhase.Complete)
+            {
+                // Explicitly use the final exported frame, even if a delayed tick skipped its interval.
+                // Capture once: decoding laugh and idle atlases on every recovery tick would thrash the cache.
+                laughReturn ??= new FrameBlend(assets.Frame(clip, sample.ClipAge));
+                frame = laughReturn.Mix(NormalFrame("idle", sample.NormalAge, now), sample.BlendWeight);
+            }
+            else { laughEntry = null; frame = assets.Frame(clip, sample.ClipAge); }
+        }
+        else frame = NormalFrame(state, now - stateStart, now);
+        // A single premultiplied image avoids the alpha dip of overlapping transparent Images.
+        if (!ReferenceEquals(sprite.Source, frame)) sprite.Source = frame;
+    }
+
+    private BitmapSource NormalFrame(string visualState, double age, double now)
+    {
+        string clip = settings.ShowDesks ? visualState : "hidden" + char.ToUpperInvariant(visualState[0]) + visualState.Substring(1);
+        BitmapSource frame = assets.Frame(clip, age);
+        if (visualState != "crawl")
         {
             bool keyHeld = false;
             foreach (int key in pressed) if (KeyMap.MacCode(key) == currentKey) keyHeld = true;
@@ -261,8 +302,7 @@ internal sealed class PetWindow : Window
                 else if (settings.ShowDesks && assets.TryPose(mousePose, out BitmapSource? alias)) frame = alias;
             }
         }
-        // One atomic image replacement avoids double-eye/face alpha ghosts.
-        if (!ReferenceEquals(sprite.Source, frame)) sprite.Source = frame;
+        return frame;
     }
 
     private void OnPetMouseDown(object sender, MouseButtonEventArgs e)

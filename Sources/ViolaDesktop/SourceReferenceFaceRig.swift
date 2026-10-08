@@ -8,6 +8,7 @@ import ViolaCore
 final class SourceReferenceFaceRig {
     let root = CALayer()
     private let rider = CALayer()
+    var riderPortraitLayer: CALayer { rider }
     private let friend = CALayer()
     private let hearts = CALayer()
     private let friendEffort = CALayer()
@@ -81,41 +82,43 @@ final class SourceReferenceFaceRig {
 
     func render(blink: Double, laugh: Double, expression: FriendExpression, opacity: Double,
                 seatX: Double, torsoY: Double, support: CGAffineTransform,
-                friendBlink: Double? = nil, laughAge: Double = 0, desksVisible: Bool = true) {
+                friendBlink: Double? = nil, laughAge: Double = 0, desksVisible: Bool = true,
+                normalExpression: FriendExpression? = nil, normalOpacity: Double? = nil) {
+        rider.setAffineTransform(.identity)
         rider.position = CGPoint(x:seatX,y:torsoY)
-        // The normal head and the opaque dedicated laugh portrait use the same
-        // ownership rule, preventing displaced old irises from showing through.
-        rider.opacity = FixedLaughMotion.ownsLaughPortrait(weight:Self.ease(laugh)) ? 0 : 1
+        // The renderer composites the complete normal/laugh portrait together;
+        // do not independently fade these registered eye and mouth patches.
+        rider.opacity = 1
         friend.setAffineTransform(support)
-        let joy = Self.ease(laugh), isLaughing = joy > 0.0001
-        // Normal blinks may fully seal. The fixed laugh has its own partial-lid
-        // shape, including when the unrelated idle blink reaches its peak.
+        let joy = Self.ease(laugh)
         let normalRiderClosure = Self.ease(blink)
-        let riderClosure = isLaughing
-            ? joy*FixedLaughFaceIdentity.riderClosure
-                + (1-joy)*min(normalRiderClosure,FixedLaughFaceIdentity.riderClosure)
-            : normalRiderClosure
+        let riderClosure = LaughFaceTransition.eyelidClosure(normal:normalRiderClosure,
+            fixed:FixedLaughFaceIdentity.riderClosure,weight:joy)
         riderEyes.forEach { $0.render(closure:riderClosure,joy:joy) }
-        let effort = isLaughing ? joy*(FixedLaughFaceIdentity.effortBase+FixedLaughFaceIdentity.effortPulse*FixedLaughMotion.pulse(age:laughAge)) : (expression == .effort ? Self.ease(opacity) : 0)
-        let normalFriendClosure = Self.ease(friendBlink ?? blink)
-        let friendClosure = isLaughing
-            ? joy*FixedLaughFaceIdentity.friendClosure
-                + (1-joy)*min(normalFriendClosure,FixedLaughFaceIdentity.friendClosure)
-            : effort > 0.0001 ? 0 : normalFriendClosure
+        let resolvedNormalExpression = normalExpression ?? expression
+        let resolvedNormalOpacity = normalOpacity ?? opacity
+        let normalEffort = resolvedNormalExpression == .effort ? Self.ease(resolvedNormalOpacity) : 0
+        let fixedEffort = FixedLaughFaceIdentity.effortBase+FixedLaughFaceIdentity.effortPulse*FixedLaughMotion.pulse(age:laughAge)
+        let effort = LaughFaceTransition.expressionBlend(normal:normalEffort,fixed:fixedEffort,weight:joy)
+        let normalFriendClosure = normalEffort > 0.0001 ? 0 : Self.ease(friendBlink ?? blink)
+        let friendClosure = LaughFaceTransition.eyelidClosure(normal:normalFriendClosure,
+            fixed:FixedLaughFaceIdentity.friendClosure,weight:joy)
         friendEyes.forEach { $0.render(closure:friendClosure,joy:0) }
-        renderFriendEffort(effort:effort,tension:isLaughing ? FixedLaughFaceIdentity.friendBrowTension : 4)
+        let tension = LaughFaceTransition.expressionBlend(normal:4,fixed:FixedLaughFaceIdentity.friendBrowTension,weight:joy)
+        renderFriendEffort(effort:effort,tension:tension)
         friendSweat.opacity = Float(joy*FixedLaughFaceIdentity.sweatOpacity)
         laughCrownCover.opacity = Float(joy)
-        hearts.opacity = !isLaughing && expression == .hearts ? Float(opacity) : 0
+        hearts.opacity = Float(LaughFaceTransition.expressionBlend(
+            normal:resolvedNormalExpression == .hearts ? resolvedNormalOpacity : 0,fixed:0,weight:joy))
         brows.forEach { $0.render(joy:joy) }
         renderMouth(joy:joy,age:laughAge)
-        diagnostics = ["normalPortraitOpacity":Double(rider.opacity),
+        diagnostics = ["normalPortraitOpacity":1-LaughFaceTransition.portraitBlend(weight:joy),
                        "riderClosure":riderClosure,"friendClosure":friendClosure,
-                       "friendEffort":effort,"friendBrowTension":(isLaughing ? FixedLaughFaceIdentity.friendBrowTension : 4)*effort,"friendMouthPress":effort,
+                       "friendEffort":effort,"friendBrowTension":tension*effort,"friendMouthPress":effort,
                        "friendSweatOpacity":Double(friendSweat.opacity),
-                       "friendSweatDropCount":isLaughing ? Double(FixedLaughFaceIdentity.sweatDropCount) : 0,
+                       "friendSweatDropCount":joy*Double(FixedLaughFaceIdentity.sweatDropCount),
                        "heartsOpacity":Double(hearts.opacity),
-                       "eyelidClosure":riderClosure,"mouthOpen":isLaughing ? Self.mouthDepth(joy:joy,age:laughAge) : 0,
+                       "eyelidClosure":riderClosure,"mouthOpen":Self.mouthDepth(joy:joy,age:laughAge)*min(1,joy*6),
                        "joy":joy,"browLift":1.7*joy,
                        "fixedLaughFaceRevision":FixedLaughFaceIdentity.revision,
                        "fixedLaughRiderClosure":FixedLaughFaceIdentity.riderClosure,
@@ -123,6 +126,14 @@ final class SourceReferenceFaceRig {
                        "fixedLaughMouthHalfWidth":FixedLaughFaceIdentity.mouthHalfWidth,
                        "fixedLaughMouthDepth":FixedLaughFaceIdentity.mouthDepth,
                        "fixedLaughSweatOpacity":FixedLaughFaceIdentity.sweatOpacity]
+    }
+
+    /// Apply the same world-space registration used for the normal head image.
+    /// render resets this each frame, so applying identity restores normal art.
+    func applyRiderPortraitTransform(_ worldTransform: CGAffineTransform) {
+        rider.position = rider.position.applying(worldTransform)
+        rider.setAffineTransform(CGAffineTransform(a:worldTransform.a,b:worldTransform.b,
+            c:worldTransform.c,d:worldTransform.d,tx:0,ty:0))
     }
 
     fileprivate static func world(_ p: CGPoint) -> CGPoint { CGPoint(x:24+0.64*p.x,y:940-0.64*p.y) }
