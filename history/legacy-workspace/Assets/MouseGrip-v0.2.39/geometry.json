@@ -1,0 +1,695 @@
+{
+  "source": "Sources/ViolaDesktop/Resources/Characters/Viola/frontal-arms-v0.2.5.png",
+  "sourceSHA256": "d6ee70d42665086fc30c3922de4fb9146114d9e74e4cfe87752727b4696cd0c6",
+  "sourceCrop": [
+    870,
+    0,
+    1290,
+    1024
+  ],
+  "outlineCropLocal": [
+    [
+      136,
+      721
+    ],
+    [
+      143,
+      700
+    ],
+    [
+      158,
+      685
+    ],
+    [
+      180,
+      674
+    ],
+    [
+      205,
+      671
+    ],
+    [
+      229,
+      675
+    ],
+    [
+      253,
+      683
+    ],
+    [
+      276,
+      698
+    ],
+    [
+      296,
+      719
+    ],
+    [
+      300,
+      734
+    ],
+    [
+      319,
+      742
+    ],
+    [
+      342,
+      760
+    ],
+    [
+      364,
+      782
+    ],
+    [
+      384,
+      807
+    ],
+    [
+      398,
+      834
+    ],
+    [
+      401,
+      846
+    ],
+    [
+      401,
+      856
+    ],
+    [
+      395,
+      878
+    ],
+    [
+      383,
+      901
+    ],
+    [
+      366,
+      924
+    ],
+    [
+      350,
+      940
+    ],
+    [
+      340,
+      944
+    ],
+    [
+      332,
+      940
+    ],
+    [
+      327,
+      932
+    ],
+    [
+      324,
+      918
+    ],
+    [
+      322,
+      903
+    ],
+    [
+      320,
+      888
+    ],
+    [
+      318,
+      870
+    ],
+    [
+      316,
+      852
+    ],
+    [
+      312,
+      837
+    ],
+    [
+      307,
+      825
+    ],
+    [
+      300,
+      813
+    ],
+    [
+      297,
+      806
+    ],
+    [
+      300,
+      827
+    ],
+    [
+      300,
+      844
+    ],
+    [
+      298,
+      864
+    ],
+    [
+      296,
+      882
+    ],
+    [
+      292,
+      899
+    ],
+    [
+      285,
+      913
+    ],
+    [
+      274,
+      921
+    ],
+    [
+      264,
+      924
+    ],
+    [
+      254,
+      921
+    ],
+    [
+      246,
+      915
+    ],
+    [
+      242,
+      906
+    ],
+    [
+      239,
+      892
+    ],
+    [
+      238,
+      876
+    ],
+    [
+      238,
+      858
+    ],
+    [
+      238,
+      840
+    ],
+    [
+      238,
+      823
+    ],
+    [
+      236,
+      810
+    ],
+    [
+      232,
+      800
+    ],
+    [
+      229,
+      792
+    ],
+    [
+      214,
+      790
+    ],
+    [
+      211,
+      807
+    ],
+    [
+      209,
+      829
+    ],
+    [
+      207,
+      851
+    ],
+    [
+      205,
+      874
+    ],
+    [
+      202,
+      892
+    ],
+    [
+      196,
+      905
+    ],
+    [
+      186,
+      912
+    ],
+    [
+      175,
+      914
+    ],
+    [
+      163,
+      910
+    ],
+    [
+      154,
+      900
+    ],
+    [
+      149,
+      885
+    ],
+    [
+      146,
+      866
+    ],
+    [
+      144,
+      847
+    ],
+    [
+      144,
+      828
+    ],
+    [
+      145,
+      812
+    ],
+    [
+      146,
+      803
+    ],
+    [
+      136,
+      812
+    ],
+    [
+      127,
+      824
+    ],
+    [
+      122,
+      839
+    ],
+    [
+      123,
+      850
+    ],
+    [
+      120,
+      869
+    ],
+    [
+      116,
+      888
+    ],
+    [
+      109,
+      903
+    ],
+    [
+      100,
+      911
+    ],
+    [
+      90,
+      914
+    ],
+    [
+      81,
+      910
+    ],
+    [
+      75,
+      901
+    ],
+    [
+      68,
+      884
+    ],
+    [
+      63,
+      871
+    ],
+    [
+      57,
+      860
+    ],
+    [
+      52,
+      851
+    ],
+    [
+      50,
+      838
+    ],
+    [
+      51,
+      822
+    ],
+    [
+      57,
+      805
+    ],
+    [
+      70,
+      791
+    ],
+    [
+      90,
+      774
+    ],
+    [
+      109,
+      755
+    ],
+    [
+      125,
+      737
+    ]
+  ],
+  "sourceHandBoundsCropLocal": [
+    53,
+    669,
+    402,
+    945
+  ],
+  "wristCropLocal": [
+    210.0,
+    695.0
+  ],
+  "legacyWholeSpriteTranslatedRect": [
+    401.0,
+    517.0,
+    106.0,
+    247.0
+  ],
+  "wristWorld": [
+    454.0,
+    596.3583984375
+  ],
+  "sprite": {
+    "file": "mouse-grip-hand-only-v0.2.39.png",
+    "rect": [
+      414.37619047619046,
+      536.0556640625,
+      88.08095238095238,
+      66.57421875
+    ],
+    "anchor": [
+      0.4498567335243553,
+      0.9057971014492754
+    ]
+  },
+  "outputPixels": [
+    349,
+    276
+  ],
+  "retainedSourcePixels": 56044,
+  "visibleRGBDifferentFromSource": 0,
+  "originalAlphaRetainedInteriorPixels": 51694,
+  "allFingerProbeRGBPreserved": true,
+  "fingerProbes": [
+    {
+      "name": "wrist",
+      "cropLocal": [
+        210,
+        695
+      ],
+      "sourceRGBA": [
+        253,
+        227,
+        217,
+        254
+      ],
+      "outputRGBA": [
+        253,
+        227,
+        217,
+        254
+      ]
+    },
+    {
+      "name": "thumb-nail",
+      "cropLocal": [
+        88,
+        879
+      ],
+      "sourceRGBA": [
+        254,
+        218,
+        213,
+        253
+      ],
+      "outputRGBA": [
+        254,
+        218,
+        213,
+        253
+      ]
+    },
+    {
+      "name": "thumb-shadow",
+      "cropLocal": [
+        110,
+        833
+      ],
+      "sourceRGBA": [
+        253,
+        236,
+        226,
+        254
+      ],
+      "outputRGBA": [
+        253,
+        236,
+        226,
+        254
+      ]
+    },
+    {
+      "name": "index-nail",
+      "cropLocal": [
+        179,
+        882
+      ],
+      "sourceRGBA": [
+        254,
+        213,
+        207,
+        253
+      ],
+      "outputRGBA": [
+        254,
+        213,
+        207,
+        253
+      ]
+    },
+    {
+      "name": "index-fold",
+      "cropLocal": [
+        174,
+        809
+      ],
+      "sourceRGBA": [
+        253,
+        221,
+        211,
+        253
+      ],
+      "outputRGBA": [
+        253,
+        221,
+        211,
+        253
+      ]
+    },
+    {
+      "name": "middle-nail",
+      "cropLocal": [
+        265,
+        890
+      ],
+      "sourceRGBA": [
+        253,
+        212,
+        207,
+        253
+      ],
+      "outputRGBA": [
+        253,
+        212,
+        207,
+        253
+      ]
+    },
+    {
+      "name": "middle-shadow",
+      "cropLocal": [
+        278,
+        837
+      ],
+      "sourceRGBA": [
+        254,
+        227,
+        218,
+        254
+      ],
+      "outputRGBA": [
+        254,
+        227,
+        218,
+        254
+      ]
+    },
+    {
+      "name": "middle-right-shadow",
+      "cropLocal": [
+        295,
+        860
+      ],
+      "sourceRGBA": [
+        237,
+        179,
+        166,
+        253
+      ],
+      "outputRGBA": [
+        237,
+        179,
+        166,
+        253
+      ]
+    },
+    {
+      "name": "ring-nail",
+      "cropLocal": [
+        326,
+        906
+      ],
+      "sourceRGBA": [
+        157,
+        115,
+        109,
+        253
+      ],
+      "outputRGBA": [
+        157,
+        115,
+        109,
+        253
+      ]
+    },
+    {
+      "name": "ring-fold",
+      "cropLocal": [
+        327,
+        825
+      ],
+      "sourceRGBA": [
+        254,
+        230,
+        220,
+        253
+      ],
+      "outputRGBA": [
+        254,
+        230,
+        220,
+        253
+      ]
+    },
+    {
+      "name": "little-finger",
+      "cropLocal": [
+        373,
+        851
+      ],
+      "sourceRGBA": [
+        251,
+        212,
+        201,
+        253
+      ],
+      "outputRGBA": [
+        251,
+        212,
+        201,
+        253
+      ]
+    },
+    {
+      "name": "little-shadow",
+      "cropLocal": [
+        362,
+        904
+      ],
+      "sourceRGBA": [
+        235,
+        173,
+        162,
+        253
+      ],
+      "outputRGBA": [
+        235,
+        173,
+        162,
+        253
+      ]
+    }
+  ],
+  "mouseProbeAlpha": [
+    [
+      220,
+      862,
+      0
+    ],
+    [
+      230,
+      900,
+      0
+    ],
+    [
+      221,
+      944,
+      0
+    ],
+    [
+      132,
+      877,
+      0
+    ],
+    [
+      310,
+      870,
+      0
+    ],
+    [
+      243,
+      952,
+      0
+    ]
+  ],
+  "sourceMouseIsEmbedded": true,
+  "outputMouseIsTransparent": true,
+  "currentIndependentMouseRect": [
+    431,
+    524,
+    53,
+    48
+  ],
+  "oldAcceptedIndependentMouseRectTranslated": [
+    431,
+    524,
+    53,
+    48
+  ],
+  "method": "Manually registered color-independent source outline; alpha-only extraction with 4x boundary coverage; source RGB unchanged.",
+  "registrationNotes": "True skin wrist is crop-local (210,695), not the legacy whole-arm anchor at source y609.28. Old frontal illustration embeds a wider mouse silhouette than the independent 53x48 mouse; only hand pixels are retained here. Check renderer registration and material seam visually."
+}

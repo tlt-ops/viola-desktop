@@ -1,0 +1,34 @@
+{
+  "source": "user-original.png",
+  "sha256": "8d91ae1df950322e7b916ff63e4b191a06533b8549c31469dfb923e1a8fbaefa",
+  "sourceSize": [
+    1145,
+    1374
+  ],
+  "processing": "Conventional pixel extraction/cutting explicitly requested by user after image tool rejection; no imagegen output used.",
+  "imagegenAttempt": {
+    "operation": "background extraction only",
+    "result": "input moderation blocked",
+    "category": "sexual"
+  },
+  "sourceToCanvas": {
+    "scale": 0.64,
+    "originX": 24,
+    "topY": 940
+  },
+  "previousVersionBackup": "cache/preserved-v0.2.28-before-reference-body",
+  "status": "installed and native verified",
+  "release": {
+    "version": "0.2.29",
+    "build": "30",
+    "appPath": "Viola 新版.app",
+    "rigProfile": "reference-v0.2.29",
+    "activeSprites": 25
+  },
+  "verification": {
+    "pixelQC": "../../build/reference-v0.2.29/qc.json",
+    "renderSummary": "../../build/reference-v0.2.29/release-render-summary.json",
+    "installation": "../../build/reference-v0.2.29/install-verification.json",
+    "native": "../../build/reference-v0.2.29/native-acceptance.json"
+  }
+}

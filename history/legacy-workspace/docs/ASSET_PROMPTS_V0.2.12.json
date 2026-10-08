@@ -1,0 +1,27 @@
+{
+  "tool": "built-in imagegen",
+  "assets": [
+    {
+      "name": "laugh-body",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent anime desktop sprite, torso only. Image 1 is the exact edit target body crop. Image 2 shows its assembled character for arm and sleeve style. Make a stomach-holding laughter pose: add BOTH attached arms to Image 1, matching her dark muted plum sleeves, ivory cuffs and gold cuff details. Both elbows bent outward slightly and downward naturally, forearms angle inward, both hands rest across her upper abdomen just above her waist belt, fingers gently curved against the dress. Anatomically correct five digits per hand, visible thumbs, graceful slender adult anime hands, no crossed extra arms. Preserve EXACT existing torso, collar at top crop boundary, golden piping, flower badge, waist, muted green hair, and original viewpoint and body scale. Keep top neck seam and bottom waist seam in the same positions relative to the canvas. Output the edited torso alone, same wide aspect ratio as Image 1 (645 by 350), no head, no table, no keyboard, no other person, no lettering. Genuine transparent background. Keep original normal-proportion 2D Japanese illustration style and colors, not chibi, not realistic, not 3D.",
+      "refs": [
+        "legacy-workspace/Sources/ViolaDesktop/Resources/Characters/Viola/body.png",
+        "idle.png"
+      ]
+    },
+    {
+      "name": "laugh-face",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target: Viola's head sprite. Change ONLY her small closed smile into a joyful open laughing mouth. A modest wide anime laughing mouth with a thin upper row of teeth and warm dark rose mouth interior, small tongue, softly upturned corners. Leave eyes OPEN exactly as reference, exact eye spacing, nose, face shape, chin, ears, hair, clips, bun, shading, neck, pose and crop boundaries unchanged. Do not move any features. This will be used as a precisely registered mouth overlay, so mouth center should stay at original smile position near (275,290) on 645x352 reference, mouth approximately 40 pixels wide by 25 pixels high. Preserve the original fresh restrained 2D anime illustration style, not chibi or realistic. Output same wide head crop, genuine transparent background, no text.",
+      "refs": [
+        "legacy-workspace/Sources/ViolaDesktop/Resources/Characters/Viola/head.png"
+      ]
+    },
+    {
+      "name": "laugh-mouse",
+      "prompt": "Use case: precise-object-edit. Create a standalone transparent desktop-pet mouse sprite matching the white ivory and dark plum mouse of reference. Change view to a symmetrical near top-down view, long axis vertical, FRONT mouse buttons toward bottom of image (toward viewer), back of mouse at top. White shell with dark plum thin side edge, small dark scroll wheel on centerline in lower half, delicate anime drawn outlines and cel shading. One isolated mouse, no hand, no fingers, no arm, no cable, no pad, no cast shadow outside mouse, no text, no background. Genuine transparent background. Clean 2D illustration.",
+      "refs": [
+        "legacy-workspace/Sources/ViolaDesktop/Resources/Characters/Viola/mouse.png"
+      ]
+    }
+  ]
+}

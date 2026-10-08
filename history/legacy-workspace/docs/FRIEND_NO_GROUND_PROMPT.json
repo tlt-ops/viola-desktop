@@ -1,0 +1,11 @@
+{
+  "tool": "built-in imagegen",
+  "source": "friend-arms-background-v0.2.8.png",
+  "output": "friend-no-ground-v0.2.13.png",
+  "prompt": "Remove only pale ground plane and all cast floor shadows; preserve all character and clothing pixels, positions, scale, canvas and transparency. Generated alpha is used as runtime mask over original artwork.",
+  "hands_mask": {
+    "source": "seating-sides-v0.2.5.png",
+    "output": "friend-hands-no-ground-v0.2.13.png",
+    "prompt": "Remove only pale floor and cast shadows beneath palms and skirt. Preserve exact 1312x1199 canvas and all character palms fingers clothing edges positions; true transparent alpha."
+  }
+}

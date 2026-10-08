@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "scope": "Fifteen historical build/releases ZIPs with complete local bytes.",
+  "validation": "Central directory, every member CRC, names and allowed payloads reviewed. Actual app versions read from internal Info.plist. No app was launched.",
+  "archives": [
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.10-parallel.zip",
+      "kind": "app",
+      "sha256": "a1ada45999fa2bc1e85b3c4a7b759e25b97f67665471e920a022388a2547127b",
+      "size": 18822172,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 77,
+      "files": 62,
+      "uncompressed_bytes": 19622387,
+      "appledouble_files": 34,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.10",
+          "build": "12",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.11-parallel.zip",
+      "kind": "app",
+      "sha256": "fb9f7459daf46cb632dcd690ab2f32a03b9dd287d2ee048b60dd6594a9ce4b14",
+      "size": 19991745,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 79,
+      "files": 64,
+      "uncompressed_bytes": 20808662,
+      "appledouble_files": 35,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.11",
+          "build": "13",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.12-parallel.zip",
+      "kind": "app",
+      "sha256": "542f97fa3307c103cd7a77184b3f5d0f13f175189153e8fe9675856235b54e46",
+      "size": 23851785,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 85,
+      "files": 70,
+      "uncompressed_bytes": 24741845,
+      "appledouble_files": 38,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.12",
+          "build": "14",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.17-parallel.zip",
+      "kind": "app",
+      "sha256": "1550d5980f0e04165e340b8cbef17f2e7fd4e99a1a892d9998a142c07ea48425",
+      "size": 33066587,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 146,
+      "files": 129,
+      "uncompressed_bytes": 34191183,
+      "appledouble_files": 68,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.17",
+          "build": "18",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.2.zip",
+      "kind": "app",
+      "sha256": "1cec9fb12ce132c3314fa2c4dee68f55bc4813114380d0392fcf6e92c202e9b7",
+      "size": 4452224,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 21,
+      "files": 14,
+      "uncompressed_bytes": 4787112,
+      "appledouble_files": 0,
+      "apps": [
+        {
+          "bundle_path": "Viola.app",
+          "version": "0.2.2",
+          "build": "3",
+          "bundle_id": "local.viola.desktop",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.3.zip",
+      "kind": "app",
+      "sha256": "a131a77c1b55615f11a020700df754db4f32b9a01e0cba672626676a7c244c99",
+      "size": 5865844,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 22,
+      "files": 15,
+      "uncompressed_bytes": 6350411,
+      "appledouble_files": 0,
+      "apps": [
+        {
+          "bundle_path": "Viola.app",
+          "version": "0.2.3",
+          "build": "4",
+          "bundle_id": "local.viola.desktop",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.4.zip",
+      "kind": "app",
+      "sha256": "61b9136f23568dabfc4148549722c69cd17bbf16b9cb4c1f8b9e9cd3057f7b6f",
+      "size": 5874027,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 51,
+      "files": 36,
+      "uncompressed_bytes": 6347594,
+      "appledouble_files": 21,
+      "apps": [
+        {
+          "bundle_path": "Viola.app",
+          "version": "0.2.4",
+          "build": "5",
+          "bundle_id": "local.viola.desktop",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.5-parallel.zip",
+      "kind": "app",
+      "sha256": "af2bf6011d55e07de7ebddec4ca4802ea447bab13325b251efe22452ce5f9fa4",
+      "size": 12216201,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 61,
+      "files": 46,
+      "uncompressed_bytes": 12784773,
+      "appledouble_files": 26,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.5",
+          "build": "6",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.6-inward-parallel.zip",
+      "kind": "app",
+      "sha256": "c82884dc3285e9d30a2a2a373d054a04d145d771720d0677f9adf32516cb050b",
+      "size": 12780838,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 63,
+      "files": 48,
+      "uncompressed_bytes": 13387520,
+      "appledouble_files": 27,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.6",
+          "build": "8",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.6-parallel.zip",
+      "kind": "app",
+      "sha256": "b4935653d580c0ca60ad4225ea5c249eeae3b14e0a3c94bee04cbd2134ba2ebd",
+      "size": 12780737,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 63,
+      "files": 48,
+      "uncompressed_bytes": 13387272,
+      "appledouble_files": 27,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.6",
+          "build": "7",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.7-parallel.zip",
+      "kind": "app",
+      "sha256": "7c808a85f29551b5b52a01681f8434785c2c4721ebaea5c0ce4a9337695f0665",
+      "size": 13291383,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 65,
+      "files": 50,
+      "uncompressed_bytes": 13927066,
+      "appledouble_files": 28,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.7",
+          "build": "9",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.8-parallel.zip",
+      "kind": "app",
+      "sha256": "4d542fcf7faf8366ec279d0cde6690eb32781678d3088b54a281ab151c0e9867",
+      "size": 17398005,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 75,
+      "files": 60,
+      "uncompressed_bytes": 18171288,
+      "appledouble_files": 33,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.8",
+          "build": "10",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64-v0.2.9-parallel.zip",
+      "kind": "app",
+      "sha256": "05ea07d6630b98d89539469ae1e755175e7bf02b8204b611f2777c0e3e9fbf03",
+      "size": 17398020,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 75,
+      "files": 60,
+      "uncompressed_bytes": 18171288,
+      "appledouble_files": 33,
+      "apps": [
+        {
+          "bundle_path": "Viola 新版.app",
+          "version": "0.2.9",
+          "build": "11",
+          "bundle_id": "local.viola.desktop.preview",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-macOS-arm64.zip",
+      "kind": "app",
+      "sha256": "5886f1a532b2c925e16eec503c5f559b78979b916cc3e1afbc578cbcca60e3a4",
+      "size": 3050942,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 20,
+      "files": 13,
+      "uncompressed_bytes": 3323699,
+      "appledouble_files": 0,
+      "apps": [
+        {
+          "bundle_path": "Viola.app",
+          "version": "0.2.0",
+          "build": "1",
+          "bundle_id": "local.viola.desktop",
+          "version_provenance": "internal_bundle_info_plist"
+        }
+      ],
+      "layout": null,
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    },
+    {
+      "path": "history/legacy-workspace/build/releases/Viola-v0.2.6-center-mouse-layout.zip",
+      "kind": "layout",
+      "sha256": "b9b492b98c8e6e77aae808c887cbe895a6cb42adb1a50020959ffeef92fae913",
+      "size": 3618,
+      "crc": "all_members_passed",
+      "privacy": "reviewed_no_private_payload_detected",
+      "members": 2,
+      "files": 2,
+      "uncompressed_bytes": 29130,
+      "appledouble_files": 0,
+      "apps": [],
+      "layout": {
+        "layout_schema_version": 1,
+        "target_app_version": "0.2.6",
+        "target_app_build": "8",
+        "version_provenance": "internal_readme_compatibility_statement"
+      },
+      "sanitized_replacement_required": false,
+      "runtime_validation": "not_executed"
+    }
+  ],
+  "summary": {
+    "archives": 15,
+    "app_archives": 14,
+    "layout_archives": 1,
+    "crc_failures": 0,
+    "privacy_holds": 0,
+    "sanitized_replacements": 0,
+    "compressed_bytes": 200844128,
+    "uncompressed_bytes": 210031230
+  }
+}

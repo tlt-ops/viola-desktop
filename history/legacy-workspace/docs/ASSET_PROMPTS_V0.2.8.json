@@ -1,0 +1,53 @@
+{
+  "mode": "built-in image_gen",
+  "finalAssets": [
+    {
+      "file": "Assets/Source/legs-slender-v0.2.8.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: precise-object-edit.\nEdit target: this transparent atlas of two slender stocking-covered anime legs with half-worn pumps.\nRemove BOTH shoes completely and reconstruct the complete natural stocking-covered feet that were inside them. Preserve the slim, long proportions, exact upper attachment positions and knee centers, overall canvas/layout, leg pose, dark opaque charcoal-plum stockings, fine ankle shape, cel shading, lighting and anime style. Both feet have one heel and five subtly indicated toes under opaque fabric; tapered normal foot proportions. Keep each ankle and heel in its current position. Extend the relaxed stockinged toes only as needed to reconstruct a complete foot, following the same existing downward/forward direction. No shoes anywhere, no shoe remnants, no extra limbs, no bare skin.\nTwo isolated entire legs on actual transparent background, full toes visible, same side-by-side placement and broad gutter. This is the underlying leg sprite for independently animated shoes."
+    },
+    {
+      "file": "Assets/Source/heels-pair-v0.2.8.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: precise-object-edit.\nReference image: transparent atlas of two stockinged legs wearing dark plum pointed pumps with fine warm-gold trim.\nCreate only the TWO SHOES from the reference as isolated animation sprites, with ALL feet and legs removed, reconstructing the inner soles/heel cups naturally. Preserve the exact shoe design, plum leather, narrow gold trim, pointed elongated toe, slender heel, anime linework and restrained highlights. A matching left/right pair; no additional shoes.\nComposition: square transparent atlas with two clearly separated full shoes side by side, each upright vertically from rear opening/heel cup at top toward pointed toe at bottom. Match each shoe's existing three-quarter frontal downward view and viewing angle from the reference, so they can be placed back over the foot. Show the opening, a little inner sole, the side and slim heel on the viewer-right side consistent with the reference. Each sprite approx 420 pixels tall, generous transparent margin and wide gutter. Entire heel and toe visible. Only two plum/gold pumps on real transparent background. No legs, feet, people, floor, floating shadows, text or labels."
+    },
+    {
+      "file": "Assets/Source/friend-help-arms-v0.2.8.png",
+      "size": [
+        1774,
+        887
+      ],
+      "prompt": "Use case: precise-object-edit.\nReference image: the purple-haired girl's clothing and hands in the lower part of the supplied Viola illustration.\nProduce a transparent sprite atlas containing ONLY TWO separate lower arms of that purple-haired girl. Match her muted violet long sleeves, black ruffled cuffs, pale skin, soft anime linework and shading exactly. Each arm runs from a straight upper forearm/elbow attachment at the TOP to its hand at the BOTTOM, roughly vertical. Sleeve same broad draping fabric as the reference, no shoulder, body or face. Each hand is angled slightly inward and gently cupped as if supporting and fitting a small shoe from underneath, with a clear thumb and four natural fingers; empty hands, no shoe drawn. One left arm and one right arm, matching the hands on the floor in the reference, palm front/three-quarter view. Two distinct vertically aligned sprites side by side, widely separated, with generous transparency. Full fingertips in frame. Normal anime proportions. No extra fingers, no extra arms, no character scene, no floor, no background, no labels. Actual transparent PNG."
+    },
+    {
+      "file": "Assets/Source/viola-amused-v0.2.8.png",
+      "size": [
+        1698,
+        926
+      ],
+      "prompt": "Use case: precise-object-edit.\nEdit ONLY facial expression in the supplied Viola head image. Preserve the exact whole canvas composition, head scale/angle/location, hair silhouette, bangs, side bun, both distinctive hair clips, eye color, face anatomy, collar, background/transparency and the original clean anime art style.\nChange both eyes to glance downward toward the purple-haired friend below her, with subtly half-lowered upper eyelids and gently raised outer eyebrow corners. Give her a small amused, knowing, playful smile, a little asymmetric but kind and understated. This is a quietly entertained expression, not exaggerated, hostile or lustful. Keep normal anime facial proportions.\nKeep facial features precisely registered to the original eyes and mouth; no head turn, no new objects, no text, no style change. Output the same wide head image composition."
+    },
+    {
+      "file": "Assets/Source/friend-arms-background-v0.2.8.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "prompt": "Use case: precise-object-edit.\nEdit target: provided seated anime illustration.\nThis is a hidden-background repair layer for a 2D character rig. Remove ONLY the purple-haired character's TWO lower forearms and hands below the black shoulder ruffles, including the violet sleeve portions down to the palms on the mat. Fill those narrow regions with a coherent continuation of the existing gray-purple floor mat and the dress/background behind the arms, without adding anything. Leave her upper black ruffled shoulders intact. Preserve every other part of the illustration, exact canvas, characters, face, hair, pose, clothing colors, green-haired character's legs, desk and surrounding transparency exactly. No new arms, no new hands, no shoes. The removed arms will be separately animated by the application. No words, symbols or annotations. Actual transparency preserved."
+    }
+  ],
+  "precedingEdits": [
+    {
+      "prompt": "Use case: precise-object-edit.\nAsset type: transparent 2D sprite atlas for the existing Viola anime desktop companion.\nEdit target: the supplied two-leg atlas. Preserve the square canvas, the positions and heights of both upper attachment points and knees, the overall two isolated side-by-side parts, dark charcoal-plum opaque stockings, soft anime linework and lighting, and actual transparent background.\nPrimary change: make BOTH legs noticeably slender and elongated in appearance. Reduce the thigh, knee and calf widths about 20–25%, soften the bulky calf muscle bulges, keep gentle natural calf taper, fine shin shading and slender ankles. Elegant normal-proportion Japanese anime legs, not muscular/bodybuilder, not chibi, not photoreal or 3D. Keep both complete legs from the upper attachment through the foot.\nSecond change: add a MATCHING PAIR of half-worn dark plum high-heeled pumps, exactly ONE shoe on EACH sprite's foot, TWO shoes total. On BOTH feet, the toes and front of the stockinged foot are inserted securely inside the closed pointed toe box. Each stocking-covered heel has slipped out and is visibly raised above its shoe's rear opening: show a small clear gap above each empty heel cup. Each shoe hangs downward naturally from the forefoot, with its slender heel and side silhouette visible in a subtle three-quarter view. Matte deep plum leather, restrained warm-gold trim at the rim, matching the existing costume palette. Each foot/shoe pair must have physically coherent anatomy and contact: no duplicated toes, no extra foot, no ankle straps. Mirror the footwear appropriately for a matching left/right pair.\nKeep both entire shoes and heels in frame with transparent margin. Keep each leg isolated with a wide transparent gutter. Change only the two leg shapes and the two half-worn shoes. No people, body, face, friend, furniture, ground, shadows on the transparent area, captions or labels."
+    },
+    {
+      "prompt": "Use case: precise-object-edit.\nEdit target: supplied transparent atlas of two stockinged legs with two half-worn plum pumps.\nMake both legs and feet a little longer and slimmer in appearance: narrow the calf and knee silhouette another 10–12 percent, soften the outer calf bulge, taper elegantly to slender ankles, and make the stockinged forefeet and pointed pump toe boxes slightly narrower and elongated. Keep subtle natural anatomy and opaque dark stockings. Graceful normal human anime proportions, not extremely thin or bony.\nPreserve both top attachment positions, both knee centers, the canvas and full visibility of both shoes. Preserve exactly TWO matching plum/gold high-heeled pumps, ONE per foot, with toes inserted and BOTH stocking-covered heels lifted visibly above each shoe's rear opening. Keep the clear heel-out/half-worn contact, modest gap, thin shoe heels, same pose, same three-quarter viewing direction, palette, light, and soft anime rendering.\nDo not add any limbs or objects, do not draw bare skin, do not switch style. Actual transparent background. Both isolated full components with clear transparent gutter. Only refine slender leg/foot/shoe silhouettes; preserve other design features."
+    }
+  ]
+}

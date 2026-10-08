@@ -1,0 +1,120 @@
+{
+  "sourceSHA256": "8d91ae1df950322e7b916ff63e4b191a06533b8549c31469dfb923e1a8fbaefa",
+  "removedArmPixels": {
+    "resting_pet_arm": 3820,
+    "resting_lap_arm": 6416,
+    "reference_left_arm": 3820,
+    "reference_right_arm": 5097,
+    "mouse_hand": 1369
+  },
+  "transferredStaticBodyPixels": 10236,
+  "removedStaticSleeveDuplicatePixels": 5345,
+  "hiddenArmBackingPixels": 52282,
+  "hiddenArmBackingBands": {
+    "leftUpperHair": {
+      "pixels": 14272,
+      "donorPixels": 29727,
+      "sourceTexturePatch": [
+        740,
+        570,
+        790,
+        685
+      ],
+      "method": "bilinear source texture clone; sloped material transition; fourteen pixel same-material edge blend"
+    },
+    "leftCuffSkirt": {
+      "pixels": 5009,
+      "donorPixels": 14605,
+      "sourceTexturePatch": [
+        432,
+        551,
+        508,
+        592
+      ],
+      "method": "bilinear source texture clone; sloped material transition; fourteen pixel same-material edge blend"
+    },
+    "petPalmPurpleHair": {
+      "pixels": 5033,
+      "donorPixels": 17291,
+      "sourceTexturePatch": [
+        398,
+        647,
+        444,
+        712
+      ],
+      "method": "bilinear source texture clone; sloped material transition; fourteen pixel same-material edge blend"
+    },
+    "rightUpperHair": {
+      "pixels": 21936,
+      "donorPixels": 29727,
+      "sourceTexturePatch": [
+        740,
+        570,
+        790,
+        685
+      ],
+      "method": "bilinear source texture clone; sloped material transition; fourteen pixel same-material edge blend"
+    },
+    "rightLapSkirt": {
+      "pixels": 6032,
+      "donorPixels": 14605,
+      "sourceTexturePatch": [
+        432,
+        551,
+        508,
+        592
+      ],
+      "method": "bilinear source texture clone; sloped material transition; fourteen pixel same-material edge blend"
+    }
+  },
+  "hiddenArmBackingOutsideOriginalArmCoverage": 0,
+  "hiddenArmBackingSourceDonorsValid": true,
+  "proximalShoulderOverlapSourceY": 335,
+  "transferOutsideBodyFrame": 0,
+  "neutralDifferentPixels": 0,
+  "visibleRGBDifferentFromOriginal": {
+    "resting_pet_arm": 0,
+    "resting_lap_arm": 0,
+    "reference_left_arm": 0,
+    "reference_right_arm": 0,
+    "mouse_hand": 0,
+    "body": 0
+  },
+  "unchangedSpriteFrames": true,
+  "unchangedLeftPalmFingerAssets": true,
+  "rightPalmShapePreserved": "two source pixel outline overlap; skirt below transferred static",
+  "unchangedLegAssets": true,
+  "spriteCount": 25,
+  "rigProfile": "reference-v0.2.29",
+  "sourceJoints": {
+    "leftShoulder": [
+      380,
+      310
+    ],
+    "leftElbow": [
+      344,
+      492
+    ],
+    "leftWrist": [
+      341,
+      563
+    ],
+    "rightShoulder": [
+      627,
+      309
+    ],
+    "rightElbow": [
+      689,
+      492
+    ],
+    "rightWrist": [
+      614,
+      567
+    ]
+  },
+  "cuffRigidSourceY": {
+    "left": 535,
+    "right": 525
+  },
+  "method": "Source pixel alpha repartition; hidden source-cloned material backing under original opaque arms"
+}

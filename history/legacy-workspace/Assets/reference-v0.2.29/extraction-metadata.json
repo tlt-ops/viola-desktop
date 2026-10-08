@@ -1,0 +1,492 @@
+{
+  "source": "user-original.png",
+  "sourceSHA256": "8d91ae1df950322e7b916ff63e4b191a06533b8549c31469dfb923e1a8fbaefa",
+  "mapping": {
+    "worldX": "24 + 0.64 * sourceX",
+    "worldY": "940 - 0.64 * sourceY"
+  },
+  "matteMethod": "border-connected neutral near-black with hand-calibrated dark garment protection",
+  "parts": {
+    "leg_back_thigh": {
+      "sourceBounds": [
+        199,
+        602,
+        311,
+        673
+      ],
+      "sourceAnchor": [
+        262,
+        613
+      ],
+      "sourceContact": null,
+      "pixels": 4071,
+      "preservesSourceRGB": true
+    },
+    "seating": {
+      "sourceBounds": [
+        0,
+        0,
+        1145,
+        1374
+      ],
+      "sourceAnchor": null,
+      "sourceContact": null,
+      "pixels": 283235,
+      "preservesSourceRGB": false,
+      "derivedHiddenLining": {
+        "pixels": 34772,
+        "maxSourceDistances": {
+          "frontLeg": 32,
+          "backLeg": 12,
+          "skirtLongHair": 8,
+          "petPalm": 8
+        },
+        "destination": "original rider ownership and foreground only",
+        "donors": "nearest original friend-owned hair and garment RGB, interior donor mask and purple-tone selector exclude scattered rider edge and skin colors, same row preferred",
+        "fixedOwner": "friend seating under original rider pixels",
+        "preservesVisibleOriginalRGB": true,
+        "bands": {
+          "frontLegPixels": 29404,
+          "backLegPixels": 1694,
+          "skirtLongHairPixels": 2042,
+          "petPalmPixels": 1632
+        }
+      }
+    },
+    "friend_rest_back": {
+      "sourceBounds": [
+        0,
+        0,
+        1145,
+        1374
+      ],
+      "sourceAnchor": null,
+      "sourceContact": [
+        253,
+        1242
+      ],
+      "pixels": 39797,
+      "preservesSourceRGB": true
+    },
+    "friend_rest_front": {
+      "sourceBounds": [
+        0,
+        0,
+        1145,
+        1374
+      ],
+      "sourceAnchor": null,
+      "sourceContact": [
+        455,
+        1275
+      ],
+      "pixels": 45935,
+      "preservesSourceRGB": true
+    },
+    "leg_back": {
+      "sourceBounds": [
+        41,
+        628,
+        261,
+        1234
+      ],
+      "sourceAnchor": [
+        247,
+        630
+      ],
+      "sourceContact": [
+        117,
+        1165
+      ],
+      "pixels": 38032,
+      "preservesSourceRGB": true
+    },
+    "leg_front_thigh": {
+      "sourceBounds": [
+        511,
+        599,
+        666,
+        692
+      ],
+      "sourceAnchor": [
+        595,
+        621
+      ],
+      "sourceContact": null,
+      "pixels": 9561,
+      "preservesSourceRGB": true
+    },
+    "leg_front": {
+      "sourceBounds": [
+        511,
+        644,
+        688,
+        1272
+      ],
+      "sourceAnchor": [
+        558,
+        646
+      ],
+      "sourceContact": [
+        617,
+        1196
+      ],
+      "pixels": 52758,
+      "preservesSourceRGB": true
+    },
+    "viola_skirt": {
+      "sourceBounds": [
+        216,
+        517,
+        910,
+        866
+      ],
+      "sourceAnchor": [
+        479,
+        586
+      ],
+      "sourceContact": null,
+      "pixels": 47508,
+      "preservesSourceRGB": true
+    },
+    "body": {
+      "sourceBounds": [
+        286,
+        252,
+        910,
+        863
+      ],
+      "sourceAnchor": [
+        479,
+        586
+      ],
+      "sourceContact": null,
+      "pixels": 95079,
+      "preservesSourceRGB": true
+    },
+    "head": {
+      "sourceBounds": [
+        328,
+        18,
+        670,
+        324
+      ],
+      "sourceAnchor": [
+        477,
+        280
+      ],
+      "sourceContact": null,
+      "pixels": 68794,
+      "preservesSourceRGB": true
+    },
+    "resting_pet_arm": {
+      "sourceBounds": [
+        286,
+        289,
+        421,
+        674
+      ],
+      "sourceAnchor": [
+        380,
+        310
+      ],
+      "sourceContact": [
+        350,
+        622
+      ],
+      "pixels": 28543,
+      "preservesSourceRGB": true
+    },
+    "resting_lap_arm": {
+      "sourceBounds": [
+        516,
+        283,
+        737,
+        631
+      ],
+      "sourceAnchor": [
+        627,
+        309
+      ],
+      "sourceContact": [
+        565,
+        599
+      ],
+      "pixels": 34879,
+      "preservesSourceRGB": true
+    },
+    "reference_left_arm": {
+      "sourceBounds": [
+        286,
+        289,
+        421,
+        583
+      ],
+      "sourceAnchor": [
+        380,
+        310
+      ],
+      "sourceContact": [
+        341,
+        563
+      ],
+      "pixels": 22976,
+      "preservesSourceRGB": true
+    },
+    "reference_right_arm": {
+      "sourceBounds": [
+        593,
+        283,
+        737,
+        595
+      ],
+      "sourceAnchor": [
+        627,
+        309
+      ],
+      "sourceContact": [
+        614,
+        567
+      ],
+      "pixels": 29635,
+      "preservesSourceRGB": true
+    },
+    "left_palm": {
+      "sourceBounds": [
+        301,
+        561,
+        392,
+        618
+      ],
+      "sourceAnchor": [
+        341,
+        563
+      ],
+      "sourceContact": [
+        348,
+        609
+      ],
+      "pixels": 3495,
+      "preservesSourceRGB": true,
+      "deskWorldTranslation": [
+        -23,
+        46
+      ]
+    },
+    "left_pinky": {
+      "sourceBounds": [
+        302,
+        601,
+        338,
+        667
+      ],
+      "sourceAnchor": [
+        316,
+        611
+      ],
+      "sourceContact": [
+        321,
+        657
+      ],
+      "pixels": 1163,
+      "preservesSourceRGB": true,
+      "deskWorldTranslation": [
+        -23,
+        46
+      ]
+    },
+    "left_ring": {
+      "sourceBounds": [
+        321,
+        599,
+        354,
+        674
+      ],
+      "sourceAnchor": [
+        334,
+        611
+      ],
+      "sourceContact": [
+        340,
+        669
+      ],
+      "pixels": 1411,
+      "preservesSourceRGB": true,
+      "deskWorldTranslation": [
+        -23,
+        46
+      ]
+    },
+    "left_middle": {
+      "sourceBounds": [
+        337,
+        600,
+        371,
+        674
+      ],
+      "sourceAnchor": [
+        350,
+        611
+      ],
+      "sourceContact": [
+        358,
+        671
+      ],
+      "pixels": 1089,
+      "preservesSourceRGB": true,
+      "deskWorldTranslation": [
+        -23,
+        46
+      ]
+    },
+    "left_index": {
+      "sourceBounds": [
+        353,
+        600,
+        384,
+        667
+      ],
+      "sourceAnchor": [
+        365,
+        612
+      ],
+      "sourceContact": [
+        373,
+        656
+      ],
+      "pixels": 713,
+      "preservesSourceRGB": true,
+      "deskWorldTranslation": [
+        -23,
+        46
+      ]
+    },
+    "left_thumb": {
+      "sourceBounds": [
+        366,
+        591,
+        394,
+        644
+      ],
+      "sourceAnchor": [
+        374,
+        608
+      ],
+      "sourceContact": [
+        386,
+        640
+      ],
+      "pixels": 638,
+      "preservesSourceRGB": true,
+      "deskWorldTranslation": [
+        -23,
+        46
+      ]
+    },
+    "mouse_hand": {
+      "sourceBounds": [
+        516,
+        549,
+        634,
+        631
+      ],
+      "sourceAnchor": [
+        614,
+        567
+      ],
+      "sourceContact": [
+        565,
+        599
+      ],
+      "pixels": 5818,
+      "preservesSourceRGB": true,
+      "deskWorldTranslation": [
+        70,
+        1
+      ]
+    },
+    "reference_blink_left": {
+      "sourceBounds": [
+        385,
+        193,
+        431,
+        225
+      ],
+      "preservesSourceRGB": false,
+      "operation": "closed eyelid using sampled original tones",
+      "archivedOnly": true
+    },
+    "reference_blink_right": {
+      "sourceBounds": [
+        459,
+        179,
+        502,
+        211
+      ],
+      "preservesSourceRGB": false,
+      "operation": "closed eyelid using sampled original tones",
+      "archivedOnly": true
+    }
+  },
+  "closedEyeMethod": "sampled original skin tones and original eyelash tone, ordinary pixel overlay",
+  "internalSeamOverlap": {
+    "method": "exact original RGB and alpha, Euclidean dilation clipped to original rider ownership and matte",
+    "generalRiderPixels": 3,
+    "armTorsoPixels": 6,
+    "sameLegThighCalfPixels": 6,
+    "handPalmFingerPixels": 3,
+    "exteriorDilationPixels": 0,
+    "friendOwnershipBorrowedPixels": 0,
+    "parts": {
+      "leg_back": {
+        "addedPixels": 333
+      },
+      "head": {
+        "addedPixels": 954
+      },
+      "resting_lap_arm": {
+        "addedPixels": 5042
+      },
+      "leg_front": {
+        "addedPixels": 891
+      },
+      "resting_pet_arm": {
+        "addedPixels": 3719
+      },
+      "viola_skirt": {
+        "addedPixels": 4913
+      },
+      "body": {
+        "addedPixels": 11070
+      },
+      "leg_front_thigh": {
+        "addedPixels": 899
+      },
+      "leg_back_thigh": {
+        "addedPixels": 317
+      }
+    }
+  },
+  "deskCalibration": {
+    "leftMiddleTipWorld": [
+      230.12,
+      556.56
+    ],
+    "leftWristWorld": [
+      219.24,
+      625.68
+    ],
+    "mousePalmWorld": [
+      455.6,
+      557.64
+    ],
+    "mouseWristWorld": [
+      486.96000000000004,
+      578.12
+    ]
+  },
+  "deskInteractionGroupTranslation": [
+    -80,
+    75
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "revision": "natural-belly-laugh-v2",
+  "user_rule": "Preserve this saved action during keyboard/mouse/crawl work; change only after an explicit user request to revise the laugh.",
+  "sha256": {
+    "Sources/ViolaCore/FixedLaughMotion.swift": "83bc70c87163a3a07cee9277bfd474bf96fa322d0241790b21c2632708d044d3",
+    "Sources/ViolaDesktop/FixedLaughRig.swift": "124d7d1a9f908afb6deba8e5a4f3194f71b6aa066fdeabdf3e0f7f28b36b290e",
+    "Sources/ViolaDesktop/FixedLaughFaceIdentity.swift": "24055197bbfd7283eca18f7252acc7503ab06dd665514f5790749a3c88739b56",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/friend-natural-crown-mask-v0.2.46.png": "765fd8d589b4814d393fda9b548d22a0b9b2dcc4030f96673ff24e4a32965afe",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/friend-natural-crown-v0.2.46.png": "5d5c87e3947c14032f82e58b27398ee27e858d77dbf18445cc1ec40b3e329199",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-natural-belly-laugh-base-v0.2.46.png": "9305885d6007a79702bb10aef875862030e2cd8b3f29d2d96b38d0e273537a89",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-natural-belly-laugh-mouth-v0.2.46.png": "e2f123d09ae6105274ac61b6e33a57cbb3467b3bd8fe08c641afa93cee183e93",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-natural-belly-laugh-v0.2.46.png": "b97971ce28e5c917701bbcfd2bfb5d9756db8ed7737dc135e8e143ab50d0bd1e",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-natural-tear-wipe-v0.2.46.png": "1f2c9cc8e65ce82bad13f3ac58a8fac5386400e78ed7d62c8c2ecc5c75553dd2",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-natural-wipe-base-v0.2.46.png": "142964d149a34657cee79f55e2746bee3776015f26b94f508e501bdfc8b44c10",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-natural-wipe-hand-v0.2.46.png": "8034c95f523818cd4a3dc0e79f2ec7b0bbf8c64b8215bf9d2e2e8f1d1630b843"
+  }
+}

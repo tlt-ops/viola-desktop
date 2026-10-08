@@ -1,0 +1,9 @@
+{
+  "source": "../reference-v0.2.29/user-original.png",
+  "sourceSHA256": "8d91ae1df950322e7b916ff63e4b191a06533b8549c31469dfb923e1a8fbaefa",
+  "processing": "user-authorized conventional pixel correction to expose picture-right upper thigh and lower stocking edge; source preserved",
+  "previousVersionBackup": "cache/preserved-v0.2.29-before-thigh-correction",
+  "release": "0.2.30 build31",
+  "status": "installed and native visually verified",
+  "verification": "../../build/thigh-v0.2.30/final-verification.json"
+}

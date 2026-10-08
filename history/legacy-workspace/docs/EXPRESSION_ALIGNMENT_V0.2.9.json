@@ -1,0 +1,64 @@
+{
+  "revision": "0.2.9-eye-alignment",
+  "method": "Register existing eye sprites to neutral head pupil anchors; no raster regeneration or head resizing. Right eye vertical offset matches the left downward gaze.",
+  "previewScale": 4,
+  "neutralPupilX": [
+    197.047,
+    413.855
+  ],
+  "previousAmusedPupilX": [
+    204.365,
+    396.979
+  ],
+  "changes": {
+    "viola_amused_eye_r": {
+      "before": [
+        353.3333333333333,
+        703.3309943181819,
+        52.666666666666664,
+        28.000397727272727
+      ],
+      "after": [
+        357.5523333333333,
+        701.3979943181819,
+        48.39639639639639,
+        28.000397727272727
+      ],
+      "translation": [
+        4.219,
+        -1.933
+      ],
+      "cropBefore": [
+        755,
+        570,
+        185,
+        88
+      ],
+      "cropAfter": [
+        755,
+        570,
+        170,
+        88
+      ],
+      "cropReason": "Trim the outer skin margin to keep the expression overlay inside the original eye socket and away from the side hair. Preserve image scale and pupil anchor."
+    },
+    "viola_amused_eye_l": {
+      "before": [
+        297.3333333333333,
+        697.3309090909091,
+        51.333333333333336,
+        28.667073863636364
+      ],
+      "after": [
+        295.5038333333333,
+        697.3309090909091,
+        51.333333333333336,
+        28.667073863636364
+      ],
+      "translation": [
+        -1.8295,
+        0.0
+      ]
+    }
+  }
+}

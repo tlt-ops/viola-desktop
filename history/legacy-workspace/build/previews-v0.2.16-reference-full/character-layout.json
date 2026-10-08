@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "id": "viola",
+  "name": "Viola Reference Full",
+  "canvas": [
+    800,
+    960
+  ],
+  "sprites": [
+    {
+      "id": "seating",
+      "file": "seating-reference-v0.2.16.png",
+      "rect": [
+        215.36,
+        92.63999999999999,
+        568.96,
+        403.2
+      ]
+    },
+    {
+      "id": "leg_back",
+      "file": "leg_back-reference-v0.2.16.png",
+      "rect": [
+        196.16,
+        145.76,
+        119.04,
+        337.92
+      ],
+      "anchor": [
+        0.8924731182795699,
+        0.9924242424242424
+      ]
+    },
+    {
+      "id": "leg_front",
+      "file": "leg_front-reference-v0.2.16.png",
+      "rect": [
+        459.2,
+        140.64,
+        108.16,
+        351.36
+      ],
+      "anchor": [
+        0.2958579881656805,
+        0.9380692167577414
+      ]
+    },
+    {
+      "id": "viola_thigh_skin",
+      "file": "viola_thigh_skin-reference-v0.2.16.png",
+      "rect": [
+        493.12,
+        426.08,
+        64.0,
+        69.76
+      ]
+    },
+    {
+      "id": "viola_skirt",
+      "file": "viola_skirt-reference-v0.2.16.png",
+      "rect": [
+        420.8,
+        360.15999999999997,
+        257.92,
+        181.76
+      ]
+    },
+    {
+      "id": "body",
+      "file": "body-reference-v0.2.16.png",
+      "rect": [
+        203.20000000000002,
+        519.52,
+        428.8,
+        232.32
+      ],
+      "anchor": [
+        0.5791044776119403,
+        0.33333333333333337
+      ]
+    },
+    {
+      "id": "head",
+      "file": "head-reference-v0.2.16.png",
+      "rect": [
+        342.72,
+        687.2,
+        219.52,
+        172.8
+      ],
+      "anchor": [
+        0.44314868804664725,
+        0.025925925925925908
+      ]
+    },
+    {
+      "id": "reference_left_arm",
+      "file": "reference_left_arm-reference-v0.2.16.png",
+      "rect": [
+        276.15999999999997,
+        538.72,
+        117.12,
+        140.16
+      ],
+      "anchor": [
+        0.8306010928961749,
+        0.9315068493150684
+      ]
+    },
+    {
+      "id": "reference_right_arm",
+      "file": "reference_right_arm-reference-v0.2.16.png",
+      "rect": [
+        510.40000000000003,
+        523.36,
+        89.60000000000001,
+        161.28
+      ],
+      "anchor": [
+        0.32142857142857145,
+        0.9166666666666666
+      ]
+    },
+    {
+      "id": "reference_left_hand",
+      "file": "reference_left_hand-reference-v0.2.16.png",
+      "rect": [
+        210.24,
+        528.48,
+        84.48,
+        27.52
+      ],
+      "anchor": [
+        0.8712121212121212,
+        0.627906976744186
+      ]
+    },
+    {
+      "id": "reference_right_hand",
+      "file": "reference_right_hand-reference-v0.2.16.png",
+      "rect": [
+        483.52,
+        517.5999999999999,
+        69.12,
+        34.56
+      ],
+      "anchor": [
+        0.8518518518518519,
+        0.4814814814814815
+      ]
+    }
+  ]
+}

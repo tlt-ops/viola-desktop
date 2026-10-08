@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "input": "Assets/Source/friend-hearts-v0.2.5.png",
+  "output": "Assets/Source/friend-hearts-drool-v0.2.11.png",
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit.\nEdit target: the provided transparent purple-haired anime girl's head with pink heart-shaped pupils.\nChange ONLY the mouth expression: keep the same gentle small smile and add a tiny, clearly readable, light comedic drool at the image-left corner of the mouth. A thin translucent pale-blue saliva line runs a short distance down the chin from that corner and ends in one small rounded droplet, with a clean white highlight. Keep it modest and cute, like a daydreaming cartoon expression, with no sexual framing. Keep the mouth anchored in exactly the same place. The drool should be about one half of the mouth's width in length and about one tenth in thickness, remaining on the chin area.\nPreserve the original canvas framing, head silhouette, hairstyle, bangs, eyebrows, eye spacing, eye sizes, heart pupils, blush, facial proportions, mouth width, skin colors and anime drawing style. No new body, no extra characters or objects, no text, no speech bubble, no watermark. Keep a real transparent background. Do not replace or reposition the eyes, nose, jaw, hair or ears. This is a small local expression edit, not a redesign."
+}

@@ -1,0 +1,35 @@
+{
+  "revision": "original-rocking-laugh-v4",
+  "user_rule": "On 2026-10-05 the user explicitly requested the original rider rocking and kicking with unstable supporting sway and effort expression. Preserve this clip during keyboard, mouse and crawl edits; revise only following an explicit request to change the laugh.",
+  "sha256": {
+    "Sources/ViolaCore/FixedLaughMotion.swift": "6356a769696365cd45d035a8dbcb7a533edea136caa0d4edf3905728df18887e",
+    "Sources/ViolaDesktop/OriginalLaughPose.swift": "29c952a2e2b8bec56513094421b4c07290f0a57506234dfe50a621a6b0ce7eb0",
+    "Sources/ViolaDesktop/FixedLaughFaceIdentity.swift": "24055197bbfd7283eca18f7252acc7503ab06dd665514f5790749a3c88739b56"
+  },
+  "required": {
+    "Sources/ViolaDesktop/LayerRenderer.swift": [
+      "OriginalLaughPose.weight(laughAmount)",
+      "OriginalLaughPose.leftWrist",
+      "OriginalLaughPose.rightWrist",
+      "OriginalLaughPose.keyboardBlend(weight)",
+      "OriginalLaughPose.keyboardSleeve(weight)"
+    ],
+    "Sources/ViolaCore/Animation.swift": [
+      "FixedLaughMotion.bounce(age:age)",
+      "FixedLaughMotion.supportSway(age:age)",
+      "FixedLaughMotion.supportDip(age:age)",
+      "FixedLaughMotion.legSwing(age:a,front:true)",
+      "FixedLaughMotion.legSwing(age:a,front:false)"
+    ],
+    "Sources/ViolaDesktop/SourceReferenceFaceRig.swift": [
+      "rider.opacity = 1",
+      "friendSweat.opacity = Float(joy*FixedLaughFaceIdentity.sweatOpacity)"
+    ]
+  },
+  "forbidden": {
+    "Sources/ViolaDesktop/LayerRenderer.swift": [
+      "FixedLaughRig(canvasSize:canvasSize)",
+      "renderNaturalLaughVisibility()"
+    ]
+  }
+}

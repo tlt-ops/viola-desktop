@@ -1,0 +1,10 @@
+{
+  "mode": "built-in image_gen",
+  "sourceReference": "Sources/ViolaDesktop/Resources/Characters/Viola/desk.png",
+  "output": "Assets/Source/modular-desk-v0.2.6.png",
+  "size": [
+    1942,
+    809
+  ],
+  "prompt": "Use case: precise-object-edit. Redesign only this isolated dark-plum anime desktop surface into TWO small joined desktop panels for a keyboard/mouse desktop pet. Transparent background, no legs, no objects, no keyboard, no mouse, no hands or people. Keep the same muted plum material, subtle painted texture and clean Japanese anime linework. Wide canvas about 1536x640. The LEFT keyboard panel is a compact rectangular board angled diagonally from the lower-left foreground toward the upper-middle rear, so its long axis slopes upward to the right by about 18 degrees in the image. The RIGHT mouse panel is a compact rectangular board extending from the center toward viewer-right with the gentle original desk perspective. The two boards connect at their inner edges with a narrow visible joint, like a modular desk assembled from two pieces. Both top surfaces lie flat in the same horizontal plane, viewed from slightly above; never depict a vertically standing board or a hinged upright panel. Generous usable left top surface for a keyboard, usable right top surface for the mouse, coherent simple perspective, slim front lips and a tiny connector below the central seam. Keep silhouette balanced, slight shallow V arrangement, no supports below, clear empty transparency around component. Do not add glowing halos or cast shadows into transparent background."
+}

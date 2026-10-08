@@ -1,0 +1,726 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "latest": {
+    "version": "0.2.50",
+    "source_branch": "main",
+    "release": "https://github.com/tlt-ops/viola-desktop/releases/tag/v0.2.50"
+  },
+  "cache_app_bundles": [
+    {
+      "path": "history/cache/fixed-laugh-v0.2.45/Viola 新版.app",
+      "version": "0.2.45",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53139209
+    },
+    {
+      "path": "history/cache/fixed-laugh-v0.2.45/Viola-0.2.44-before.app",
+      "version": "0.2.44",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53059161
+    },
+    {
+      "path": "history/cache/keyboard-diagonal-v0.2.43/Viola 新版.app",
+      "version": "0.2.43",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53057913
+    },
+    {
+      "path": "history/cache/keyboard-diagonal-v0.2.43/Viola-0.2.42-before.app",
+      "version": "0.2.42",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53034229
+    },
+    {
+      "path": "history/cache/keyboard-fit-v0.2.42/Viola 新版.app",
+      "version": "0.2.42",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53034229
+    },
+    {
+      "path": "history/cache/keyboard-fit-v0.2.42/Viola-0.2.41-before.app",
+      "version": "0.2.41",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53034625
+    },
+    {
+      "path": "history/cache/keyboard-reach-v0.2.41/Viola 新版.app",
+      "version": "0.2.41",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53034625
+    },
+    {
+      "path": "history/cache/keyboard-reach-v0.2.41/Viola-0.2.40-before.app",
+      "version": "0.2.40",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53016480
+    },
+    {
+      "path": "history/cache/laugh-restore-v0.2.44/Viola 新版.app",
+      "version": "0.2.44",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53059161
+    },
+    {
+      "path": "history/cache/laugh-restore-v0.2.44/Viola-0.2.43-before.app",
+      "version": "0.2.43",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53057913
+    },
+    {
+      "path": "history/cache/layered-laugh-v0.2.47/Viola 新版.app",
+      "version": "0.2.47",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81783962
+    },
+    {
+      "path": "history/cache/layered-laugh-v0.2.47/Viola-0.2.46-before.app",
+      "version": "0.2.46",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 109,
+      "logical_bytes": 62235080
+    },
+    {
+      "path": "history/cache/layered-rocking-v0.2.49/Viola 新版.app",
+      "version": "0.2.49",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81784858
+    },
+    {
+      "path": "history/cache/layered-rocking-v0.2.49/Viola-0.2.48-before.app",
+      "version": "0.2.48",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81756362
+    },
+    {
+      "path": "history/cache/natural-laugh-v0.2.46/Viola 新版.app",
+      "version": "0.2.46",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 109,
+      "logical_bytes": 62235080
+    },
+    {
+      "path": "history/cache/natural-laugh-v0.2.46/Viola-0.2.45-before.app",
+      "version": "0.2.45",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53139209
+    },
+    {
+      "path": "history/cache/open-source-20261008/build/.app-stage.Mfs2ho/viola终稿.app",
+      "version": "0.2.49",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 120,
+      "logical_bytes": 81738915
+    },
+    {
+      "path": "history/cache/open-source-20261008/build/.previous-app.sFmVjU/viola终稿.app",
+      "version": "0.2.49",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81785727
+    },
+    {
+      "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/original-installed.app",
+      "version": "0.2.49",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81784858
+    },
+    {
+      "path": "history/cache/open-source-20261008/build/installed-before-0.2.50/viola终稿.app",
+      "version": "0.2.49",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81784858
+    },
+    {
+      "path": "history/cache/open-source-20261008/build/packaging-check.nPL7Xd/Applications/viola终稿.app",
+      "version": "0.2.49",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81785727
+    },
+    {
+      "path": "history/cache/original-laugh-v0.2.48/Viola 新版.app",
+      "version": "0.2.48",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81756362
+    },
+    {
+      "path": "history/cache/original-laugh-v0.2.48/Viola-0.2.47-before.app",
+      "version": "0.2.47",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 121,
+      "logical_bytes": 81783962
+    },
+    {
+      "path": "history/cache/preserved-v0.2.24-before-rollback/Viola 新版.app",
+      "version": "0.2.24",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 69,
+      "logical_bytes": 44927451
+    },
+    {
+      "path": "history/cache/preserved-v0.2.25-before-crawl/Viola-v0.2.25.app",
+      "version": "0.2.25",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 67,
+      "logical_bytes": 42381015
+    },
+    {
+      "path": "history/cache/preserved-v0.2.28-before-reference-body/Viola-v0.2.28.app",
+      "version": "0.2.28",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 67,
+      "logical_bytes": 42505303
+    },
+    {
+      "path": "history/cache/preserved-v0.2.29-before-motion-repair/Viola-v0.2.29.app",
+      "version": "0.2.29",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 88,
+      "logical_bytes": 49376187
+    },
+    {
+      "path": "history/cache/preserved-v0.2.29-before-thigh-correction/Viola-v0.2.29.app",
+      "version": "0.2.29",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 88,
+      "logical_bytes": 49376187
+    },
+    {
+      "path": "history/cache/preserved-v0.2.31-before-crawl-10x/Viola-v0.2.31.app",
+      "version": "0.2.31",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 100,
+      "logical_bytes": 52791076
+    },
+    {
+      "path": "history/cache/preserved-v0.2.32-before-long-crawl/Viola-v0.2.32.app",
+      "version": "0.2.32",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 100,
+      "logical_bytes": 52791076
+    },
+    {
+      "path": "history/cache/preserved-v0.2.33-before-half-speed/Viola-v0.2.33.app",
+      "version": "0.2.33",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 100,
+      "logical_bytes": 52791076
+    },
+    {
+      "path": "history/cache/preserved-v0.2.34-before-larger-slower-crawl/Viola-v0.2.34.app",
+      "version": "0.2.34",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 100,
+      "logical_bytes": 52791076
+    },
+    {
+      "path": "history/cache/preserved-v0.2.35-before-friend-eyelid-fix/Viola-v0.2.35.app",
+      "version": "0.2.35",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 100,
+      "logical_bytes": 52791076
+    },
+    {
+      "path": "history/cache/preserved-v0.2.36-before-open-eye-effort/Viola-v0.2.36.app",
+      "version": "0.2.36",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 100,
+      "logical_bytes": 52798660
+    },
+    {
+      "path": "history/cache/preserved-v0.2.37-before-cadence-and-arm-fix/Viola 新版.app",
+      "version": "0.2.37",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 100,
+      "logical_bytes": 52818036
+    },
+    {
+      "path": "history/cache/preserved-v0.2.38-before-mouse-grip-restore/Viola 新版.app",
+      "version": "0.2.38",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 100,
+      "logical_bytes": 52868884
+    },
+    {
+      "path": "history/cache/preserved-v0.2.39-before-straight-sleeve/Viola 新版.app",
+      "version": "0.2.39",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 101,
+      "logical_bytes": 53011044
+    },
+    {
+      "path": "history/cache/rollback-v0.2.30-before-thigh-rollback-20261003-144000/current-app",
+      "version": "0.2.30",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 188,
+      "logical_bytes": 103497366
+    },
+    {
+      "path": "history/cache/rollback-v0.2.30-before-thigh-rollback-20261003-144000/current-app/Viola 新版.app",
+      "version": "0.2.30",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 94,
+      "logical_bytes": 51748683
+    },
+    {
+      "path": "history/cache/transparency-probe/Viola Probe Background.app",
+      "version": null,
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 2,
+      "logical_bytes": 94266
+    },
+    {
+      "path": "history/cache/transparency-probe/Viola Probe Overlay.app",
+      "version": null,
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 2,
+      "logical_bytes": 93561
+    },
+    {
+      "path": "history/installed-apps/Viola-v0.2.22.app",
+      "version": "0.2.22",
+      "completeness": "entire_bundle_by_file_inventory",
+      "note": "historical bundle preserved as found; signing and runtime validity not checked",
+      "files": 67,
+      "logical_bytes": 42381045
+    }
+  ],
+  "workspace_app_bundles": [
+    {
+      "path": "history/legacy-workspace/build/preserved-v0.2.20-before-resting-pose/Viola-v0.2.20.app",
+      "version": "0.2.20",
+      "build": "21",
+      "files": 65,
+      "logical_bytes": 40808726,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/preserved-v0.2.21-before-motion-seams/Viola-v0.2.21.app",
+      "version": "0.2.21",
+      "build": "22",
+      "files": 67,
+      "logical_bytes": 42320856,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/rollback-full-reference-v0.2.16/Viola 新版.app",
+      "version": "0.2.15",
+      "build": "16",
+      "files": 46,
+      "logical_bytes": 30533121,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/rollback-laugh-audio/Viola 新版.app",
+      "version": "0.2.12",
+      "build": "14",
+      "files": 32,
+      "logical_bytes": 24735651,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/preserved-v0.2.18-before-waist-join/Viola-v0.2.18.app",
+      "version": "0.2.18",
+      "build": "19",
+      "files": 65,
+      "logical_bytes": 40784947,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/rollback-resume-v0.2.16-20261002/Viola 新版.app",
+      "version": "0.2.15",
+      "build": "16",
+      "files": 46,
+      "logical_bytes": 30533121,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/preserved-v0.2.19-before-desk-repair/Viola-v0.2.19.app",
+      "version": "0.2.19",
+      "build": "20",
+      "files": 65,
+      "logical_bytes": 40804467,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/rollback-friend-breath/Viola 新版.app",
+      "version": "0.2.12",
+      "build": "14",
+      "files": 35,
+      "logical_bytes": 25732376,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/preserved-candidate-v0.2.16-before-foot-correction/Viola 新版.app",
+      "version": "0.2.16",
+      "build": "17",
+      "files": 58,
+      "logical_bytes": 32027463,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/preserved-v0.2.17-before-body-completion/Viola 新版.app",
+      "version": "0.2.17",
+      "build": "18",
+      "files": 61,
+      "logical_bytes": 34180099,
+      "executable_verified": true,
+      "tree_sha256": null
+    },
+    {
+      "path": "history/legacy-workspace/build/rollback-shoe-hook/Viola 新版.app",
+      "version": "0.2.12",
+      "build": "14",
+      "files": 35,
+      "logical_bytes": 25712024,
+      "executable_verified": true,
+      "tree_sha256": null
+    }
+  ],
+  "cache_source_snapshots": [
+    {
+      "path": "history/cache/fixed-laugh-v0.2.45/source-before",
+      "version": "0.2.44",
+      "context_version": "0.2.45",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "Package.swift",
+        "ViolaCore/Configuration.swift",
+        "character.json"
+      ],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/keyboard-diagonal-v0.2.43/source-before",
+      "version": "0.2.42",
+      "context_version": "0.2.43",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "Package.swift",
+        "ViolaCore/Configuration.swift"
+      ],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/keyboard-fit-v0.2.42/source-before",
+      "version": "0.2.41",
+      "context_version": "0.2.42",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "Package.swift",
+        "ViolaCore/Configuration.swift",
+        "character.json"
+      ],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/keyboard-reach-v0.2.41/source-before",
+      "version": "0.2.40",
+      "context_version": "0.2.41",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "ViolaCore/Configuration.swift",
+        "character.json"
+      ],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/laugh-restore-v0.2.44/source-before",
+      "version": "0.2.43",
+      "context_version": "0.2.44",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "Package.swift",
+        "ViolaCore/Configuration.swift"
+      ],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/layered-laugh-v0.2.47/source-before",
+      "version": null,
+      "context_version": "0.2.47",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "Package.swift",
+        "packaging/Info.plist",
+        "ViolaCore/Configuration.swift",
+        "character.json"
+      ],
+      "version_provenance": "unknown_saved_revision",
+      "note": "Four saved Swift files. Directory records the later change context, not the exact saved revision."
+    },
+    {
+      "path": "history/cache/layered-rocking-v0.2.49/source-before",
+      "version": "0.2.48",
+      "context_version": "0.2.49",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "Package.swift"
+      ],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/natural-laugh-v0.2.46/source-before",
+      "version": "0.2.45",
+      "context_version": "0.2.46",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "Package.swift",
+        "ViolaCore/Configuration.swift",
+        "character.json"
+      ],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/original-laugh-v0.2.48/source-before",
+      "version": "0.2.47",
+      "context_version": "0.2.48",
+      "completeness": "partial_source",
+      "missing_structure": [
+        "Package.swift"
+      ],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.24-before-rollback",
+      "version": "0.2.24",
+      "context_version": "0.2.24",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.25-before-crawl",
+      "version": "0.2.25",
+      "context_version": "0.2.25",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.28-before-reference-body",
+      "version": "0.2.28",
+      "context_version": "0.2.28",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.29-before-motion-repair",
+      "version": "0.2.29",
+      "context_version": "0.2.29",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.29-before-thigh-correction",
+      "version": "0.2.29",
+      "context_version": "0.2.29",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.31-before-crawl-10x",
+      "version": "0.2.31",
+      "context_version": "0.2.31",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.32-before-long-crawl",
+      "version": "0.2.32",
+      "context_version": "0.2.32",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.33-before-half-speed",
+      "version": "0.2.33",
+      "context_version": "0.2.33",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.34-before-larger-slower-crawl",
+      "version": "0.2.34",
+      "context_version": "0.2.34",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.35-before-friend-eyelid-fix",
+      "version": "0.2.35",
+      "context_version": "0.2.35",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.36-before-open-eye-effort",
+      "version": "0.2.36",
+      "context_version": "0.2.36",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.37-before-cadence-and-arm-fix",
+      "version": "0.2.37",
+      "context_version": "0.2.37",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.38-before-mouse-grip-restore",
+      "version": "0.2.38",
+      "context_version": "0.2.38",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/preserved-v0.2.39-before-straight-sleeve",
+      "version": "0.2.39",
+      "context_version": "0.2.39",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/rollback-v0.2.30-before-thigh-rollback-20261003-144000",
+      "version": "0.2.30",
+      "context_version": "0.2.30",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    },
+    {
+      "path": "history/cache/source",
+      "version": "0.2.49",
+      "context_version": "0.2.49",
+      "completeness": "complete_source_structure",
+      "missing_structure": [],
+      "version_provenance": "snapshot_packaging_info_plist",
+      "note": "Structural inventory only; build and runtime compatibility not verified."
+    }
+  ],
+  "public_document_path_redactions": [
+    "legacy-workspace/Assets/reference-v0.2.30/provenance.json",
+    "legacy-workspace/Assets/reference-v0.2.29/provenance.json",
+    "legacy-workspace/docs/ASSET_PROMPTS_V0.2.12.json",
+    "legacy-workspace/docs/MOTION_REPAIR_V0.2.31.md",
+    "legacy-workspace/docs/REFERENCE_REPAIR_V0.2.17.md",
+    "legacy-workspace/docs/LAYERED_LAUGH_V3.md",
+    "legacy-workspace/docs/ASSET_PROMPTS_SEATED_RIGHT_KNEE_V0.2.12.json",
+    "legacy-workspace/docs/THIGH_V0.2.30.md",
+    "legacy-workspace/docs/REFERENCE_BODY_V0.2.29.md",
+    "legacy-workspace/docs/ACCEPTANCE.md",
+    "legacy-workspace/scripts/extract_seated_skirt_v0.2.14.py",
+    "legacy-workspace/scripts/extract_reference_v0.2.29.py",
+    "legacy-workspace/README.md"
+  ],
+  "directory_modes": [],
+  "notes": [
+    "Preserved files reflect the states found on disk. Older apps have not been launched or rebuilt for this archive.",
+    "complete_source_structure indicates saved structural coverage, not an independently verified successful build.",
+    "Partial snapshots and differently named rollback folders retain their original paths. Version labels are based on bundle Info.plist when available."
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "classification": "MEDIUM / Sol HIGH",
+  "candidateRevision": 4,
+  "curveAntialiasSamplesPerPixel": 64,
+  "newStockingEdgeWidthSourcePixels": 1,
+  "changedOriginalPixels": 11061,
+  "sourceBoundsXYXY": [
+    514,
+    601,
+    663,
+    721
+  ],
+  "skinReplacementPixels": 10350,
+  "newStockingEdgePixels": 273,
+  "pixelsOutsideSemanticFrontThigh": 0,
+  "pixelsOutsidePreviouslySplitFrontLegAlpha": 817,
+  "seatingOriginalStockingResidualPixels": 336,
+  "modifiedSprites": [
+    {
+      "id": "seating",
+      "file": "seating-original-v0.2.30.png",
+      "changedSpritePixels": 336,
+      "alphaUnchanged": true,
+      "sourceBounds": [
+        0,
+        0,
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "leg_front_thigh",
+      "file": "leg_front_thigh-original-v0.2.30.png",
+      "changedSpritePixels": 7330,
+      "alphaUnchanged": true,
+      "sourceBounds": [
+        511,
+        599,
+        666,
+        692
+      ]
+    },
+    {
+      "id": "leg_front",
+      "file": "leg_front-original-v0.2.30.png",
+      "changedSpritePixels": 4274,
+      "alphaUnchanged": false,
+      "sourceBounds": [
+        511,
+        644,
+        688,
+        1272
+      ],
+      "interiorAlphaChangedPixels": 1002
+    },
+    {
+      "id": "viola_skirt",
+      "file": "viola_skirt-original-v0.2.30.png",
+      "changedSpritePixels": 214,
+      "alphaUnchanged": true,
+      "sourceBounds": [
+        216,
+        517,
+        910,
+        866
+      ]
+    },
+    {
+      "id": "resting_lap_arm",
+      "file": "resting_lap_arm-original-v0.2.30.png",
+      "changedSpritePixels": 643,
+      "alphaUnchanged": true,
+      "sourceBounds": [
+        516,
+        283,
+        737,
+        631
+      ]
+    },
+    {
+      "id": "mouse_hand",
+      "file": "mouse_hand-original-v0.2.30.png",
+      "changedSpritePixels": 643,
+      "alphaUnchanged": true,
+      "sourceBounds": [
+        516,
+        549,
+        634,
+        631
+      ]
+    }
+  ],
+  "allSpriteAlphaUnchanged": false,
+  "allGeometryAndAnchorsUnchanged": true,
+  "oldSourceSHA256": "8d91ae1df950322e7b916ff63e4b191a06533b8549c31469dfb923e1a8fbaefa",
+  "unchangedRigProfile": "reference-v0.2.29",
+  "friendBackingEdited": false,
+  "stockingEdgeSourceY": "approximately 707 to 720 depending on x",
+  "method": "ordinary pixel transformation, original broad leg shading with original adjacent exposed-skin color anchors, old stocking rim tonal structure removed, unified source-coordinate patch applied to all rider overlaps",
+  "finalRelease": "0.2.30 build31",
+  "visibleSilhouetteUnchanged": true,
+  "interiorAlphaAdjustment": {
+    "pixels": 1002,
+    "sourceBoundsXYXY": [
+      515,
+      678,
+      662,
+      685
+    ],
+    "RGBChanges": 0,
+    "method": "soften duplicate calf leading edge only inside opaque same-thigh overlap"
+  }
+}
