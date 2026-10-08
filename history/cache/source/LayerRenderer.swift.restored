@@ -1,0 +1,71 @@
+import AppKit
+import QuartzCore
+import ViolaCore
+
+protocol CharacterRenderer: AnyObject {
+    var rootLayer: CALayer { get }
+    var canvasSize: CGSize { get }
+    func render(_ frame: AnimationFrame)
+}
+final class LayerRenderer: CharacterRenderer {
+    let rootLayer = CALayer()
+    let canvasSize: CGSize
+    private var layers: [String: CALayer] = [:]
+    private var definitions: [String: SpriteDefinition] = [:]
+    private let keyboardGlow = CAShapeLayer()
+    init(assets: CharacterAssets) {
+        canvasSize = CGSize(width: assets.manifest.canvas[0], height: assets.manifest.canvas[1])
+        rootLayer.bounds = CGRect(origin: .zero, size: canvasSize)
+        rootLayer.anchorPoint = .zero; rootLayer.contentsScale = 2
+        for sprite in assets.manifest.sprites {
+            let layer = CALayer()
+            layer.contents = assets.images[sprite.id]; layer.contentsGravity = .resize; layer.contentsScale = 2
+            let anchor = CGPoint(x: sprite.anchor?.first ?? 0.5, y: sprite.anchor?.last ?? 0.5)
+            layer.anchorPoint = anchor
+            layer.bounds = CGRect(origin: .zero, size: sprite.frame.size)
+            layer.position = CGPoint(x: sprite.frame.minX + anchor.x * sprite.frame.width, y: sprite.frame.minY + anchor.y * sprite.frame.height)
+            if let polygon = sprite.polygon {
+                let mask = CAShapeLayer(), path = CGMutablePath()
+                for (index, p) in polygon.enumerated() where p.count == 2 {
+                    let point = CGPoint(x: p[0] * sprite.frame.width, y: (1 - p[1]) * sprite.frame.height)
+                    if index == 0 { path.move(to: point) } else { path.addLine(to: point) }
+                }
+                path.closeSubpath(); mask.path = path; mask.fillColor = NSColor.white.cgColor; layer.mask = mask
+            }
+            rootLayer.addSublayer(layer); layers[sprite.id] = layer; definitions[sprite.id] = sprite
+        }
+        keyboardGlow.path = CGPath(roundedRect: CGRect(x: 158, y: 435, width: 204, height: 24), cornerWidth: 6, cornerHeight: 6, transform: nil)
+        keyboardGlow.fillColor = NSColor(calibratedRed: 0.90, green: 0.82, blue: 0.54, alpha: 0.3).cgColor
+        keyboardGlow.opacity = 0
+        if let keyboard = layers["keyboard"] { rootLayer.insertSublayer(keyboardGlow, above: keyboard) }
+        render(AnimationFrame())
+    }
+    func render(_ frame: AnimationFrame) {
+        CATransaction.begin(); CATransaction.setDisableActions(true)
+        pose("body", dy: frame.breath)
+        pose("head", dy: frame.breath, angle: frame.headTilt + frame.hairSway)
+        pose("head_close", dy: frame.breath, angle: frame.headTilt + frame.hairSway)
+        layers["head_close"]?.opacity = Float(frame.blink)
+        pose("seating", dy: frame.friendBreath)
+        pose("left_arm", dy: frame.breath * 0.22 + frame.leftHandY, angle: frame.leftHandAngle)
+        pose("keyboard", dy: frame.keyboardY)
+        pose("right_arm", dx: frame.mouseX, dy: frame.mouseY - frame.mousePress * 4 + frame.breath * 0.15, angle: -frame.mousePress * 0.012)
+        pose("mouse", dx: frame.mouseX, dy: frame.mouseY - frame.mousePress * 1.5)
+        keyboardGlow.opacity = Float(frame.keyGlow)
+        CATransaction.commit()
+    }
+    private func pose(_ id: String, dx: Double = 0, dy: Double = 0, angle: Double = 0) {
+        guard let layer = layers[id], let definition = definitions[id] else { return }
+        let anchor = layer.anchorPoint
+        layer.position = CGPoint(x: definition.frame.minX + anchor.x * definition.frame.width + dx, y: definition.frame.minY + anchor.y * definition.frame.height + dy)
+        layer.transform = CATransform3DMakeRotation(angle, 0, 0, 1)
+    }
+    func savePNG(to url: URL, background: NSColor? = nil) throws {
+        let w = Int(canvasSize.width), h = Int(canvasSize.height)
+        guard let context = CGContext(data: nil, width: w, height: h, bitsPerComponent: 8, bytesPerRow: 0, space: CGColorSpaceCreateDeviceRGB(), bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue) else { throw AssetError.invalid("render context") }
+        if let background { context.setFillColor(background.cgColor); context.fill(CGRect(origin: .zero, size: canvasSize)) }
+        rootLayer.render(in: context)
+        guard let cg = context.makeImage(), let data = NSBitmapImageRep(cgImage: cg).representation(using: .png, properties: [:]) else { throw AssetError.invalid("render PNG") }
+        try data.write(to: url)
+    }
+}

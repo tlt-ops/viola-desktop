@@ -1,0 +1,91 @@
+import AppKit
+import CoreGraphics
+import ViolaCore
+/// Passive input observation. No filtering, injection, characters or key identities.
+final class InputListener {
+    var onEvent: ((InputEvent) -> Void)?
+    private var tap: CFMachPort?
+    private var source: CFRunLoopSource?
+    private var globalMouse: Any?
+    private var localMonitor: Any?
+    private(set) var running = false
+    private(set) var keyboardAvailable = false
+    private(set) var keyDownCount = 0
+    private(set) var keyUpCount = 0
+    private(set) var mouseMoveCount = 0
+    private(set) var leftClickCount = 0
+    private(set) var rightClickCount = 0
+    var permissionGranted: Bool { CGPreflightListenEventAccess() }
+    static var now: Double { ProcessInfo.processInfo.systemUptime }
+    func start() {
+        stop(); running = true
+        let kinds: [CGEventType] = [.keyDown, .keyUp, .mouseMoved, .leftMouseDragged, .rightMouseDragged, .leftMouseDown, .rightMouseDown]
+        let mask = kinds.reduce(CGEventMask(0)) { $0 | (CGEventMask(1) << $1.rawValue) }
+        if permissionGranted {
+            tap = CGEvent.tapCreate(tap: .cgSessionEventTap, place: .tailAppendEventTap, options: .listenOnly, eventsOfInterest: mask, callback: { _, type, event, context in
+                guard let context else { return Unmanaged.passUnretained(event) }
+                let listener = Unmanaged<InputListener>.fromOpaque(context).takeUnretainedValue()
+                if type == .tapDisabledByTimeout || type == .tapDisabledByUserInput {
+                    if let tap = listener.tap { CGEvent.tapEnable(tap: tap, enable: true) }
+                } else if let input = InputListener.decode(type: type, event: event, now: InputListener.now) {
+                    listener.deliver(input)
+                }
+                return Unmanaged.passUnretained(event)
+            }, userInfo: Unmanaged.passUnretained(self).toOpaque())
+        }
+        if let tap {
+            source = CFMachPortCreateRunLoopSource(kCFAllocatorDefault, tap, 0)
+            CFRunLoopAddSource(CFRunLoopGetMain(), source, .commonModes)
+            CGEvent.tapEnable(tap: tap, enable: true); keyboardAvailable = true
+        } else {
+            globalMouse = NSEvent.addGlobalMonitorForEvents(matching: [.mouseMoved, .leftMouseDragged, .rightMouseDragged, .leftMouseDown, .rightMouseDown]) { [weak self] event in self?.handleLocal(event) }
+            localMonitor = NSEvent.addLocalMonitorForEvents(matching: [.keyDown, .keyUp, .mouseMoved, .leftMouseDragged, .rightMouseDragged, .leftMouseDown, .rightMouseDown]) { [weak self] event in self?.handleLocal(event); return event }
+        }
+    }
+    func stop() {
+        if let source { CFRunLoopRemoveSource(CFRunLoopGetMain(), source, .commonModes) }
+        source = nil
+        if let tap { CFMachPortInvalidate(tap) }; tap = nil
+        if let globalMouse { NSEvent.removeMonitor(globalMouse) }
+        if let localMonitor { NSEvent.removeMonitor(localMonitor) }
+        globalMouse = nil; localMonitor = nil; running = false; keyboardAvailable = false
+    }
+    func requestPermission() { _ = CGRequestListenEventAccess() }
+    static func decode(type: CGEventType, event: CGEvent, now: Double) -> InputEvent? {
+        switch type {
+        case .keyDown: return .keyDown(time: now, isRepeat: event.getIntegerValueField(.keyboardEventAutorepeat) != 0)
+        case .keyUp: return .keyUp(time: now)
+        case .mouseMoved, .leftMouseDragged, .rightMouseDragged:
+            return .mouseMove(time: now, x: event.location.x, y: event.location.y, dx: event.getDoubleValueField(.mouseEventDeltaX), dy: event.getDoubleValueField(.mouseEventDeltaY))
+        case .leftMouseDown: return .leftClick(time: now)
+        case .rightMouseDown: return .rightClick(time: now)
+        default: return nil
+        }
+    }
+    private func handleLocal(_ event: NSEvent) {
+        let t = Self.now
+        let input: InputEvent?
+        switch event.type {
+        case .keyDown: input = .keyDown(time: t, isRepeat: event.isARepeat)
+        case .keyUp: input = .keyUp(time: t)
+        case .mouseMoved, .leftMouseDragged, .rightMouseDragged:
+            let p = NSEvent.mouseLocation
+            input = .mouseMove(time: t, x: p.x, y: p.y, dx: event.deltaX, dy: event.deltaY)
+        case .leftMouseDown: input = .leftClick(time: t)
+        case .rightMouseDown: input = .rightClick(time: t)
+        default: input = nil
+        }
+        if let input { deliver(input) }
+    }
+    private func deliver(_ input: InputEvent) {
+        switch input {
+        case .keyDown: keyDownCount += 1
+        case .keyUp: keyUpCount += 1
+        case .mouseMove: mouseMoveCount += 1
+        case .leftClick: leftClickCount += 1
+        case .rightClick: rightClickCount += 1
+        }
+        onEvent?(input)
+    }
+    deinit { stop() }
+}

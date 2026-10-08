@@ -1,0 +1,21 @@
+{
+  "revision": "layered-belly-laugh-v3",
+  "user_rule": "Keep this saved action during keyboard/mouse/crawl edits. User authorized replacement of v2 with a layered laugh on 2026-10-04. Change it again only following an explicit request to revise the laugh.",
+  "sha256": {
+    "Sources/ViolaCore/FixedLaughMotion.swift": "f3c4205e6ba54a4fa1fe3f499d44a5694dfa1edd6a6f249b0ec6b9e437051dfe",
+    "Sources/ViolaDesktop/FixedLaughRig.swift": "8554d855b84d713d12005e0663841226be14274f2dd57137518be7e11112c5af",
+    "Sources/ViolaDesktop/FixedLaughFaceIdentity.swift": "24055197bbfd7283eca18f7252acc7503ab06dd665514f5790749a3c88739b56",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-right-upper-v0.2.47.png": "e5c2001b1914b05f28ea176b52a6010c95754eb178757f196687743bac646d1b",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-left-upper-v0.2.47.png": "4c0be4021f48290dc306329433658b93339be8cc9f934047093e0a52fe0e3c18",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-right-lower-v0.2.47.png": "6ab39a57b58248eb061937fd144154fa0d465beb6eb7124a3ed38f9ee67df205",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-left-lower-v0.2.47.png": "ad108edb1d6e3bd140c2c27fb467403243253f9e78fd3ac06ac5d3f414231f80",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-layers-v0.2.47.json": "dd78e2284c42ecc799b78dc0cbd8b354a697ae4e7b0f70ebd78a4c9b7f3d776c",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-left-hand-v0.2.47.png": "d5e31d393a2d2072e19c3ac024a78f176f5b2892ad309198e7fc179f684db48e",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-wipe-hand-v0.2.47.png": "9799061edd95a516ac31aabaa1fc895637ab04882e6d0cbb6c10a53605fe74e8",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-head-v0.2.47.png": "796e554c706974fba3bca29bc33c5acd78beb235975bbfd19861a7a8876c14cf",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-chest-v0.2.47.png": "7df24be00639d9d2c074d8e9b62fbde68df1b86e1ec3dfcb0bdd423895777099",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-clean-v0.2.47.png": "010e7eb83cb65cb5c0433042e9b8f03f775f546a16ea6b58b509b85d88793714",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-right-hand-v0.2.47.png": "ff2e80f88b14ddc8d71c00b1958dd7408f9bfbe26ff71cfa5211188755918653",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-hair-v0.2.47.png": "22753e6fb20fd4c7db4e879755778db397ef011ff98d3473c6e589722c7a11dd"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "mode": "built-in imagegen",
+  "input": "viola-natural-belly-laugh-v0.2.46.png",
+  "output": "viola-layered-clean-v0.2.47.png",
+  "prompt": "Use case: precise-object-edit. Asset type: hidden clean torso texture for a layered 2D anime animation. Edit target: the supplied olive-haired adult woman's transparent upper-body illustration. Remove BOTH arms completely, including the plum sleeves, cream cuffs, and BOTH hands resting over her abdomen. Reconstruct the cream apron and plum dress panels that were hidden beneath her hands, and the long olive hair that was behind her sleeves. Keep the existing head, neck, torso, collar, gold trim and flower brooch, belt, proportions, perspective, shading, and exact placement and framing unchanged. She remains dressed exactly as in the reference. Do not reposition or resize the head or torso. Do not add new limbs or objects. Preserve the transparent background and original exterior hair silhouette as closely as possible. This is a clean plate used behind separate animated arm layers, not a new character design. No text, watermark, sheet borders, or background.",
+  "derivedBy": "Deterministic polygon alpha cuts from the clean plate and preserved .46 painted head, sleeves and hands."
+}

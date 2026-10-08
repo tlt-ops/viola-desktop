@@ -1,0 +1,20 @@
+{
+  "mode": "built-in imagegen",
+  "input": "viola-natural-belly-laugh-v0.2.46.png",
+  "generated_source": "viola-layered-clean-v0.2.47.png",
+  "prompt": "Remove both arms, sleeves, cuffs and hands; reconstruct the covered apron, dress and long hair; preserve the existing head, torso, collar, gold trim, brooch, belt, proportions, exact placement and transparent background. Hidden clean plate for independent animation layers.",
+  "derived_layers": [
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-right-upper-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-left-upper-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-right-lower-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-left-lower-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-layers-v0.2.47.json",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-left-hand-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-wipe-hand-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-head-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-chest-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-clean-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-right-hand-v0.2.47.png",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/viola-layered-hair-v0.2.47.png"
+  ]
+}

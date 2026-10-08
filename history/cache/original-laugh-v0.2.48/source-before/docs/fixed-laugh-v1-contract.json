@@ -1,0 +1,19 @@
+{
+  "revision": "fixed-belly-laugh-v1",
+  "user_rule": "Keep this saved laugh unchanged during keyboard, mouse and crawl changes; revise only on an explicit user request to change the laugh.",
+  "sha256": {
+    "Sources/ViolaCore/FixedLaughMotion.swift": "841e01d6e31e58d433ba26faa15a9d04c8093ab8d0ac5135436231ad54175382",
+    "Sources/ViolaDesktop/FixedLaughRig.swift": "0311a839ec39a90a7551f1ad6ab147310142987a1850e031d2f3d00e5a04ad6a",
+    "Sources/ViolaDesktop/FixedLaughFaceIdentity.swift": "26442fd7b5a50344c3a952065c889fa36eeecbe9e7c5ba678fe538006d93498d",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/frontal-arms-v0.2.5.png": "d6ee70d42665086fc30c3922de4fb9146114d9e74e4cfe87752727b4696cd0c6",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/resting_lap_arm-original-v0.2.31.png": "7c5bde5c0d90c6b539f6e8bba578b0ffd3868ac7ce38162df0e0d1f9f01ec2eb",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/head-original-v0.2.29.png": "4f9e38f7eb04a0ff39357385e3cb65a19c332378fc47427e0efe54d6bf207849",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/seating-original-v0.2.29.png": "e7a19dd655908f30428e715006e031ea986d2136841d45f8004e3ebc64bc0cff",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/left_palm-original-v0.2.29.png": "787ae9e1479e0d72339e6144f04d266df16d687fe4e4af10ea6d7af88f4523ff",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/left_pinky-original-v0.2.29.png": "8fd8dc70707aaacb581372904b4ac0fa88c229baf545dd734f3350a6bc7d9811",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/left_ring-original-v0.2.29.png": "cd715357a9771d9895b19276927f352f63d91f35159944374a22557b63279712",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/left_middle-original-v0.2.29.png": "a6753752e35b3ff71a85c6b971c8949de1fa8d3d1a3d94a6801b7c0ddd49daf1",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/left_index-original-v0.2.29.png": "86adbd1ad492d9650ccb7a7588c56fca09901e6b8d4d5b207471b21165733e47",
+    "Sources/ViolaDesktop/Resources/Characters/Viola/left_thumb-original-v0.2.29.png": "191207ea58d0174ebf0fbb8780080b529b85a4d2fe7808dfe7b0d726831ca855"
+  }
+}

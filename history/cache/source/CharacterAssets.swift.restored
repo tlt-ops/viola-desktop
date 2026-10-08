@@ -1,0 +1,49 @@
+import AppKit
+
+struct SpriteDefinition: Codable {
+    let id: String
+    let file: String
+    let rect: [Double]
+    let anchor: [Double]?
+    let crop: [Double]?
+    let polygon: [[Double]]?
+    var frame: CGRect { CGRect(x: rect[0], y: rect[1], width: rect[2], height: rect[3]) }
+}
+struct CharacterManifest: Codable {
+    let version: Int
+    let id: String
+    let name: String
+    let canvas: [Double]
+    let sprites: [SpriteDefinition]
+}
+enum AssetError: LocalizedError {
+    case missing(String), invalid(String)
+    var errorDescription: String? {
+        switch self { case .missing(let s): return "缺少角色素材：\(s)"; case .invalid(let s): return "角色素材格式错误：\(s)" }
+    }
+}
+final class CharacterAssets {
+    let manifest: CharacterManifest
+    let images: [String: CGImage]
+    init(directory: URL) throws {
+        manifest = try JSONDecoder().decode(CharacterManifest.self, from: Data(contentsOf: directory.appendingPathComponent("character.json")))
+        guard manifest.version == 1, manifest.canvas.count == 2, manifest.canvas.allSatisfy({ $0.isFinite && $0 > 0 }), Set(manifest.sprites.map(\.id)).count == manifest.sprites.count else { throw AssetError.invalid("manifest") }
+        var loaded: [String: CGImage] = [:]
+        for sprite in manifest.sprites {
+            guard sprite.rect.count == 4, sprite.rect.allSatisfy(\.isFinite), sprite.rect[2] > 0, sprite.rect[3] > 0,
+                  !sprite.file.contains(".."), !sprite.file.contains("/"), sprite.anchor == nil || sprite.anchor?.count == 2 else { throw AssetError.invalid(sprite.id) }
+            guard let image = NSImage(contentsOf: directory.appendingPathComponent(sprite.file)), var cg = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else { throw AssetError.missing(sprite.file) }
+            if let crop = sprite.crop {
+                guard crop.count == 4, let cut = cg.cropping(to: CGRect(x: crop[0], y: crop[1], width: crop[2], height: crop[3])) else { throw AssetError.invalid("crop \(sprite.id)") }
+                cg = cut
+            }
+            loaded[sprite.id] = cg
+        }
+        images = loaded
+    }
+    static var bundledDirectory: URL {
+        if let path = Bundle.main.resourceURL?.appendingPathComponent("Characters/Viola"),
+           FileManager.default.fileExists(atPath: path.appendingPathComponent("character.json").path) { return path }
+        return Bundle.module.resourceURL!.appendingPathComponent("Resources/Characters/Viola")
+    }
+}
