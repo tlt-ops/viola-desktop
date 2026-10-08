@@ -1,0 +1,106 @@
+name: Build and publish tagged release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+jobs:
+  macos:
+    runs-on: macos-14
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run core behavior checks
+        run: swift run -c release ViolaChecks
+      - name: Package and verify macOS app
+        run: ./scripts/build_app.sh
+      - name: Archive macOS app
+        run: ditto -c -k --keepParent "build/viola终稿.app" build/viola-macos.zip
+      - name: Upload macOS release archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-viola-macos
+          path: build/viola-macos.zip
+          if-no-files-found: error
+
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Publish Windows app and run self-test and smoke-test
+        shell: pwsh
+        run: ./scripts/build_windows.ps1
+      - name: Upload Windows release archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-viola-windows-win-x64
+          path: build/windows/viola-windows-win-x64.zip
+          if-no-files-found: error
+      - name: Upload Windows smoke render and check logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-viola-windows-checks
+          path: |
+            build/windows/smoke.png
+            build/windows/logs/**
+            build/windows/staging-*/logs/**
+          if-no-files-found: ignore
+
+  release:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: [macos, windows]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download macOS archive
+        uses: actions/download-artifact@v4
+        with:
+          name: release-viola-macos
+          path: release-assets/macos
+      - name: Download Windows archive
+        uses: actions/download-artifact@v4
+        with:
+          name: release-viola-windows-win-x64
+          path: release-assets/windows
+      - name: Create release without replacing existing assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$RELEASE_TAG" --repo "$GH_REPO" >/dev/null 2>&1; then
+            echo "Release $RELEASE_TAG already exists; refusing to replace it or its assets." >&2
+            exit 1
+          fi
+          test -s release-assets/macos/viola-macos.zip
+          test -s release-assets/windows/viola-windows-win-x64.zip
+          cat > release-notes.md <<'NOTES'
+          提供 macOS 与 Windows x64 桌宠版本。
+
+          - 可切换奶龙大笑与薇欧拉大笑两种音源。
+          - 支持键鼠姿势响应、手动及空闲爬行、固定大笑动画。
+          - Windows x64 为 self-contained 包，解压后运行 Viola.Windows.exe。
+          - 发布流程执行 macOS 核心行为检查，以及 Windows self-test 和渲染 smoke-test；Windows 真人键鼠操作与多屏体验仍需目标机器验收。
+
+          本项目为非官方二创，如涉及侵权将删除相关内容。代码采用 MIT 许可；图片、角色与音频素材单独说明，不包含在代码 MIT 授权中。
+          NOTES
+          gh release create "$RELEASE_TAG" \
+            release-assets/macos/viola-macos.zip \
+            release-assets/windows/viola-windows-win-x64.zip \
+            --repo "$GH_REPO" --verify-tag \
+            --title "Viola $RELEASE_TAG" --notes-file release-notes.md

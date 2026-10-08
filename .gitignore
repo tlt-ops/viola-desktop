@@ -1,0 +1,29 @@
+# Swift and local builds
+.build/
+.swiftpm/
+build/
+windows/bin/
+windows/obj/
+*.app/
+*.dmg
+*.zip
+# macOS and editors
+.DS_Store
+*.xcuserstate
+xcuserdata/
+.idea/
+.vscode/
+# Local user state and diagnostics
+profile/
+profiles/
+config.json
+layout.json
+keyboard-stats.json
+diagnostics.json
+*.log
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key

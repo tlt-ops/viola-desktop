@@ -1,0 +1,31 @@
+name: macOS build and checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show compiler
+        run: swift --version
+      - name: Build release executables
+        run: swift build -c release
+      - name: Run core behavior checks
+        run: swift run -c release ViolaChecks
+      - name: Package and verify app
+        run: ./scripts/build_app.sh
+      - name: Archive app with bundle permissions
+        run: ditto -c -k --keepParent "build/viola终稿.app" build/viola-macos.zip
+      - name: Upload app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: viola-macos
+          path: build/viola-macos.zip
+          if-no-files-found: error

@@ -1,0 +1,44 @@
+name: Windows build and checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Publish win-x64 and run release checks
+        shell: pwsh
+        run: ./scripts/build_windows.ps1
+      - name: Upload Windows release archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: viola-windows-win-x64
+          path: build/windows/viola-windows-win-x64.zip
+          if-no-files-found: error
+      - name: Upload smoke render
+        uses: actions/upload-artifact@v4
+        with:
+          name: viola-windows-smoke
+          path: build/windows/smoke.png
+          if-no-files-found: error
+      - name: Upload release check logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: viola-windows-check-logs
+          path: |
+            build/windows/logs/**
+            build/windows/staging-*/logs/**
+          if-no-files-found: ignore
