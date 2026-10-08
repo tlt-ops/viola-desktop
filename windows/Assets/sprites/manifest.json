@@ -1,5 +1,5 @@
 {
-  "applicationVersion": "0.2.50",
+  "applicationVersion": "0.2.51",
   "clips": {
     "blink": {
       "columns": 10,
@@ -243,6 +243,6 @@
     "mouse-right": "desk-mouse-2.png"
   },
   "schemaVersion": 1,
-  "sourceVersion": "0.2.49",
+  "sourceVersion": "0.2.51",
   "width": 320
 }

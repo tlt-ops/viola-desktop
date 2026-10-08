@@ -34,6 +34,7 @@ internal static class SelfTests
             var loop = new Clip { FrameCount = 3, Fps = 30, Loop = true };
             Require(Assets.FrameIndex(loop, .1) == 0 && Assets.FrameIndex(loop, 2.0 / 30) == 2, "elapsed-time loop indexing");
             loop.Loop = false; Require(Assets.FrameIndex(loop, 9) == 2, "one-shot frame clamps");
+            TransitionSelfTests.Run(assets);
             string path = Path.Combine(temporary, "settings.json");
             var config = new Settings { Width = double.NaN, Left = double.PositiveInfinity, Interaction = false, LaughVariant = "viola", SoundEnabled = false, SoundVolume = .3 };
             config.KeyPresses[0x41] = 3; config.Sanitize(); SettingsStore.Save(path, config);

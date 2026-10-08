@@ -19,6 +19,8 @@ jobs:
         run: swift build -c release
       - name: Run core behavior checks
         run: swift run -c release ViolaChecks
+      - name: Verify laugh entry and recovery transitions
+        run: swift run -c release --skip-build ViolaDesktop --render-gallery build/transition-review --laugh-transition-review
       - name: Package and verify app
         run: ./scripts/build_app.sh
       - name: Archive app with bundle permissions
@@ -29,3 +31,10 @@ jobs:
           name: viola-macos
           path: build/viola-macos.zip
           if-no-files-found: error
+      - name: Upload transition review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: viola-macos-transition-review
+          path: build/transition-review/**
+          if-no-files-found: ignore

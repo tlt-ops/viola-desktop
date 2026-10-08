@@ -775,6 +775,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, NSMe
         current["showDesks"] = config.showDesks
         current["sourceArms"] = renderer.sourceArmDiagnostics
         current["sourceFace"] = renderer.sourceFaceDiagnostics
+        current["portraitTransition"] = renderer.portraitTransitionDiagnostics
         current["blink"] = ["rider":currentFrame.blink,"friend":currentFrame.friendBlink]
         current["restingPose"] = renderer.deskVisibilityDiagnostics["restingPose"]
         current["restingPoseVisible"] = renderer.deskVisibilityDiagnostics["restingPoseVisible"]

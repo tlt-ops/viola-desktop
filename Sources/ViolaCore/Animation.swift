@@ -40,6 +40,8 @@ public struct AnimationFrame {
     public var rightShoe = ShoeFrame()
     public var friendExpression: FriendExpression = .neutral
     public var friendExpressionOpacity = 0.0
+    public var normalFriendExpression: FriendExpression?
+    public var normalFriendExpressionOpacity: Double?
     public var keyPressures: [UInt16: Double] = [:]
     public var fingerPressures: [TypingFinger: Double] = [:]
     public var keyboardActive = false
@@ -273,6 +275,8 @@ public final class AnimationEngine {
             frame.friendExpressionOpacity = min(1, min(expressionAge/0.16, (expressionDuration-expressionAge)/0.2))
         }
         if laughing {
+            frame.normalFriendExpression = frame.friendExpression
+            frame.normalFriendExpressionOpacity = frame.friendExpressionOpacity
             frame.friendExpression = .effort
             frame.friendExpressionOpacity = frame.laugh*(0.55+FixedLaughMotion.pulse(age:frame.laughAge)*0.20)
         }

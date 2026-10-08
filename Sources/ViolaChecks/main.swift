@@ -14,6 +14,116 @@ func checkLess<T: Comparable>(_ a: T, _ b: T) { if !(a < b) { fail("\(a) must be
 func checkGreater<T: Comparable>(_ a: T, _ b: T) { if !(a > b) { fail("\(a) must be greater than \(b)") } }
 
 final class ViolaCoreChecks {
+    func testLaughPortraitHandoffIsContinuousAndKeepsEndpointPoses() {
+        checkEqual(LaughFaceTransition.portraitBlend(weight:-1),0)
+        checkEqual(LaughFaceTransition.portraitBlend(weight:0),0)
+        checkEqual(LaughFaceTransition.portraitBlend(weight:1),1)
+        checkEqual(LaughFaceTransition.portraitBlend(weight:2),1)
+        checkEqual(LaughFaceTransition.portraitBlend(weight:.nan),0)
+        checkEqual(LaughFaceTransition.portraitBlend(weight: -.infinity),0)
+        checkEqual(LaughFaceTransition.portraitBlend(weight:.infinity),1)
+        var previous = 0.0, intermediateSamples = 0
+        for n in 0...10000 {
+            let value = LaughFaceTransition.portraitBlend(weight:Double(n)/10000)
+            checkTrue(value.isFinite && value >= 0 && value <= 1)
+            checkTrue(value >= previous)
+            checkLess(value-previous,0.0003)
+            if value > 0 && value < 1 { intermediateSamples += 1 }
+            previous = value
+        }
+        checkGreater(intermediateSamples,9900)
+        var last = 0.0, lastBlinkClosure = 1.0
+        for n in 0...8000 {
+            let age = Double(n)/1000
+            let weight = FixedLaughMotion.weight(age:age)
+            let eased = weight*weight*(3-2*weight)
+            let value = LaughFaceTransition.portraitBlend(weight:eased)
+            checkLess(abs(value-last),0.025)
+            let blinkClosure = LaughFaceTransition.eyelidClosure(normal:1,fixed:0.4,weight:eased)
+            checkLess(abs(blinkClosure-lastBlinkClosure),0.01)
+            if age == 0 || age == 8 { checkEqual(blinkClosure,1) }
+            if age >= 0.42 && age <= 7.3 { checkEqual(value,1) }
+            last = value
+            lastBlinkClosure = blinkClosure
+        }
+        checkEqual(last,0)
+        // Match the real 60 Hz engine -> renderer envelope, including both
+        // entry and exit. This bounds visible per-frame changes rather than
+        // prescribing another easing function inside the handoff.
+        var previousFrameBlend = 0.0
+        for n in 0...480 {
+            let age = Double(n)/60
+            let weight = FixedLaughMotion.weight(age:age)
+            let rendererWeight = weight*weight*(3-2*weight)
+            let blend = LaughFaceTransition.portraitBlend(weight:rendererWeight)
+            checkLess(abs(blend-previousFrameBlend),0.17)
+            previousFrameBlend = blend
+        }
+        checkEqual(previousFrameBlend,0)
+    }
+
+    func testLaughEyelidsAndExpressionsJoinNormalWithoutThresholdJumps() {
+        for fixed in [0.40,0.28] {
+            for normal in [0.0,0.3,1.0] {
+                checkEqual(LaughFaceTransition.eyelidClosure(normal:normal,fixed:fixed,weight:0),normal)
+                checkEqual(LaughFaceTransition.eyelidClosure(normal:normal,fixed:fixed,weight:1),fixed)
+                checkLess(abs(LaughFaceTransition.eyelidClosure(normal:normal,fixed:fixed,weight:0.000001)-normal),0.000001)
+                var previous = normal
+                for n in 1...10000 {
+                    let closure = LaughFaceTransition.eyelidClosure(normal:normal,fixed:fixed,weight:Double(n)/10000)
+                    checkTrue(closure >= min(normal,fixed) && closure <= max(normal,fixed))
+                    checkLess(abs(closure-previous),0.000101)
+                    previous = closure
+                }
+                checkLess(abs(previous-LaughFaceTransition.eyelidClosure(normal:normal,fixed:fixed,weight:0.999999)),0.000001)
+            }
+        }
+        // Normal effort, hearts and brow tension all meet both endpoint poses;
+        // no first-frame forced effort or disappearing heart is allowed.
+        for (normal,fixed) in [(0.8,0.55),(0.0,0.75),(0.7,0.0),(4.0,2.8)] {
+            checkEqual(LaughFaceTransition.expressionBlend(normal:normal,fixed:fixed,weight:0),normal)
+            checkEqual(LaughFaceTransition.expressionBlend(normal:normal,fixed:fixed,weight:1),fixed)
+            var previous = normal
+            for n in 1...10000 {
+                let value = LaughFaceTransition.expressionBlend(normal:normal,fixed:fixed,weight:Double(n)/10000)
+                checkLess(abs(value-previous),0.00013)
+                previous = value
+            }
+        }
+    }
+
+    func testLaughRetainsUnderlyingFriendExpressionForContinuousHandoff() {
+        var seen: Set<String> = []
+        for seed in UInt64(1)...UInt64(16) {
+            let engine = AnimationEngine(now:0,expressionSeed:seed)
+            engine.allowsShoeDrops = false
+            for n in 1...600 {
+                let now = Double(n)/20
+                let normal = engine.tick(now:now)
+                guard normal.friendExpression != .neutral, normal.friendExpressionOpacity > 0.9 else { continue }
+                seen.insert(normal.friendExpression.rawValue)
+                checkTrue(engine.startLaugh(now:now))
+                let entry = engine.tick(now:now)
+                checkEqual(entry.normalFriendExpression,normal.friendExpression)
+                checkEqual(entry.normalFriendExpressionOpacity ?? -1,normal.friendExpressionOpacity,accuracy:0.000001)
+                checkEqual(entry.laugh,0)
+                let nearEntry = engine.tick(now:now+0.000001)
+                checkEqual(nearEntry.normalFriendExpression,normal.friendExpression)
+                checkLess(abs((nearEntry.normalFriendExpressionOpacity ?? -1)-normal.friendExpressionOpacity),0.00001)
+                let nearExit = engine.tick(now:now+7.999999)
+                // now+duration can subtract back to one ULP below duration.
+                // Sample just past it to test the actual non-laugh endpoint.
+                let exited = engine.tick(now:now+FixedLaughMotion.duration+0.000001)
+                checkEqual(exited.laugh,0)
+                checkTrue(exited.normalFriendExpression == nil)
+                checkEqual(nearExit.normalFriendExpression,exited.friendExpression)
+                checkEqual(nearExit.normalFriendExpressionOpacity ?? -1,exited.friendExpressionOpacity,accuracy:0.00001)
+                break
+            }
+        }
+        checkTrue(seen.contains(FriendExpression.effort.rawValue))
+        checkTrue(seen.contains(FriendExpression.hearts.rawValue))
+    }
     func testFixedLaughIgnoresConcurrentKeyboardAndMouse() {
         let quiet = AnimationEngine(now:0,expressionSeed:42)
         let busy = AnimationEngine(now:0,expressionSeed:42)
@@ -706,6 +816,9 @@ final class ViolaCoreChecks {
 
 let suite = ViolaCoreChecks()
 let cases: [(String, () throws -> Void)] = [
+    ("testLaughPortraitHandoffIsContinuousAndKeepsEndpointPoses", suite.testLaughPortraitHandoffIsContinuousAndKeepsEndpointPoses),
+    ("testLaughEyelidsAndExpressionsJoinNormalWithoutThresholdJumps", suite.testLaughEyelidsAndExpressionsJoinNormalWithoutThresholdJumps),
+    ("testLaughRetainsUnderlyingFriendExpressionForContinuousHandoff", suite.testLaughRetainsUnderlyingFriendExpressionForContinuousHandoff),
     ("testFixedLaughIgnoresConcurrentKeyboardAndMouse", suite.testFixedLaughIgnoresConcurrentKeyboardAndMouse),
     ("testNaturalLaughTearsPrecedeWipeAndClearBeforeHandLowers", suite.testNaturalLaughTearsPrecedeWipeAndClearBeforeHandLowers),
     ("testLayeredLaughMotionRangesContinuityAndNeutralRecovery", suite.testLayeredLaughMotionRangesContinuityAndNeutralRecovery),
