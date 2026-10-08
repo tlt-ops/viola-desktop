@@ -8,6 +8,10 @@
 
 本项目使用**非官方二创素材**，相关角色、图片与音频权利归各自权利人所有。**如侵权必删。** 权利人可通过[仓库 Issues](https://github.com/tlt-ops/viola-desktop/issues)联系维护者，维护者会及时处理并删除侵权素材。
 
+## 下载
+
+下载见 [Releases](https://github.com/tlt-ops/viola-desktop/releases)：macOS 包为 `viola-macos.zip`，Windows x64 包为 `viola-windows-win-x64.zip`。解压后分别打开 `viola终稿.app` 或 `Viola.Windows.exe`，Windows 请保留完整发布目录。
+
 ## macOS 功能
 
 - 左手按照物理键位移动、按键，右手握鼠标并响应移动与点击；键位统计分别显示按下和连发次数。
@@ -41,7 +45,7 @@ swift build -c release
 swift run -c release ViolaChecks
 ```
 
-0.2.50 的本地 `ViolaChecks` 已执行，43 项核心检查通过。`ViolaChecks` 检查核心行为与几何约束；通过这些检查并不等于已在每一种 macOS、屏幕布局或输入设备上完成实机验证。仓库的 CI 配置与已执行的本地检查须分别看待。
+0.2.50 的本地 `ViolaChecks` 已执行，43 项核心检查通过。`ViolaChecks` 检查核心行为与几何约束；通过这些检查并不等于已在每一种 macOS、屏幕布局或输入设备上完成实机验证。[macOS CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37712787059) 也已通过 Swift 5.10 编译、43 项核心检查、应用包签名与资源逐字节校验，并生成 ZIP。
 
 ## Windows 下载与构建
 
@@ -51,7 +55,9 @@ Windows x64 版使用独立的 .NET 10/WPF 实现和角色 PNG 动画图集。[W
 powershell -ExecutionPolicy Bypass -File .\scripts\build_windows.ps1
 ```
 
-在 Windows 上构建需要 .NET SDK 10.0.x，默认生成 `build/windows/viola-windows-win-x64.zip`。完整解压后运行 `Viola.Windows.exe`，无需另装 .NET 运行时。Windows 源码包含透明窗口、托盘、拖动/滚轮缩放、键鼠动作、8 秒大笑、两种笑声音源选择及声音开关、手动/闲置爬行和本地 virtual-key 按下计数。Windows 音量默认 0.8 并保存于设置，当前没有音量调节界面。首次移植未包含完整图层编辑、掉鞋交互、鼠标穿透及 macOS 高级统计界面。Windows 版仍需 Windows CI 和真实桌面验证，不能将 macOS 检查结果视为 Windows 已通过。
+在 Windows 上构建需要 .NET SDK 10.0.x，默认生成 `build/windows/viola-windows-win-x64.zip`。完整解压后运行 `Viola.Windows.exe`，无需另装 .NET 运行时。Windows 源码包含透明窗口、托盘、拖动/滚轮缩放、键鼠动作、8 秒大笑、两种笑声音源选择及声音开关、手动/闲置爬行和本地 virtual-key 按下计数。Windows 音量默认 0.8 并保存于设置，当前没有音量调节界面。首次移植未包含完整图层编辑、掉鞋交互、鼠标穿透及 macOS 高级统计界面。[Windows CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37712787153) 已通过 .NET 10 x64 发布、自检与实际 WPF 窗口 PNG 冒烟检查；真实物理键鼠、托盘、多屏和长期运行仍需在 Windows 用户机器验收。
+
+![Windows 原生 WPF 窗口冒烟截图](docs/images/windows-preview.png)
 
 ## macOS 首次使用
 
@@ -79,4 +85,4 @@ macOS 版隐藏角色不会停止输入监听；关闭“键鼠互动”或退�
 
 代码采用 [MIT License](LICENSE)。**角色图片、笑声音频和由它们生成的预览不属于 MIT 授权范围**；素材的公开分发依据和再次使用要求见 [ASSETS.md](docs/ASSETS.md)。
 
-English: Viola Desktop has a Swift/AppKit macOS implementation and a separate .NET 10/WPF Windows x64 port using exported character animation atlases. Both source implementations include keyboard/mouse reactions, an eight-second laugh cycle, and crawling. Windows build and desktop behavior still require Windows CI and real-device verification. macOS needs macOS 13+ and Swift 5.9+; Windows builds need .NET SDK 10.0.x. Code is MIT licensed; bundled artwork/audio and derived previews have separate rights. Local input totals use macOS physical-key codes or Windows virtual-key codes without decoding text. See the linked documents for platform differences.
+English: Viola Desktop has a Swift/AppKit macOS implementation and a separate .NET 10/WPF Windows x64 port using exported character animation atlases. Both source implementations include keyboard/mouse reactions, an eight-second laugh cycle, and crawling. Both platform CI builds passed, including Windows self-tests and an actual WPF window render. Physical input, tray behavior, multiple monitors, and sustained operation still require Windows user-device validation. macOS needs macOS 13+ and Swift 5.9+; Windows builds need .NET SDK 10.0.x. Code is MIT licensed; bundled artwork/audio and derived previews have separate rights. Local input totals use macOS physical-key codes or Windows virtual-key codes without decoding text. See the linked documents for platform differences.

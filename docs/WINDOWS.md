@@ -63,6 +63,10 @@ Windows 的输入映射采用 Windows virtual-key 到已有角色键位姿势的
 
 ## 验证范围
 
-Windows 端的源码、图集和构建配置在 macOS 上准备；Windows CI 与真实 Windows 桌面运行结果应以实际执行记录为准。未执行的构建、权限/输入和音频行为不能记为通过。此移植不承诺与 macOS 版的每个可编辑图层、掉鞋/穿鞋交互或高级统计界面完全等价。
+源码提交 `db03858` 的 [Windows CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37712787153) 已成功完成 .NET 10、`win-x64` self-contained 发布；`--self-test` 检查全部资源、设置持久化、缓存边界、帧索引和键位映射；`--smoke-test` 实际启动 WPF 窗口、输出有效 PNG，再生成 ZIP。下图来自该 Windows CI 的原生窗口渲染，未修改像素。
+
+![Windows 原生 WPF 窗口冒烟截图](images/windows-preview.png)
+
+冒烟模式刻意不注册输入钩子、不创建托盘、不读写用户 profile，因此它验证了 Windows 编译、资源与窗口渲染，没有证明真人物理键鼠输入、托盘操作、多屏/缩放或持续运行已完成验收。音频文件存在与数据检查也不能替代真人听音验收。此移植不承诺与 macOS 版的每个可编辑图层、掉鞋/穿鞋交互或高级统计界面完全等价。
 
 素材仍属[非官方二创并采用独立授权范围](ASSETS.md)；代码 MIT 不覆盖图片、音频和图集。

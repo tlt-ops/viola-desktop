@@ -8,14 +8,14 @@
 - Windows 同步补充隐藏桌面键鼠时的键位/鼠标姿势资源支持；图集可由原生渲染器导出并逐帧校验打包，视觉基线保留 0.2.49。
 - 薇欧拉笑声已内置为 8 秒 AAC 片段，来源和裁切记录见 [素材说明](docs/ASSETS.md)。
 - 本地 `ViolaChecks` 已执行，43 项核心检查通过。
-- 新版本 macOS 本地验证与 Windows CI/实机验证分别记录；Windows 未执行的检查不视为通过。
+- 提交 `db03858` 的 [macOS CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37712787059) 通过 Swift 5.10 编译、43 项核心检查、签名/资源验证并打包；[Windows CI](https://github.com/tlt-ops/viola-desktop/actions/runs/37712787153) 通过 .NET 10 x64 发布、资源/设置/缓存/索引/键位自检、实际 WPF PNG 冒烟检查并打包。真人 Windows 键鼠、多屏与长期运行尚未验收。
 
 ## 0.2.49 — Windows 首次移植
 
 - 新增独立 .NET 10/WPF Windows x64 实现，通过 macOS 渲染器导出的 PNG 图集展示角色动画。
 - 源码实现托盘、透明置顶窗口、拖动/缩放、键鼠输入反应、8 秒大笑、手动/自动爬行及本地 virtual-key 非连发按下累计。
 - 新增 Windows 构建入口和 CI：self-contained 发布、自检、窗口 PNG 冒烟检查及 ZIP 产物。
-- Windows 编译与真实桌面运行需以 Windows CI/实机结果确认；没有将 macOS 通过记录视为 Windows 验证。
+- 初始 Windows 构建与运行验证记录见上方 0.2.50；CI 的自检/窗口渲染与真实输入验收范围分别记录。
 - 未移植完整图层 rig、掉鞋/穿鞋交互、鼠标穿透、触控板捏合、减少动作/睡眠及 macOS 高级统计界面。详见 [Windows 文档](docs/WINDOWS.md)。
 
 ## 0.2.49 — macOS 公开源码基线
